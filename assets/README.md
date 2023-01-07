@@ -1,0 +1,1 @@
+* Esta carpete es solo para archivos multimedia
