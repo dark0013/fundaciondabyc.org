@@ -1,4 +1,4 @@
-.fond-principal {
+/* .fond-principal {
   display: inline-block;
   background-image: linear-gradient(rgba(15, 142, 144, 0.15),
   rgba(15, 142, 144, 0.15)), url('../assets/img/img_inicio/solidaridad.jpg');
@@ -10,4 +10,56 @@
   height: 500px;
 
 
+} */
+
+
+.testimonial-slider-bg {
+  background-image: url(../../../assets/img/img_inicio/solidaridad.jpg)
+}
+
+.testimonial-slider-bg {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  height: 650px
+}
+
+.testimonial-slider-bg:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #233F4D;
+  OPACITY: .9
+}
+
+.testimonial-slider-bg .section-title {
+  z-index: 99
+}
+
+.testimonial-slider-bg .section-title h2 {
+  color: #fff
+}
+
+.testimonial-content{
+  display: flex;
+  align-items: center;
+}
+
+.hijo {  
+  padding: 25px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  z-index: 1;    
+}
+
+@media only screen and (max-width: 600px) {
+  .hijo {  
+    font-size: 15px;    
+  }
 }
