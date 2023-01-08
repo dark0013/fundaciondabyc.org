@@ -1,0 +1,16 @@
+.padre {
+    position: relative;
+}
+
+.hijo {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+
+    
+}
