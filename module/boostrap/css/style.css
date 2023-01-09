@@ -13,8 +13,8 @@ body {
     font-weight: 400;
     position: relative;
     z-index: 1;
-    background: #fff;
-    color: #191919;
+    background: rgb(20, 20, 20);
+    color: #f5efef;
     overflow-x: hidden
 }
 
