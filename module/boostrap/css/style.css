@@ -185,7 +185,11 @@ li {
 
 .section-title h2 {
     font-size: 50px;
+<<<<<<< HEAD
     font-weight: 500;
+=======
+    font-weight: 500px;
+>>>>>>> a8bff53adc696b692494196cbdf6bf17426bf4db
     line-height: 60px;
     letter-spacing: 1px;
     margin: 20px 0
