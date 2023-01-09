@@ -14,7 +14,7 @@
 
 
 .testimonial-slider-bg {
-  background-image: url(../../../assets/img/img_inicio/solidaridad.jpg)
+  background-image:url("../../../assets/img/img_inicio/solidaridad.jpg")
 }
 
 .testimonial-slider-bg {
@@ -41,8 +41,10 @@
 }
 
 .testimonial-slider-bg .section-title h2 {
-  color: #fff
+  color: #fff;
 }
+
+
 
 .testimonial-content{
   display: flex;
@@ -63,3 +65,4 @@
     font-size: 15px;    
   }
 }
+

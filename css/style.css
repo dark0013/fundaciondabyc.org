@@ -1,1 +1,12 @@
 
+.centrado{
+    color:white; 
+    text-align:center;
+    line-height: 100px;
+    font-size: 25PX;
+
+}
+
+.centarimg{
+    height:315px;
+}

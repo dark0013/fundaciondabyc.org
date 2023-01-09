@@ -185,10 +185,11 @@ li {
 
 .section-title h2 {
     font-size: 50px;
-    font-weight: 500;
-    line-height: 60px;
+    text-align: center;
+    font-weight: 0;
+    line-height: 0px;
     letter-spacing: 1px;
-    margin: 20px 0
+    margin: 0px 0
 }
 
 .section-title h2 b {
