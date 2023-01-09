@@ -88,7 +88,7 @@ li {
 }
 
 .section-padding {
-    padding: 120px 0
+    padding: 45px 0
 }
 
 @media only screen and (min-width:992px) and (max-width:1200px) {
@@ -1289,7 +1289,7 @@ textarea:focus::-webkit-input-placeholder {
     font-size: 55px;
     font-weight: 500;
     line-height: 80px;
-    color: #FFF;
+    color: rgb(219, 44, 44);
     text-align: center;
     z-index: 999;
     bottom: -70px
@@ -2823,7 +2823,6 @@ ul.port-menu.recent {
 }
 
 .map-section iframe {
-    filter: grayscale(90%);
     width: 100%
 }
 
@@ -2837,7 +2836,7 @@ ul.port-menu.recent {
 }
 
 .blog-meta i {
-    color: #00B965;
+    color: #442321;
     font-size: 20px;
     margin-right: 5px
 }
@@ -3183,4 +3182,11 @@ a.reply-btn {
 .go-top:hover {
     background-color: #e09e27;
     color: #fff
+}
+
+/*----- contacto ----*/ 
+.body{
+    background-i: url(../assets/img/img_fondo/testimonial-slider-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
