@@ -1672,37 +1672,6 @@ p.event-date {
     color: #fff
 }
 
-.testimonial-slider-bg {
-    background-image: url(../../../assets/img/img_fondo/testimonial-slider-bg.jpg)
-}
-
-.testimonial-slider-bg {
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    position: relative;
-    height: 650px
-}
-
-.testimonial-slider-bg:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #233F4D;
-    OPACITY: .9
-}
-
-.testimonial-slider-bg .section-title {
-    z-index: 99
-}
-
-.testimonial-slider-bg .section-title h2 {
-    color: #fff
-}
-
 .single-team-item img {
     display: block;
     max-width: 90px;
@@ -1738,46 +1707,7 @@ p.event-date {
     font-size: 85%
 }
 
-.testimonial-text {
-    margin: 50px 0;
-    background: #fff;
-    padding: 20px;
-    font-size: 14px;
-    position: relative;
-    margin-top: 20px
-}
 
-.testimonial-text i {
-    font-size: 30px;
-    display: inline-block;
-    margin-bottom: 20px;
-    color: #FFD857
-}
-
-.testimonial-text:after {
-    position: absolute;
-    content: "";
-    bottom: -14px;
-    left: 7px;
-    background: #00B965;
-    width: 33px;
-    height: 33px;
-    transform: rotate(41deg);
-    display: none
-}
-
-.testimonial-bottom {
-    position: relative;
-    display: none
-}
-
-.testimonial-bottom img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    position: absolute;
-    top: -16px
-}
 
 .author-desc {
     display: inline-block;
@@ -1794,26 +1724,7 @@ p.event-date {
     opacity: .5
 }
 
-.single-testimonial-box {
-    height: 350px
-}
 
-.active .testimonial-text {
-    background: #00B965;
-    color: #fff
-}
-
-.active .testimonial-text p {
-    color: #fff
-}
-
-.active .testimonial-text:after {
-    display: block
-}
-
-.active .testimonial-bottom {
-    display: block
-}
 
 .team-carousel .owl-dots button {
     width: 12px;
@@ -3182,11 +3093,4 @@ a.reply-btn {
 .go-top:hover {
     background-color: #e09e27;
     color: #fff
-}
-
-/*----- contacto ----*/ 
-.body{
-    background-i: url(../assets/img/img_fondo/testimonial-slider-bg.jpg);
-    background-size: cover;
-    background-attachment: fixed;
 }
