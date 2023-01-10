@@ -58,6 +58,10 @@
   z-index: 1;    
 }
 
+.card-body{
+  height: 220px;
+}
+
 @media only screen and (max-width: 600px) {
   .hijo {  
     font-size: 15px;    
