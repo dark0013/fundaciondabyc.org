@@ -5,3 +5,11 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+body {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+    height: 650px
+}
