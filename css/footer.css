@@ -1,0 +1,41 @@
+.footer-area {
+    background: #13303e;
+    color: #fff
+}
+
+.footer-area .logo .navbar-brand {
+    color: #fff
+}
+
+.footer-area h5 {
+    margin: 20px 0;
+    color: #FFD857
+}
+
+.footer-area p {
+    color: #eee;
+    margin-top: 20px
+}
+
+.footer-area ul li a {
+    display: block;
+    color: #eee;
+    padding: 7px 0
+}
+
+.footer-area ul li a:hover {
+    color: #EFC94C
+}
+
+.footer-up {
+    padding: 80px 0
+}
+
+li {
+    display: inline-block
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
