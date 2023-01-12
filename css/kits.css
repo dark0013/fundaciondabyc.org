@@ -78,7 +78,7 @@ h2{
 div#general{
     
     background: linear-gradient(rgba(5,7,12,0.55),rgba(5,7,12,0.55)),url(/assets/img/img_fondo/people-stacking-hands-together-park.jpg);
-    width: 1800px;
+    width: 1300px;
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -87,11 +87,12 @@ div#general{
 div#contenedor1{
     padding: 5px;
     margin-top: 50px;
+    border: black;
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 5px;
-    width: 440px;
-    height: 400px; ;
+    width: 350px;
+    height: 350px; ;
     float: left;
 }
 p{
@@ -103,9 +104,9 @@ div#contenedor2{
     margin-top: 50px;
     margin-bottom: 10px;
     margin-right: 10px;
-    margin-left: -110px;
-    width: 440px;
-    height: 400px; ;
+    margin-left: 0px;
+    width: 350px;
+    height: 350px; ;
     float: left;
 }
 div#contenedor3{
@@ -127,4 +128,30 @@ div#contenedor4{
     width: 440px;
     height: 400px; ;
     float: left;
+}
+
+.card{
+    width: 440px;
+    height: 400px;
+    border-radius: 15px; 
+    overflow: hidden;
+    margin: 20px;
+}
+
+.card1{
+    width: 220px;
+    height: 100px;
+    border-radius: 15px; 
+    overflow: hidden;
+    margin: 20px;
+}
+.card1{
+    font-size: 40px;
+    color: aliceblue;
+    margin-left: 100px;
+    margin-top: 25px;
+}
+.card:hover{
+    transform: translateY(-10%);
+    
 }
