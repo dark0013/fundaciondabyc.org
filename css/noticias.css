@@ -1,7 +1,8 @@
 .cabeza{
-    background: url(../assets/img/img_noticias/fundacion.png);
+    background: url(../assets/img/img_noticias/imgnoti.jpg);
     background-repeat:no-repeat;
     background-size: cover;
+    
    
     
 }
@@ -49,7 +50,7 @@
         cursor: pointer;
         width: 350px;
         overflow: hidden;
-        border-radius: 2px;
+        border-radius: 5px;
     }
     .contenedor figure img{
         width: 100%;
