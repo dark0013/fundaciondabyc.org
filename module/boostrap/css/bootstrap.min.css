@@ -4368,9 +4368,42 @@ fieldset:disabled .btn {
     list-style: none
 }
 
-.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active{
+    color: #00B965
+}
 .navbar-nav .show>.nav-link {
-    color: var(--bs-navbar-active-color)
+    color: #00B965
+}
+
+.navbar-nav li.nav-item:hover>a {
+    color: #00B965
+}
+
+.m-auto {
+    margin: auto !important
+}
+
+.navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.navbar-nav .dropdown-menu {
+    position: static;
+    float: none
 }
 
 .navbar-nav .dropdown-menu {

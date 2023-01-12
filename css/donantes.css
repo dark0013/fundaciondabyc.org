@@ -1,3 +1,4 @@
+/*Fondo img*/
 .testimonial-slider-bg {
     background-image: url(../../../assets/img/img_fondo/testimonial-slider-bg.jpg);
     background-size: 100%;
@@ -92,3 +93,5 @@
 .active .testimonial-bottom {
     display: block
 }
+
+/*Menu*/
