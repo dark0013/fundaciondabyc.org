@@ -4326,6 +4326,19 @@ fieldset:disabled .btn {
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)
 }
 
+ /*PEGAJOSO*/
+ .menu-fixed{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    padding: 0;
+    left: 0;
+    max-width: 1000%; 
+    width: 100%;
+
+}
+/*Sub-Menu*/
+
 .navbar>.container,
 .navbar>.container-fluid,
 .navbar>.container-lg,
@@ -4376,11 +4389,8 @@ fieldset:disabled .btn {
 }
 
 .navbar-nav li.nav-item:hover>a {
-    color: #00B965
-}
-
-.m-auto {
-    margin: auto !important
+    color: white;
+    background: #125235;
 }
 
 .navbar-nav {
