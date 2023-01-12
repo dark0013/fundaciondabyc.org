@@ -25,6 +25,9 @@
     background-size: cover;
     background-position-y: 0cm;
 }
+.Nose{
+    display: inline-flex;
+}
 .Encabezado{
     padding: 45px;
     background-color: #163c50;
