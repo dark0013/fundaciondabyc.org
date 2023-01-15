@@ -2610,7 +2610,7 @@ textarea.form-control-lg {
     -moz-appearance: none;
     appearance: none;
     -webkit-print-color-adjust: exact;
-    color-adjust: exact;
+    accent-color: exact;
     print-color-adjust: exact
 }
 
@@ -4322,22 +4322,9 @@ fieldset:disabled .btn {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x)
 }
-
- /*PEGAJOSO*/
- .menu-fixed{
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    padding: 0;
-    left: 0;
-    max-width: 1000%; 
-    width: 100%;
-
-}
-/*Sub-Menu*/
 
 .navbar>.container,
 .navbar>.container-fluid,
@@ -4368,7 +4355,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-nav {
-    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-x: 1rem;
     --bs-nav-link-padding-y: 0.5rem;
     --bs-nav-link-font-weight: ;
     --bs-nav-link-color: var(--bs-navbar-color);
@@ -4378,7 +4365,8 @@ fieldset:disabled .btn {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
+    flex-wrap: wrap;
 }
 
 .navbar-nav .nav-link.active{
@@ -4403,12 +4391,26 @@ fieldset:disabled .btn {
     flex-direction: column;
     padding-left: 0;
     margin-bottom: 0;
-    list-style: none
+    list-style: none;
 }
+ /*PEGAJOSO*/
+ .menu-fixed{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    padding: 0;
+    left: 0;
+    max-width: 1000%; 
+    width: 100%;
+
+}
+/*Sub-Menu*/
+
 
 .navbar-nav .nav-link {
     padding-right: 0;
-    padding-left: 0
+    padding-left: 0;
+    justify-content: center;
 }
 
 .navbar-nav .dropdown-menu {
@@ -4478,7 +4480,8 @@ fieldset:disabled .btn {
 
 .navbar-nav-scroll {
     max-height: var(--bs-scroll-height, 75vh);
-    overflow-y: auto
+    overflow-y: auto;
+    justify-content: center;
 }
 
 @media (min-width:576px) {
