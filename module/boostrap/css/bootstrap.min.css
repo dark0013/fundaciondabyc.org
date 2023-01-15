@@ -1261,7 +1261,7 @@ progress {
 
     .col-md-9 {
         flex: 0 0 auto;
-        width: 75%
+        width: 72%
     }
 
     .col-md-10 {
@@ -4399,13 +4399,10 @@ fieldset:disabled .btn {
     z-index: 1000;
     top: 0;
     padding: 0;
-    left: 0;
     max-width: 1000%; 
     width: 100%;
 
 }
-/*Sub-Menu*/
-
 
 .navbar-nav .nav-link {
     padding-right: 0;
