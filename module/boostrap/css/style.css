@@ -73,7 +73,7 @@ img {
 i,
 span,
 a {
-    display: inline-block
+    /* display: inline-block; */
 }
 
 ul {
@@ -179,7 +179,7 @@ li {
 }
 
 .section-title {
-    position: relative
+    position: ;
 }
 
 .section-title h2 {
