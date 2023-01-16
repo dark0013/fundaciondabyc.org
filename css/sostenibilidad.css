@@ -1,6 +1,7 @@
 .Nose{
     display: inline-flex;
     width: 100%;
+    margin-top: 1.8rem !important
 }
 .Imgfondo {
     background: url(../assets/img/img_sostenibilidad/manoscopy.png);
@@ -21,12 +22,11 @@
 .line{
     background-color: #072f3d;
     width: 100%;
-    height: 280px;
 }
 .tit0{
     background: linear-gradient(
                 #98eceb,
-                #003d44,
+                #f06387,
                 #efefef
                 );
     color: transparent;
@@ -38,6 +38,7 @@
     font-size: 400%;
     height: 120px;
     padding: 15px;
+    
 
 }
 .Parra{
