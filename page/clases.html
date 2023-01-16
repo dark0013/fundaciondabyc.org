@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BABYC | Formulario Clases</title>
+    <title>BABYC | Formulario de Clases</title>
     <link rel="icon" href="../assets/ico/ico.png" type="image/jpg" />
     <link rel="stylesheet" href="../module/boostrap/css/bootstrap.min.css"> 
     <link href="../module/boostrap/css/owl.carousel.css" rel="stylesheet"><!-- Style CSS -->
@@ -16,6 +16,7 @@
     <link href="../css/clases.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/ico.css">
     <script src="https://kit.fontawesome.com/1b1959dac0.js" crossorigin="anonymous"></script>
+
 </head>
 <!--Menu-->
 <body>
@@ -73,77 +74,107 @@
         </div>
         <!-- Cascada img -->
 
-    <div class="container">    
+    <div class="container justify-content-center">    
         <div class="contact-section section-padding">
-            <div class="container">
+            <div class="container col-md-6">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <br><br>
-                        <h2 class="titulo">Formulario Regreso a Clases</h2>
-                        <br><br>
-                        <div id="general">
-                                <input class="letra gmail" type="text" name="nombre" id="nombre" placeholder="Escriba sus nombres y apellidos"/>
-                                <input class="letra gmail " type="email" name="email" id="email" placeholder="Correo Electronico"/>
-                                <input class="letra edad"type="number" name="Edad" id="Edad" placeholder="Edad"/>
-                                    <h5 class="subtitulo">Lista de Viveres:</h5>   
-                                        <div class="caja1"><label for="harina">Harina:</label>
-                                            <input class="cantidad" type="number" name="harina" id="harina" placeholder="cantidad" required />
-                                                </div>
-                                            <div class="caja1"><label for="aceite">Aceite:</label>
-                                                <input class="cantidad" type="number" name="aceite" id="aceite" placeholder="cantidad" required />
-                                                    </div>
-                                                <div class="caja3"><label for="Mantequilla">Mantequilla:</label>
-                                                    <input class="cantidad" type="number" name="Mantequilla" id="Mantequilla" placeholder="cantidad" required />
-                                                        </div>
-                                                    <div class="caja4"><label for="Leche">Leche:</label>
-                                                        <input class="cantidad" type="number" name="leche" id="leche" placeholder="cantidad" required />
-                                                            </div>
-                                                        <div class="caja5"><label for="sobresdesopa">Sobre de Sopas:</label>
-                                                            <input class="cantidad" type="number" name="sobresdesopa" id="sobresdesopa" placeholder="cantidad" required />
-                                                                </div>
-                                                            <div class="caja6"><label for="lentejafrejol">Lenteja/Frejol:</label>
-                                                                <input class="cantidad" type="number" name="lentejafrejol" id="lentejafrejol" placeholder="cantidad" required />
-                                                                    </div>
-                                                                <div class="caja7"><label for="Arroz">Arroz:</label>
-                                                                    <input class="cantidad" type="number" name="Arroz" id="Arroz" placeholder="cantidad" required />
-                                                                        </div>
-                                                                    <div class="caja8"><label for="Avena">Avena:</label>
-                                                                        <input class="cantidad" type="number" name="Avena" id="Avena" placeholder="cantidad" required />
-                                                                            </div>
-                                                                            <div class="caja9"><label for="enlatados">Enlatados en general:</label>
-                                                                                <input class="cantidad" type="number" name="enlatados" id="enlatados" placeholder="cantidad" required />
-                                                                            </div>
-                                                                        <div class="caja10"><label for="sal">Sal:</label>
-                                                                            <input class="cantidad" type="number" name="sal" id="sal" placeholder="cantidad" required />    
-                                                                        </div>
-                                                                    <div class="caja11">
-                                                                        <label for="azucar">Azucar:</label>
-                                                                            <input class="cantidad" type="number" name="Azucar" id="Azucar" placeholder="cantidad" required />
-                                                                    </div>
-                                                                    <br> 
-                                                                <h5 class="subtitulo">Opcional:</h5>    
-                                                            <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto"/>
-                                                        <input class="cantidad" type="number" name="number" id="number" placeholder="cantidad" required />
-                                                    <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto"/>
-                                                <input class="cantidad"type="number" name="number" id="number" placeholder="cantidad" required />
-                                            <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto"/>
-                                        <input class="cantidad" type="number" name="number" id="number" placeholder="cantidad" required />
-                                    <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto"/>
-                                <input class="cantidad"type="number" name="number" id="number" placeholder="cantidad" required />
-                            <div class="centrado"> 
-                                <input type="submit" name="Enviar" value="enviar"/>
-                                <input type="submit" name="Regresar" value="regresar"/>
-                            </div>                 
+                    <div class="justify-content-center"><br><br>
+                        <h2 class="titulo">Formulario de Regreso a Clases</h2><br>
+                        <div class="container" id="general">
+                            <div class="centrado">
+                                <input type="text" name="Nombre" placeholder="Nombres y Apellidos" class="justify-content-center letra gmail form-control">
+                                <input type="email" name="gmail" placeholder="Correo electronico" class="justify-content-center letra gmail form-control">
+                                <input type="number" name="Edad" placeholder="Edad" class="justify-content-center letra edad form-control">
+                            </div>
+                            <h5 class="subtitulo">Lista de Utiles Escolares:</h5>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="form-group col-6">
+                                        <label for="#">1 Resma de Hojas:</label>
+                                        <input type="number" name="Hojas" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">Lapiz:</label>
+                                        <input type="number" name="Lapiz" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">2 Cuad. Cuadro universitario:</label>
+                                        <input type="number" name="cuad" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">Sacapuntas:</label>
+                                        <input type="number" name="Sacapuntas" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">2 Cuad. Linea universitario:</label>
+                                        <input type="number" name="papel" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">Borrador:</label>
+                                        <input type="number" name="Borrador" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">1 Funda de Hojas de Cuadro:</label>
+                                        <input type="number" name="funda" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">Pluma Azul:</label>
+                                        <input type="number" name="azul" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">1 Funda de Hojas de Lineas:</label>
+                                        <input type="number" name="funda" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">Pluma Negra:</label>
+                                        <input type="number" name="Negra" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">Caja de lapices de colores:</label>
+                                        <input type="number" name="colores" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">Pluma Roja:</label>
+                                        <input type="number" name="Roja" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                    <div class="form-group col-6">
+                                        <label for="#">Caja de Marcadores:</label>
+                                        <input type="number" name="Marcadores" placeholder="cantidad" class="cantidad form-control">
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="form-group container">
+                                <h5 class="subtitulo">Opcional:</h5>
+                                <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
+                                <input type="number" name="cantid" placeholder="cant" class="cant">
+                                <br>
+                                <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
+                                <input type="number" name="cantid" placeholder="cant" class="cant">
+                                <br>
+                                <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
+                                <input type="number" name="cantid" placeholder="cant" class="cant">
+                                <br>
+                                <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
+                                <input type="number" name="cantid" placeholder="cant" class="cant">
+                                <br>
+                            </div>
+                            <div class="container">
+                                <div class="centrado">
+                                    <form>
+                                        <input type="submit" name="Enviar" value="enviar" class="boton1">
+                                        <input type="submit" name="Regresar" value="regresar">   
+                                    </form> 
+                                </div>
+                            </div>    
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     </header>
-
-<!-- Footer Area -->
-
+    <!-- Footer Area -->
     <footer class="footer-area">
         <div class="container">
             <div class="footer-up">

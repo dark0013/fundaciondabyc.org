@@ -88,7 +88,7 @@ label{
 }
 
 form input[type="submit"]{
-    background-color: rgb(157, 253, 119);
+    background-color: rgb(119, 222, 253);
     color: black;
     font-size: 20px;
 }
