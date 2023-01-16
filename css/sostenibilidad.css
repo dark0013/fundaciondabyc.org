@@ -1,129 +1,89 @@
-.Imgfondo {
-    background: url(../assets/img/img_sostenibilidad/manos.png);
-    height: 90vh;
-    width: 100vw;
-    color: rgb(190, 212, 235);
-    background-size: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position-y: 3.23cm;
-
-}
-.LinColor{
-    background-color: #000000;
-    width: 100vw;
-    height: 1vh;
-    size: 100%;
-}
-.Imgcard{
-    background-image: url(../assets/img/img_sostenibilidad/fondo-fundacion.jpg);
-    width: 100vw;
-    height: 100vh;
-    opacity: 80%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 0cm;
-}
 .Nose{
     display: inline-flex;
+    width: 100%;
+}
+.Imgfondo {
+    background: url(../assets/img/img_sostenibilidad/manoscopy.png);
+    height: 490px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .Encabezado{
-    padding: 45px;
+    padding: 35px;
     background-color: #163c50;
+    width: 100%;
+    border-radius: 15px;
+    opacity: 88%;
+    
+}
+.line{
+    background-color: #072f3d;
+    width: 100%;
+    height: 280px;
 }
 .tit0{
-    text-align: center;
-    font-size: 500%;
     background: linear-gradient(
-                #000000,
-                #292929,
-                #4c4d69
+                #98eceb,
+                #003d44,
+                #efefef
                 );
     color: transparent;
     -webkit-background-clip: text;
 }
+.tit0 h1{
+    
+    text-align: center;
+    font-size: 400%;
+    height: 120px;
+    padding: 15px;
+
+}
 .Parra{
     text-align: center;
-    color: #000000;
-    font-size: 500%;
 }
-.Subtema{
+.Parra h1{
+    font-size: 160%;
+    color: rgb(96, 117, 113);
+}
+.all{
+    background-color: #072f3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-wrap: wrap;
+}
+.card {
+    margin: 20px;
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
-.contai00{
-    color: #000000;
-    float: left;
-    width: 30%;
-    max-width: 280px;
-    height: 50ppx;
+.Conten {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin: auto;
-}
-.contai00 .card{
-    width: 230px;
-    height: 200px;
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: .5s;
     border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center ;
-}
-.contai00 .card:hover{
-    transform: translateY(-3%);
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-}
-.contai01{
-    color: #000000;
-    float: center;
-    width: 30%;
-    max-width: 280px;
-    height: 50ppx;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-}
-.contai01 .card{
-    width: 230px;
-    height: 200px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center ;
-}
-.contai01 .card:hover{
-    transform: translateY(-3%);
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-}
-.contai00{
-    color: #000000;
-    float: left;
-    width: 30%;
-    max-width: 280px;
-    height: 50ppx;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-    cursor: default;
-}
-.contai00 .card{
-    width: 230px;
-    height: 200px;
-    border-radius: 15px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    overflow: hidden;
-    margin: 20px;
-    text-align: center ;
-}
-.contai00 .card:hover{
-    transform: translateY(-3%);
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-}
-@media (max-width: 480px) {
 
+}
+.Conten h3 {
+    color: rgb(42, 11, 100);
+    
+}
+.card:hover .Conten{
+    opacity: 1;
 }
