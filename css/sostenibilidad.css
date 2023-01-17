@@ -49,7 +49,7 @@
     color: rgb(96, 117, 113);
 }
 .all{
-    background-color: #072f3d;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,15 +59,172 @@
 .card {
     margin: 20px;
     width: 250px;
-    height: 200px;
+    height: 250px;
     border-radius: 15px;
     background-size: cover;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url(../../../assets/img/img_sostenibilidad/obj2.png);
+}
+.card2 {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../../assets/img/img_sostenibilidad/obj3.png);
+}
+.card3 {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../../assets/img/img_sostenibilidad/obj4.png);
+}
+.card4 {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../../assets/img/img_sostenibilidad/obj12.png);
+}
+.card5 {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../../assets/img/img_sostenibilidad/obj13.png);
+}
+.card6 {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../../assets/img/img_sostenibilidad/obj16.png);
+}
+.card7 {
+    margin: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-size: cover;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../../assets/img/img_sostenibilidad/obj17.png);
 }
 .Conten {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: .5s;
+    border-radius: 15px;
+
+}
+.Conten2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: .5s;
+    border-radius: 15px;
+
+}
+.Conten3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: .5s;
+    border-radius: 15px;
+
+}
+.Conten4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: .5s;
+    border-radius: 15px;
+
+}
+.Conten5 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: .5s;
+    border-radius: 15px;
+
+}
+.Conten6 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+    opacity: 0;
+    transition: .5s;
+    border-radius: 15px;
+
+}
+.Conten7 {
     width: 100%;
     height: 100%;
     display: flex;
@@ -85,6 +242,77 @@
     color: rgb(42, 11, 100);
     
 }
-.card:hover .Conten{
-    opacity: 1;
+.card:hover{
+    transform: scale(1.2);
+    z-index: 3;
+}
+.card2:hover{
+    transform: scale(1.2);
+    z-index: 3;
+}
+.card3:hover{
+    transform: scale(1.2);
+    z-index: 3;
+}
+.card4:hover{
+    transform: scale(1.2);
+    z-index: 3;
+}
+.card5:hover{
+    transform: scale(1.2);
+    z-index: 3;
+}
+.card6:hover{
+    transform: scale(1.2);
+    z-index: 3;
+}
+.card7:hover{
+    transform: scale(1.2);
+    z-index: 3;
+}
+@media screen and (max-width: 768px){
+    .card:hover{
+        width: 90%;
+    }
+    .card2:hover{
+        width: 90%;
+    }
+    .card3:hover{
+        width: 90%;
+    }
+    .card4:hover{
+        width: 90%;
+    }
+    .card5:hover{
+        width: 90%;
+    }
+    .card6:hover{
+        width: 90%;
+    }
+    .card7:hover{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 200px){
+    .card:hover{
+        width: 200%;
+    }
+    .card2:hover{
+        width: 200%;
+    }
+    .card3:hover{
+        width: 200%;
+    }
+    .card4:hover{
+        width: 200%;
+    }
+    .card5:hover{
+        width: 200%;
+    }
+    .card6:hover{
+        width: 200%;
+    }
+    .card7:hover{
+        width: 200%;
+    }
 }
