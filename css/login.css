@@ -1,0 +1,85 @@
+body {
+    margin: 0px;
+    height: 0px;
+}
+
+.contenedor {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.pwx-5{
+    width: 25%;
+    padding: 20px;
+}
+.hijo {
+    box-shadow: 0 0 30px #333;
+}
+
+.logo {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    background: #5cb85c;
+}
+
+.txt_formulario {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: 2px solid #5cb85c !important;
+    color: white !important;
+}
+
+input:focus,
+select:focus,
+select,
+input.form-control:focus {
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.etiquetas{
+   font-size: 10px !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+.btn-boton-x{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgba(37, 179, 56, 0.7);
+    border: none;
+    color: white;
+}
+
+.btn-boton-x:hover{    
+    background-color: rgba(3, 165, 25, 0.7);    
+}
+
+
+.btn-boton-y{
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.61);
+    color: white;
+}
+
+.btn-boton-y:hover{    
+    background-color: rgba(0, 62, 233, 0.4);    
+}
