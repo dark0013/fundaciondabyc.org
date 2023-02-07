@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/estilo_admin.css">
+    <link rel="stylesheet" href="/css/carga.css">
     <title>Administrador | DABYC</title>
 </head>
 <body>
@@ -104,7 +105,18 @@
                     </div>
                 </div>
             </div>
-
+            <form Class ="mt-4">
+                <input placeholder="Introduzca un titulo" type="text" id="task" name="task">
+                <br><br>
+                   <textarea style= "width:40%"  rows="10" weight="20" placeholder="Introduzca la descripción"></textarea>
+                  <br><br>
+                <label for="file">Subir foto:</label>
+                <input type="file" id="file" name="file">
+                <br><br>
+                <button type="submit">Enviar</button>
+              </form>
+            
+              <script src="../js/script.js"></script>
 
 
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -133,5 +145,6 @@
                 list.forEach((item)=>
                 item.addEventListener('mouseover',activelink));
             </script>
+           
     </body>
     </html>
