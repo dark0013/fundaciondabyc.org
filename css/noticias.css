@@ -67,6 +67,7 @@
         height: 100%;
         display: inline;
         justify-content: center;
+        padding: 100px 0px 0px 0px;
     }
 }    
 @media screen and (max-width: 200px){
