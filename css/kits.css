@@ -1,37 +1,20 @@
-.general{
-    background: linear-gradient(rgba(5,7,12,0.55),rgba(5,7,12,0.55)),url(../assets/img/img_fondo/imagenkit.png);
-    background-position:center;
-    background-size:cover;
-    height: 40rem;
-    margin: 0 auto;
-    padding: 0px;
+.imagen{
+    background:url(../assets/img/img_fondo/imagenkit.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-
 .contenedor2{
     margin:5% 10px;
-    padding: 0px;
-    display: flex;   
+    padding: 0px 50px 0px 0px;
+    display: flex;
+    max-width: 720px;
 }
 
-.caja{
-    width: 260px;
-    height: 650px;
-    margin:3% 30px;
-    box-shadow: 0 0 20px 2px rgba(0,0,0, 100);
-    transition: 1s;
-    background-color: rgb(87, 42, 146);
-    
-}
-.caja img{
-    width: 100%;
-    border-radius: 5px;
-    display: flex;
-}
 .titulo h2{
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 60px;
-    padding: 85px;
+    padding: 85px 0px 0px 0px;
 }
 .title{
     text-align: center;
@@ -50,15 +33,20 @@
     font-size: 20px;
     text-align: center  
 }
-
-.caja{ 
-    display: grid;
-    width: 100%;
+.caja{
+    width: 260px;
     height: 100%;
-    border-radius: 15px;
-    padding: 15px; 
+    margin:3% 30px;
+    box-shadow: 0 0 20px 2px rgba(0,0,0, 100);
+    transition: 1s;
+    background-color: rgb(87, 42, 146);
+    
 }
-
+.caja img{
+    width: 100%;
+    border-radius: 5px;
+    display: flex;
+}
 .caja:hover{
     transform: scale(1.1);
     z-index: 3;
@@ -71,7 +59,7 @@
         height: 100%;
         display: block;
         justify-content: center;
-        padding: 10px 0px 0px 0px;
+        padding:0px 0px 0px 50px;
     }
     .titulo h2{
         text-align: center;
