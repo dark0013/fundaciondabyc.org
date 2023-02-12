@@ -23,7 +23,7 @@ body{
 }
 .navigation{
     position:fixed;
-    width: 300px;
+    width: 600px;
     height: 100%;
     background: var(--blue);
     border: 0px solid var(--blue);
@@ -85,6 +85,9 @@ body{
     line-height: 60px !important;
     text-align: start;
     white-space: nowrap;
+}
+.title{
+    padding: 15px;
 }
 
 /* curva */
@@ -226,10 +229,10 @@ body{
     color: var(--white);
 }
 .details{
+    padding-top: 50%;
     position: relative;
     width: 100%;
-    padding: 0px;
-    display: grid;
+    padding: 10px;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
     /*margin-top:10px;*/
@@ -239,7 +242,7 @@ body{
     display: grid;
     min-height: 250px;
     background: var(--white);
-    padding: 20px;
+    padding: 60px;
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
     border-radius: 20px;
 }
@@ -325,20 +328,37 @@ body{
     color: var(--blue);
 }
 .nombre{
+    margin-left: 10px;
     color: var(--blue);
 }
 .nombre{
     font-family:"Arial";
     font-size: 20px;
 }
+#nombre{
+    margin-left: 10px;
+ }
+ #Apellido{
+    margin-left: 10px;
+ }
+#usuario {
+    margin-left: 10px;
+ }
+#contraseña{
+   margin-left: 10px;
+}
+#rol{
+    margin-left: 10px;
+ }
 
 /* responsive*/
-@media (max-width:991px){
+@media screen and (max-width:1100px){
     .navigation{
-        left: -300px;
+        width: 200px;
+        left: -800px;
     }
     .navigation.active{
-        width: 300px;
+        width: 200px;
         left:0;
     }
     .main{
@@ -349,13 +369,31 @@ body{
         left: 300px;
     }
     .cardBox{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2,2fr);
+    }
+
+    .Datos{
+        grid-template-columns: repeat(1,1fr);
+        width:100%;
+    }
+    .nombre{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .nombre{
+        grid-template-columns: repeat(1,1fr);
+}
+@media screen and (max-width: 1100px){
+    .details{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .recenOrders{
+        overflow-x: auto;
+    }
+    .table{
+        white-space: nowrap;
     }
 }
-@media  (max-width: 768px){
-    
-}
-@media  (max-width: 480px){
+@media screen and (max-width: 1100px){
     .cardBox{
         grid-template-columns: repeat(1,1fr);
     }
@@ -381,5 +419,29 @@ body{
     .main.active .toggle{
         color: #fff;
     }
+    .details{
+        padding-top: 50%;
+        position: relative;
+        width: 100%;
+        padding: 10px;
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 30px;
+        /*margin-top:10px;*/
+    }
+    #nombre{
+        width: 90%;
+    }
+    #Apellido{
+        width: 90%;
+     }
+    #usuario {
+       width: 90%;
+     }
+    #contraseña{
+       width: 90%;
+    }
+    #rol{
+        width: 90%;
+     }
 }  
 
