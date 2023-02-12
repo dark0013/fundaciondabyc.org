@@ -63,44 +63,49 @@
                 <div class="toggle">
                     <ion-icon name="menu"></ion-icon>
                 </div>
-                <!--buscar-->
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Buscar">
-                        <ion-icon name="search"></ion-icon>
-                    </label>
-                </div>
-                <!--imgUsuario-->
-                <div class="user">
-                    <img src="user.jpg">
-                </div>
-            </div>
-
-            <!--cartas-->
-            <div class="cardBox">
-                <div class="card">
-                    <div>
-                        <div class="numbers">1,504</div>
-                        <div class="cardName">Número de visitas</div>
-                    </div>
-                    <div class="iconBox">
-                        <ion-icon name="eye"></ion-icon>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <div class="numbers">80</div>
-                        <div class="cardName">Usuarios</div>
-                    </div>
-                    <div class="iconBox">
-                        <ion-icon name="person-add"></ion-icon>
-                    </div>
-                </div>
                 
             </div>
-            
-            
-              <script src="../js/script.js"></script>
+
+            <!--formulario-->
+            <d class="details">
+            <div class="recenOrders">
+                <div class="cardHeader">
+                    <h2>Todos los Usuarios</h2>
+                    <a href="/page/agregar_usuario.html" class="btn">Agregar más</a>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Apellido</td>
+                            <td>Usuario</td>
+                            <td>Contraseña</td>
+                            <td>Rol</td>
+                            <td>Estado</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Julio</td>
+                            <td>Marquez</td>
+                            <td>juliomarquez25</td>
+                            <td>********</td>
+                            <td>Administrador</td>
+                            <td><span class="Activo">Activo</span></td>     
+                        </tr> 
+                        <tr>
+                            <td>Maria</td>
+                            <td>Dominguez</td>
+                            <td>mariadomi47</td>
+                            <td>***********</td>
+                            <td>Donante</td>
+                            <td><span class="Inactivo">inactivo</span></td>     
+                        </tr> 
+                    </tbody>
+                </table>
+            </div>
+
+            <script src="../js/script.js"></script>
 
 
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
