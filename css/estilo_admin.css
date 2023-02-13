@@ -187,12 +187,18 @@ body{
     height: 100%;
     object-fit: cover;
 }
+.icono{
+    text-decoration: none;
+    color: var(--black2)
+}
+
+
 .cardBox{
     position: relative;
-    width: 100%;
-    padding: 20px;
+    width: 300px;
+    padding: 20px 0px 0px 20%;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(2,1fr); /*atributo para que dos elementos o mas esten en una sola linea */
     grid-gap: 30px;
 }
 .cardBox .card{
@@ -201,8 +207,9 @@ body{
     padding: 30px;
     border-radius: 20px;
     display: flex;
-    justify-content: space-between;
+    width: 300px;
     cursor: pointer;
+    justify-content: space-between;
     box-shadow: 0 7px 25px rgba(0,0,0,0.08);
 }
 .cardBox .card .numbers{
@@ -215,6 +222,7 @@ body{
     color: var(--blue);
     font-size: 1.5em;
     margin-top: 5px;
+    text-decoration: none;
 }
 .cardBox .card .iconBox{
     font-size: 3.5em;
@@ -223,11 +231,6 @@ body{
 .cardBox .card:hover{
     background: var(--blue);
 }
-.cardBox .card:hover .numbers,
-.cardBox .card:hover .cardName,
-.cardBox .card:hover .iconBox{
-    color: var(--white);
-}
 .details{
     padding-top: 50%;
     position: relative;
@@ -235,7 +238,7 @@ body{
     padding: 10px;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
-    /*margin-top:10px;*/
+    /* margin-top:10px; */
 }
 .details .recenOrders{
     position: relative;
@@ -352,15 +355,8 @@ body{
  }
 
 /* responsive*/
-@media screen and (max-width:1100px){
-    .navigation{
-        width: 200px;
-        left: -800px;
-    }
-    .navigation.active{
-        width: 200px;
-        left:0;
-    }
+@media screen and (min-width: 280px) and (max-width:1300px) {
+    
     .main{
         width: 100%;
         left:0;
@@ -370,6 +366,12 @@ body{
     }
     .cardBox{
         grid-template-columns: repeat(2,2fr);
+        position: relative;
+        width: 300px;
+        padding: 10px 0px 0px 10%;
+        display: grid;
+        grid-gap: 30px;
+        
     }
 
     .Datos{
@@ -381,8 +383,7 @@ body{
     }
     .nombre{
         grid-template-columns: repeat(1,1fr);
-}
-@media screen and (max-width: 1100px){
+    }
     .details{
         grid-template-columns: repeat(1,1fr);
     }
@@ -392,10 +393,8 @@ body{
     .table{
         white-space: nowrap;
     }
-}
-@media screen and (max-width: 1100px){
     .cardBox{
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1,4fr);
     }
     .cardHeader h2 {
         font-size: 20px;
@@ -403,16 +402,8 @@ body{
     .user{
         min-width: 40px;
     }
-    .navigation{
-        width: 100%;
-        left: -100;
-        z-index: 1000;
-        
-    }
-    .navigation.active{
-        width: 100%;
-        left: 0;
-    }
+    
+    
     .toggle{
         z-index: 10001;
     }
@@ -426,22 +417,47 @@ body{
         padding: 10px;
         grid-template-columns: 2fr 1fr;
         grid-gap: 30px;
-        /*margin-top:10px;*/
+        /margin-top:10px;/
     }
     #nombre{
         width: 90%;
     }
     #Apellido{
         width: 90%;
-     }
+    }
     #usuario {
-       width: 90%;
-     }
+    width: 90%;
+    }
     #contraseña{
-       width: 90%;
+        width: 90%;
     }
     #rol{
         width: 90%;
-     }
-}  
+    }
+    .main{
+        width: 100%;
+        left:0;
+    }
+    .main.active{
+        left: 300px;
+    }
+    .navigation{
+        width: 100px;
+        left: -500px;
+    }
+    .navigation.active{
 
+        width: 300px;
+        left:0;
+    }
+    .navigation{
+        width: 500px;
+        left: -100; 
+        z-index: 1000;
+        
+    }
+    .navigation.active{
+        width: 100%;
+        left: 0;
+    }
+}
