@@ -45,12 +45,6 @@
                 </li>
                 <li> 
                     <a href="#">
-                        <span class="icon"><ion-icon name="settings"></ion-icon></span>
-                        <span class="title">Configuración</span>
-                    </a>
-                </li>
-                <li> 
-                    <a href="#">
                         <span class="icon"><ion-icon name="log-out"></ion-icon></span>
                         <span class="title">Salir</span>
                     </a>
@@ -68,44 +62,43 @@
             <div class="details">
                 <div class="recenOrders">
                     <div class="cardHeader">
-                        <h2>Formulario</h2>
-                        <a href="#" class="btn">Enviar</a>
                     </div>
                     <br/><br/>
-                    <fieldset>
-                        <legend class="Datos">Datos Persona :</legend>
-                        <br/>
-
-                        <label for="nombre"class="nombre">Nombre:</label><br/>
-                        <input type="text" id="nombre" name="nombre"
-                        placeholder="Escribe tu nombre" required="true"/><br/>
-                        <br/>
-
-                        <label for="Apellidos"class="nombre">Apellido:</Nombre:</label><br/>
-                        <input type="text" id="Apellido" name="Apellido"
-                        placeholder="Escribe tu apellido"required="true"/><br/>
-                        <br/>
-                        <label for="usuario"class="nombre">Usuario:</Nombre:</label><br/>
-                        <input type="text" id="usuario" name="usuario" 
-                        placeholder="Estcribe tu Usuario" required="true"/><br/>
-                        <br/>
-
-                        <label for="Contraseña"class="nombre">Contraseña:</Nombre:</label><br/>
-                        <input type="password" class="contraseña"id="contraseña" name="contraseña" 
-                        placeholder="Estcribe tu contraseña" required="true"/><br/>
-                        <br/>
-
-                        <label for="rol"class="nombre">Rol:</label><br/>
-                        <select name="rol" id="rol" >
-                            <option value="administrador"selected="true">Administrador</option>
-                            <option value="Donante">Donante</option>
-                            <option value="otro">Otro</option>
-                        </select><br/>
-                        <br/>
-                
-                        <br/>
-                    </fieldset>
-    
+                    <center>
+                        <fieldset class="formulario1">
+                        
+                            <form >
+                                <legend class="Datos">Datos Persona :</legend>
+                                <br/>
+        
+                                <label for="nombre"class="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre"
+                                placeholder="Escribe tu nombre" required="true"/><br/>
+                            
+        
+                                <label for="Apellidos"class="nombre">Apellido:</label>
+                                <input type="text" id="Apellido" name="Apellido"
+                                placeholder="Escribe tu apellido"required="true"/><br/>
+                               
+                                <label for="usuario"class="nombre">Usuario:</label>
+                                <input type="text" id="usuario" name="usuario" 
+                                placeholder="Escribe tu Usuario" required="true"/><br/>
+                                
+        
+                                <label for="Contraseña"class="nombre">Contraseña:</label><br/>
+                                <input type="password" class="contraseña"id="contraseña" name="contraseña" 
+                                placeholder="Escribe tu contraseña" required="true"/><br/>
+                            
+                                <div>
+                                    <form action="#">
+                                        <input type="submit" value="Enviar" class="btn">
+                                    </form>
+                                </div>
+                                <br/>
+                            </form>
+                        
+                        </fieldset>
+                    </center>
 
     <script src="../js/script.js"></script>
 

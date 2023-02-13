@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="module/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/estilo_admin.css">
     <link rel="stylesheet" href="/css/carga.css">
     <title>Administrador | DABYC</title>
 </head>
 <body>
-    <div class="container">
+    <body class="container">
         <div class="navigation">
             <ul>
                 <li> 
@@ -42,7 +43,6 @@
                         <span class="title">Gestion de Contactos</span>
                     </a>
                 </li>
-                
                 <li> 
                     <a href="#">
                         <span class="icon"><ion-icon name="log-out"></ion-icon></span>
@@ -51,94 +51,65 @@
                 </li>
             </ul>
         </div>
-
         <!--menu-->
         <div class="main">
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu"></ion-icon>
                 </div>
-                
             </div>
-
-            <!--cartas-->
-            <div class="cardBox">
-            
-            <div class="card">
-                <a class="cardName" href="/page/agregar_usuario.html">Agregar usuario</a>
-                <div class="iconBox">
-                    <a class="icono" href="/page/agregar_usuario.html">
-                        <i class="fa-solid fa-user-plus"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="card">
-                <a class="cardName" href="/page/roles.html">Roles</a>
-                <div class="iconBox">
-                    <a class="icono" href="/page/roles.html">
-                        <i class="fa-solid fa-user-plus"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
             <!--formulario-->
-            <d class="details">
-            <div class="recenOrders1">
-                <div class="cardHeader">
-                    <h2>Todos los Usuarios</h2>
-                    
-                </div>
-                <table>
-                    <thead class="table">
-                        <tr>
-                            <td>Nombre</td>
-                            <td>Apellido</td>
-                            <td>Usuario</td>
-                            <td>Contraseña</td>
-                            <td>Rol</td>
-                            <td>Estado</td>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Julio</td>
-                            <td>Marquez</td>
-                            <td>juliomarquez25</td>
-                            <td>********</td>
-                            <td>Administrador</td>
-                            <td><span class="Activo">Activo</span></td>     
-                        </tr> 
-                        <tr>
-                            <td>Maria</td>
-                            <td>Dominguez</td>
-                            <td>mariadomi47</td>
-                            <td>***********</td>
-                            <td>Donante</td>
-                            <td><span class="Inactivo">inactivo</span></td>     
-                        </tr> 
-                        <tr>
-                            <td>Julio</td>
-                            <td>Marquez</td>
-                            <td>juliomarquez25</td>
-                            <td>********</td>
-                            <td>Administrador</td>
-                            <td><span class="Activo">Activo</span></td>     
-                        </tr> 
-                    </tbody>
-                </table>
-            </div>
-            
+            <div class="details">
+                <div class="recenOrders">
+                    <div class="cardHeader">
+                    </div>
+                    <br/><br/>
+                    <center>
+                        <fieldset class="formulario1">
+                        
+                            <form >
+                                <br/>
+                                <legend class="Datos">Rol de Usuario </legend>
+                                <br/>
+        
+                                <label for="nombre"class="nombre">Nombre</label><br/>
+                                <input type="text" id="nombre" name="nombre"
+                                placeholder="Escribe tu nombre" required="true"/><br/>
+                                <br/>
+                                
+                                <label for="nombre"class="nombre">Número de Rol</label><br/>
+                                <input type="text" id="nombre" name="nombre"
+                                placeholder="Escribe tu nombre" required="true"/><br/>
+                                <br/>
+        
+                                <div class="mb-3">
+                                    <label id="etiqueta" for="disabledSelect" class="form-label">Roles</label>
+                                    <select id="disabledSelect" class="form-select">
+                                      <option></option>
+                                      <option>Administrador</option>
+                                      <option>Donante</option>
+                                      <option>Otro</option>
+                                    </select>
+                                  </div>
+                                <br/>
+                                <div>
+                                    <form action="#">
+                                        <input type="submit" value="Enviar" class="btn">
+                                    </form>
+                                </div>
+                                <br/>
+                            </form>
+                        
+                        </fieldset>
+                    </center>
 
-            <script src="../js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script src="https://kit.fontawesome.com/1b1959dac0.js" crossorigin="anonymous"></script>
-    
-    
-    
+
+
             <script>
     
                 //menutoggle
@@ -160,6 +131,5 @@
                 list.forEach((item)=>
                 item.addEventListener('mouseover',activelink));
             </script>
-           
     </body>
-    </html>
+</html>
