@@ -4,7 +4,7 @@ body {
 }
 
 .contenedor {
-/*     background: rgb(238, 174, 202);
+    /*     background: rgb(238, 174, 202);
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%); */
     background-image: url("https://images.pexels.com/photos/10629418/pexels-photo-10629418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     background-repeat: no-repeat;
@@ -17,23 +17,19 @@ body {
     justify-content: center;
     flex-direction: column;
 }
-.pwx-5{
+
+.pwx-5 {
     width: 25%;
     padding: 20px;
 }
+
 .hijo {
     box-shadow: 0 0 30px rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255,0.1);
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .logo {
-   
     text-align: center;
-
-   /*  width: 100px;
-    height: 100px; */
-   /*  border: 5px solid rgb(255, 255, 255); */
-   /*  background: #5cb85c; */
 }
 
 .txt_formulario {
@@ -56,14 +52,14 @@ input.form-control:focus {
     -webkit-box-shadow: none;
 }
 
-.etiquetas{
-   font-size: 10px !important;
+.etiquetas {
+    font-size: 10px !important;
     color: rgb(255, 255, 255) !important;
     font-weight: bold;
 }
 
 
-.btn-boton-x{
+.btn-boton-x {
     width: 100%;
     border-radius: 10px;
     padding: 5px;
@@ -72,12 +68,12 @@ input.form-control:focus {
     color: white;
 }
 
-.btn-boton-x:hover{    
-    background-color: rgba(3, 165, 25, 0.7);    
+.btn-boton-x:hover {
+    background-color: rgba(3, 165, 25, 0.7);
 }
 
 
-.btn-boton-y{
+.btn-boton-y {
     width: 100%;
     border-radius: 10px;
     padding: 5px;
@@ -86,6 +82,6 @@ input.form-control:focus {
     color: white;
 }
 
-.btn-boton-y:hover{    
-    background-color: rgba(0, 62, 233, 0.4);    
+.btn-boton-y:hover {
+    background-color: rgba(0, 62, 233, 0.4);
 }
