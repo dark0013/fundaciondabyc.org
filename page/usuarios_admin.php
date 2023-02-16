@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,55 +6,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estilo_admin.css">
-    <link rel="stylesheet" href="/css/carga.css">
+    <link rel="stylesheet" href="../css/estilo_admin.css">
+    <link rel="stylesheet" href="../css/carga.css">
     <title>Administrador | DABYC</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="navigation">
-            <ul>
-                <li>
-                    <a href="#">
-                        <!--<img src="img/logo.jpeg" alt=""> -->
-                        <span class="title1">Fundacion | DABYC</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/page/admin_.html">
-                        <span class="icon"><ion-icon name="home"></ion-icon></span>
-                        <span class="title">Inicio</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/page/usuarios_admin.html">
-                        <span class="icon"><ion-icon name="person-add"></ion-icon></span>
-                        <span class="title">Usuarios</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/page/proyecto_admin.html">
-                        <span class="icon"><ion-icon name="cloud-upload"></ion-icon></span>
-                        <span class="title">Proyectos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/page/gestion_contacto.html">
-                        <span class="icon"><ion-icon name="clipboard"></ion-icon></span>
-                        <span class="title">Gestion de Contactos</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <span class="icon"><ion-icon name="log-out"></ion-icon></span>
-                        <span class="title">Salir</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
+        
+    <?php include "master/navbar.php" ?>
+   
         <!--menu-->
         <div class="main">
             <div class="toggle">

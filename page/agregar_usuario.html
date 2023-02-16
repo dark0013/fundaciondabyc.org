@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,41 +10,43 @@
     <link rel="stylesheet" href="/css/carga.css">
     <title>Administrador | DABYC</title>
 </head>
+
 <body>
+
     <body class="container">
         <div class="navigation">
             <ul>
-                <li> 
+                <li>
                     <a href="#">
                         <!--<img src="img/logo.jpeg" alt=""> -->
                         <span class="title">Fundacion | DABYC</span>
                     </a>
                 </li>
-                <li> 
+                <li>
                     <a href="/page/admin_.html">
                         <span class="icon"><ion-icon name="home"></ion-icon></span>
                         <span class="title">Inicio</span>
                     </a>
                 </li>
-                <li> 
+                <li>
                     <a href="/page/usuarios_admin.html">
                         <span class="icon"><ion-icon name="person-add"></ion-icon></span>
                         <span class="title">Usuarios</span>
                     </a>
                 </li>
-                <li> 
+                <li>
                     <a href="/page/proyecto_admin.html">
                         <span class="icon"><ion-icon name="cloud-upload"></ion-icon></span>
                         <span class="title">Proyectos</span>
                     </a>
                 </li>
-                <li> 
+                <li>
                     <a href="/page/gestion_contacto.html">
                         <span class="icon"><ion-icon name="clipboard"></ion-icon></span>
                         <span class="title">Gestion de Contactos</span>
                     </a>
                 </li>
-                <li> 
+                <li>
                     <a href="#">
                         <span class="icon"><ion-icon name="log-out"></ion-icon></span>
                         <span class="title">Salir</span>
@@ -59,53 +62,51 @@
                 </div>
             </div>
             <!--formulario-->
-            <div class="details">
-                <div class="recenOrders">
-                    <div class="cardHeader">
-                    </div>
-                    <br/><br/>
-                    <center>
-                        <fieldset class="formulario1">
-                        
-                            <form >
-                                <legend class="Datos">Datos Persona :</legend>
-                                <br/>
-        
-                                <label for="nombre"class="nombre">Nombre:</label>
-                                <input type="text" id="nombre" name="nombre"
-                                placeholder="Escribe tu nombre" required="true"/><br/>
-                            
-        
-                                <label for="Apellidos"class="nombre">Apellido:</label>
-                                <input type="text" id="Apellido" name="Apellido"
-                                placeholder="Escribe tu apellido"required="true"/><br/>
-                               
-                                <label for="usuario"class="nombre">Usuario:</label>
-                                <input type="text" id="usuario" name="usuario" 
-                                placeholder="Escribe tu Usuario" required="true"/><br/>
-                                
-        
-                                <label for="Contraseña"class="nombre">Contraseña:</label><br/>
-                                <input type="password" class="contraseña"id="contraseña" name="contraseña" 
-                                placeholder="Escribe tu contraseña" required="true"/><br/>
-                            
-                                <div>
-                                    <form action="#">
-                                        <input type="submit" value="Enviar" class="btn">
-                                        
-                                    </form>
-                                </div>
-                                <br>
-                                <div>
-                                    <a href="usuario-admin.html"><button class="btn" style="background-color:red;">Salir</button></a>
-                                </div>
-                                <br/>
-                            </form>
-                        
-                        </fieldset>
-                    </center>
 
-    <script src="../js/script.js"></script>
+
+            <center>
+                <fieldset class="formulario1">
+
+                    <form>
+                        <legend class="Datos">Datos Persona :</legend>
+                        <br />
+
+                        <label for="nombre" class="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre"
+                            required="true" /><br />
+
+
+                        <label for="Apellidos" class="nombre">Apellido:</label>
+                        <input type="text" id="Apellido" name="Apellido" placeholder="Escribe tu apellido"
+                            required="true" /><br />
+
+                        <label for="usuario" class="nombre">Usuario:</label>
+                        <input type="text" id="usuario" name="usuario" placeholder="Escribe tu Usuario"
+                            required="true" /><br />
+
+
+                        <label for="Contraseña" class="nombre">Contraseña:</label><br />
+                        <input type="password" class="contraseña" id="contraseña" name="contraseña"
+                            placeholder="Escribe tu contraseña" required="true" /><br />
+
+                        <div>
+                            <form action="#">
+                                <input type="submit" value="Enviar" class="btn">
+
+                            </form>
+                        </div>
+                        <br>
+                        <div>
+                            <a href="usuario-admin.html"><button class="btn"
+                                    style="background-color:red;">Salir</button></a>
+                        </div>
+                        <br />
+                    </form>
+
+                </fieldset>
+            </center>
+
+            <script src="../js/script.js"></script>
 
 
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
@@ -113,25 +114,26 @@
 
 
             <script>
-    
+
                 //menutoggle
                 let toggle = document.querySelector('.toggle');
-                let navigation=document.querySelector('.navigation');
-                let main=document.querySelector('.main');
-    
-                toggle.onclick = function(){
+                let navigation = document.querySelector('.navigation');
+                let main = document.querySelector('.main');
+
+                toggle.onclick = function () {
                     navigation.classList.toggle('active');
                     main.classList.toggle('active');
                 }
-    
-                let list=document.querySelectorAll('.navigation li ');
-                function activelink(){
-                    list.forEach((item)=>
-                    item.classList.remove('hovered'));
+
+                let list = document.querySelectorAll('.navigation li ');
+                function activelink() {
+                    list.forEach((item) =>
+                        item.classList.remove('hovered'));
                     this.classList.add('hovered')
                 }
-                list.forEach((item)=>
-                item.addEventListener('mouseover',activelink));
+                list.forEach((item) =>
+                    item.addEventListener('mouseover', activelink));
             </script>
     </body>
+
 </html>
