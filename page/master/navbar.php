@@ -7,13 +7,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/page/admin_.html">
+                    <a href="page/admin/admin_.php">
                         <span class="icon"><ion-icon name="home"></ion-icon></span>
                         <span class="title">Inicio</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/page/usuarios_admin.html">
+                    <a href="page/admin/usuarios_admin.php">
                         <span class="icon"><ion-icon name="person-add"></ion-icon></span>
                         <span class="title">Usuarios</span>
                     </a>

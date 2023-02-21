@@ -1,20 +1,6 @@
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/estilo_admin.css">
-    <link rel="stylesheet" href="../css/carga.css">
-    <title>Administrador | DABYC</title>
-</head>
-
-<body>
-    <div class="container">
+<?php include ('../master/header.php')?>
         
-    <?php include "master/navbar.php" ?>
+<?php include ('../master/navbar.php') ?>
    
         <!--menu-->
         <div class="main">
@@ -27,9 +13,9 @@
             <div class="cardBox">
 
                 <div class="card">
-                    <a class="cardName" href="/page/usuario-admin.html">Ver Usuario</a>
+                    <a class="cardName" href="page/usuario/gestionUsuario.php">Ver Usuario</a>
                     <div class="iconBox">
-                        <a class="icono" href="/page/usuario-admin.html">
+                        <a class="icono" href="page/usuario/gestionUsuario.php">
                             <ion-icon name="eye"></ion-icon>
                         </a>
                     </div>
@@ -92,39 +78,4 @@
                     </table>
                 </div>
             </d>-->
-
-
-            <script src="../js/script.js"></script>
-
-
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script src="https://kit.fontawesome.com/1b1959dac0.js" crossorigin="anonymous"></script>
-
-
-
-            <script>
-
-                //menutoggle
-                let toggle = document.querySelector('.toggle');
-                let navigation = document.querySelector('.navigation');
-                let main = document.querySelector('.main');
-
-                toggle.onclick = function () {
-                    navigation.classList.toggle('active');
-                    main.classList.toggle('active');
-                }
-
-                let list = document.querySelectorAll('.navigation li ');
-                function activelink() {
-                    list.forEach((item) =>
-                        item.classList.remove('hovered'));
-                    this.classList.add('hovered')
-                }
-                list.forEach((item) =>
-                    item.addEventListener('mouseover', activelink));
-            </script>
-
-</body>
-
-</html>
+<?php include ('../master/script.php') ?>
