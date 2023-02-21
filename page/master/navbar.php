@@ -7,25 +7,25 @@
                     </a>
                 </li>
                 <li>
-                    <a href="page/admin/admin_.php">
+                    <a href="../admin/admin_.php">
                         <span class="icon"><ion-icon name="home"></ion-icon></span>
                         <span class="title">Inicio</span>
                     </a>
                 </li>
                 <li>
-                    <a href="page/admin/usuarios_admin.php">
+                    <a href="../admin/usuarios_admin.php">
                         <span class="icon"><ion-icon name="person-add"></ion-icon></span>
                         <span class="title">Usuarios</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/page/proyecto_admin.html">
+                    <a href="../admin/proyecto_admin.html">
                         <span class="icon"><ion-icon name="cloud-upload"></ion-icon></span>
                         <span class="title">Proyectos</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/page/gestion_contacto.html">
+                    <a href="../admin/gestion_contacto.html">
                         <span class="icon"><ion-icon name="clipboard"></ion-icon></span>
                         <span class="title">Gestion de Contactos</span>
                     </a>

@@ -78,4 +78,5 @@
                     </table>
                 </div>
             </d>-->
+            <script src="../../js/eventos/usuario/usuarios_admin.js"></script>
 <?php include ('../master/script.php') ?>
