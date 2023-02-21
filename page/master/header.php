@@ -11,4 +11,3 @@
     <title>Administrador | DABYC</title>
 </head>
 <body>
-    <div class="container">

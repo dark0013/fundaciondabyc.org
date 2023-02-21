@@ -133,7 +133,7 @@ body{
 }
 .main.active{
     width: calc(100% - 80px);
-    left: 4%;
+    left: 0%;
 }
 .topbar{
     width: 100%;
