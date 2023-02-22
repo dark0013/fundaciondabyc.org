@@ -31,7 +31,7 @@
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
         <ul class="sub-menu">
-          <li><a href="#">Agregar Proyecto</a></li>
+          <li><a href="../proyecto/proyecto_admin.php">Agregar Proyecto</a></li>
         </ul>
       </li>
       <li>
