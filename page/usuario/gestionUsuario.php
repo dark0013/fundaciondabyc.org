@@ -28,19 +28,16 @@
 
 
   <div class="row">
+    <!-- No tocar las id -->
     <form>
+      <!-- Favor no eliminar ni modificasr este campo esta oculto -->
 
-      <div class="form-group row">
-        <label for="staticEmail" class="col-sm-2 col-form-label">id</label>
-        <div class="col-sm-10">
-          <input type="text"  class="form-control" id="txt_id_user" >
-        </div>
-      </div>
+      <input type="hidden" class="form-control" id="txt_id_user">
 
       <div class="form-group row">
         <label for="staticEmail" class="col-sm-2 col-form-label">nombre user</label>
         <div class="col-sm-10">
-          <input type="text"  class="form-control" id="txt_nombre_user" >
+          <input type="text" class="form-control" id="txt_nombre_user">
         </div>
       </div>
 
@@ -50,14 +47,14 @@
           <input type="text" class="form-control" id="txt_rol">
         </div>
       </div>
-      
+
       <div class="form-group row">
         <label for="inputPassword" class="col-sm-2 col-form-label">cedula</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" id="txt_cedula">
         </div>
       </div>
-      
+
       <div class="form-group row">
         <label for="inputPassword" class="col-sm-2 col-form-label">nombre</label>
         <div class="col-sm-10">
