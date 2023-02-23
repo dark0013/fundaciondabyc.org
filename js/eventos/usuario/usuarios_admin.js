@@ -1,5 +1,140 @@
 let idTabla = 0;
 
+
+
+
+const btnGuardar = document.getElementById("btn_guardar");
+
+btnGuardar.addEventListener("click", async (e) => {
+    e.preventDefault();//
+    const name_users = document.getElementById("txt_nombre_user").value;
+    const id_rol = document.getElementById("txt_rol").value;
+    const identification_card = document.getElementById("txt_cedula").value;
+    const name = document.getElementById("txt_nombre").value;
+    const pass = document.getElementById("txt_contrasenia").value;
+    const user_sesion = "ALCAMPOVERDE";
+    const usur_creation = "ALCAMPOVERDE";
+
+    let parametros = JSON.stringify({ name_users, id_rol, identification_card, name, pass, user_sesion, usur_creation });
+
+    console.log(parametros);
+
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/usuario', {
+        method: 'POST',
+        headers: {
+            'accept': 'application/json ',
+            'Content-Type': 'application/json'
+        },
+        body: parametros
+    })
+
+    if (data.status == 200) {
+        alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
+        limpiarCampos();
+        location.reload();
+    }
+
+});
+
+
+
+const btnEditar = document.getElementById("btn_editar");
+btnEditar.addEventListener("click", async (e) => {
+    e.preventDefault();//
+    const id_user = document.getElementById("txt_id_user").value;
+    const name_users = document.getElementById("txt_nombre_user").value;
+    const id_rol = document.getElementById("txt_rol").value;
+    const identification_card = document.getElementById("txt_cedula").value;
+    const name = document.getElementById("txt_nombre").value;
+    const pass = document.getElementById("txt_contrasenia").value;
+    const user_update = "ALCAMPOVERDE";
+    const usur_creation = "ALCAMPOVERDE";
+
+    let parametros = JSON.stringify({ id_user, name_users, id_rol, identification_card, name, pass, user_update, usur_creation });
+
+    console.log(parametros);
+
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/usuario', {
+        method: 'PUT',
+        headers: {
+            'accept': 'application/json ',
+            'Content-Type': 'application/json'
+        },
+        body: parametros
+    })
+
+    if (data.status == 200) {
+        alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
+        limpiarCampos();
+        location.reload();
+    }
+
+});
+
+
+
+
+const btnInactivar = document.getElementById("btn_inactivar");
+btnInactivar.addEventListener("click", async (e) => {
+    e.preventDefault();//
+
+    alert("Inactivar");
+    const id_user = document.getElementById("txt_id_user").value;
+
+    /*  const user_update = "ALCAMPOVERDE";
+     const usur_creation = "ALCAMPOVERDE"; */
+
+    let parametros = JSON.stringify({ id_user });
+
+    console.log(parametros);
+
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/usuario', {
+        method: 'DELETE',
+        headers: {
+            'accept': 'application/json ',
+            'Content-Type': 'application/json'
+        },
+        body: parametros
+    })
+
+    if (data.status == 200) {
+        alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
+        limpiarCampos();
+        location.reload();
+
+    }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const getData = async () => {
     const data = await fetch('http://localhost/ApiFundacionDabyc/controllers/usuario?page');
     console.log(data);
@@ -32,9 +167,14 @@ function llenarTabla(tabla, filas) {
         data: filas,
         columns: [
             { data: 'id_user' },
+            { data: 'name_users' },
+            { data: 'identification_card' },
+            { data: 'pass' },
             { data: 'name' },
             { data: 'id_rol' },
-            { data: 'status' }
+            { data: 'status' },
+            { data: 'status' },
+            { data: 'date_creation' },
         ],
         columnDefs: [{
             targets: [], //OCULTAR COLUMNAS
@@ -48,11 +188,22 @@ function llenarTabla(tabla, filas) {
 
         if ($(this).hasClass('selected')) {
             $(this).removeClass('selected');
+            document.getElementById("txt_id_user").value = "";
+            document.getElementById("txt_nombre_user").value = "";
+            document.getElementById("txt_rol").value = "";
+            document.getElementById("txt_cedula").value = "";
+            document.getElementById("txt_nombre").value = "";
+            document.getElementById("txt_contrasenia").value = "";
         } else {
             let cellData = $('#' + tabla).DataTable().row($(this)).data();
 
-           // idTabla = cellData.ID;
-
+            idTabla = cellData.id_user;
+            document.getElementById("txt_id_user").value = cellData.id_user;
+            document.getElementById("txt_nombre_user").value = cellData.name_users;
+            document.getElementById("txt_rol").value = cellData.id_rol;
+            document.getElementById("txt_cedula").value = cellData.identification_card;
+            document.getElementById("txt_nombre").value = cellData.name;
+            document.getElementById("txt_contrasenia").value = cellData.pass;
 
         }
 
@@ -60,79 +211,15 @@ function llenarTabla(tabla, filas) {
 }
 
 
-window.onload = () => { getData(); }; 
-
-/*
-
-actualizar.addEventListener('click', async (e) => {
-    e.preventDefault();
-
-    let id = document.getElementsByName('id')[0].value;
-    const titulo = document.getElementsByName('titulo')[0].value;
-    const descripcion = document.getElementsByName('descripcion')[0].value;
-    const autor = document.getElementsByName('autor')[0].value;
-
-
-    console.log(JSON.stringify({ id, titulo, descripcion, autor }));
-
-    let data = await fetch('http://localhost/MediumBlogApi/controllers/Blog', {
-        method: 'PUT',
-        headers: {
-            'accept': 'application/json ',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({ id, titulo, descripcion, autor })
-    })
-
-    if (data.status === 200) {
-        alert('exito al actualizar, refresque pantalla o presione F5 para poder previsualizar los cambios')
-    }
+window.onload = () => { getData(); };
 
 
 
-})
-
-function posicion(id) {
-    fetch('http://localhost/MediumBlogApi/controllers/Blog?page=1')
-        .then(response => response.json())
-        .then(data => {
-            for (let valor of data) {
-                if (valor.id == id) {
-                    //console.log(valor)
-                    let id = document.getElementsByName('id')[0].value = valor.id;
-                    let titulo = document.getElementsByName('titulo')[0].value = valor.titulo;
-                    let descripcion = document.getElementsByName('descripcion')[0].value = valor.descripcion;
-                    let autor = document.getElementsByName('autor')[0].value = valor.autor;
-                }
-            }
-
-        });
+const limpiarCampos = _ => {
+    document.getElementById("txt_id_user").value = " ";
+    document.getElementById("txt_nombre_user").value = " ";
+    document.getElementById("txt_rol").value = " ";
+    document.getElementById("txt_cedula").value = " ";
+    document.getElementById("txt_nombre").value = " ";
+    document.getElementById("txt_contrasenia").value = " ";
 }
-
-function Modificar(id) {
-    posicion(id)
-
-}
-
-const Eliminar = async (valor) => {
-    list = { "id": valor };
-    let data = await fetch('http://localhost/MediumBlogApi/controllers/Blog', {
-        method: 'DELETE',
-        headers: {
-            'accept': 'application/json ',
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(list)
-    })
-
-    if (data.status == 200) {
-        alert('exito al Eliminar, refresque pantalla o presione F5 para poder previsualizar los cambios')
-    }
-
-    //extrarDatos();
-}
-
-
-
-
-*/
