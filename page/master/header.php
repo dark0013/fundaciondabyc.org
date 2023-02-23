@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../../css/sidebar.css">
-    <link rel="stylesheet" href="../../css/carga.css">
     <link rel="stylesheet" href="../../module/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../module/DataTables/css/jquery.dataTables.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>

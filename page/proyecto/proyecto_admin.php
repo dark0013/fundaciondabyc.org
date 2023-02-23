@@ -1,5 +1,6 @@
 <?php include('../master/header.php') ?>
 
+<link rel="stylesheet" href="../../css/carga.css">
 <?php include('../master/navbar.php') ?>
 
 <setion class="home-section">

@@ -6,7 +6,6 @@
   <div class="home-content">
     <i class='bx bx-menu'></i>
   </div>
-  <div class="container centro">
 
     <table id="tblDatos" class="table table-striped table-bordered" style="width: 100%">
       <thead>
