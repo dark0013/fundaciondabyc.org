@@ -58,7 +58,7 @@
       <div class="name-job">
         <div class="profile_name">Salir</div>
       </div>
-      <a href="#"><i class='bx bx-log-out' ></i></a>
+      <a href="../../index.html"><i class='bx bx-log-out' ></i></a>
       
     </div>
   </li>
