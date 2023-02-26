@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../module/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../module/DataTables/css/jquery.dataTables.css">
+    <script src="https://kit.fontawesome.com/1b1959dac0.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
