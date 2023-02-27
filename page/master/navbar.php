@@ -19,7 +19,7 @@
         </div>
         <ul class="sub-menu">
           <li><a href="../usuario/gestionUsuario.php">Gestion Usuario</a></li>
-          <li><a href="#">Gestion Rol</a></li>
+          <li><a href="../usuario/gestionRol.php">Gestion Rol</a></li>
         </ul>
       </li>
       <li>
