@@ -1,5 +1,6 @@
 <script src="../../module/jquery/jquery-3.6.1.min.js"></script>
 <script src="../../module/DataTables/js/jquery.dataTables.js"></script>
+<script src="../../module/boostrap/js/bootstrap.bundle.min.js"></script>
 
 <script>
   let arrow = document.querySelectorAll(".arrow");
