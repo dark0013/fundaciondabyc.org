@@ -8,7 +8,7 @@
   </div>
 
   <button id="myBtn">Agregar Usuario <i class="fa-solid fa-user-plus"></i></button>
-  <div id="myModal" class="modal">
+  <div id="modal" style="display:none" class="modal">
     <div class="modal-content1">
     <span class="close1">&times;</span>
       
@@ -17,6 +17,7 @@
         <form>
           <!-- Favor no eliminar ni modificasr este campo esta oculto -->
           <h1 style="text-align:center">Ingrese los Datos</h1>
+
           <input type="hidden" class="form-control" id="txt_id_user">
 
           <div class="form-group row">
@@ -69,9 +70,9 @@
   </div>
       
 
-    <table id="tblDatos" class="table table-striped table-bordered" style="width: 100%">
+    <table id="tblDatos" class="table table-striped table-bordered" style="width: 100%" onclick="openModal()">
       <thead>
-        <tr>
+        <tr >
           <th>ID</th>
           <th>name_users</th>
           <th>identification_card</th>
@@ -86,34 +87,32 @@
     </table>
   </div>
 
-
-
 </setion>
 
 <script>
-    //Selección del botón para abrir la ventana modal
-    var modal = document.getElementById("myModal");
-    var btn = document.getElementById("myBtn");
-    var span = document.getElementsByClassName("close1")[0];
 
-
-    //Abrir la ventana modal al hacer clic en el botón
-    btn.onclick = function() {
+	var btn = document.getElementById("myBtn");
+	btn.onclick = function() {
         modal.style.display = "block";
     }
 
-    //Cerrar la ventana modal al hacer clic fuera de la misma
-    window.onclick = function(event) {
+	function openModal(){
+		document.getElementById("modal").style.display="block";
+	}
+  
+	var span = document.getElementsByClassName("close1")[0];
+	// Cuando el usuario haga click en <span> (x), cierra el modal
+		span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+	window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = "none";
         }
     }
 
-    // Cuando el usuario haga click en <span> (x), cierra el modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-    </script>
+</script>
 
 <script src="../../js/eventos/usuario/usuarios_admin.js"></script>
 
