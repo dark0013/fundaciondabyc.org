@@ -104,35 +104,6 @@ btnInactivar.addEventListener("click", async (e) => {
 
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const getData = async () => {
     const data = await fetch('http://localhost/ApiFundacionDabyc/controllers/rol?page');
     console.log(data);
