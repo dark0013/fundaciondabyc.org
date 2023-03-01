@@ -25,13 +25,13 @@ const mostrarDatos = (data) => {
     const cardBodyHtml = document.createElement('div');
     cardBodyHtml.className = 'card-body';
 
-    const titleHtml = document.createElement('label');
+    const titleHtml = document.createElement('h2');
     titleHtml.innerHTML = title;
     titleHtml.className = 'card-title';
 
     const date_creationHtml = document.createElement('h6');
     date_creationHtml.innerHTML = date_creation;
-    date_creationHtml.className = 'card-subtitle mb-2 text-muted';
+    date_creationHtml.className = 'card-subtitle';
 
     const descriptionHtml = document.createElement('textarea');
     descriptionHtml.innerHTML = description;
