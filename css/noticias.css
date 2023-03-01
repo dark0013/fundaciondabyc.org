@@ -1,79 +1,59 @@
 .imagen{
     background:url(/assets/img/img_noticias/imgnoti.jpg);
     background-attachment: fixed;
-    background-size: 100%;     
-}
-
-.date{
-    width: 30%;
-    height: 30%;
-}
-
-.contenedor2{
-    margin:5% 10px;
-    padding: 1px;
-    display: flex;
-}
-.caja{
-    width: 300px;
-    height: 650px;
-    margin:3% 30px;
-    box-shadow: 0 0 20px 2px rgba(0,0,0, 100);
-    transition: 1s;
-    background-color: rgb(87, 42, 146);
-    
-}
-.caja img{
+    background-size: 100%;
+    height: 100%;
     width: 100%;
-    border-radius: 5px;
-    display: flex;
+     
 }
 
-.title{
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 30px;
-}
-.area{
-    text-align: left;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-}
-
-.texto{
-    display:flex;
-    flex-direction: row;
-    font-size: 20px;
-    text-align: center  
-}
-
-.caja{ 
+.card {
+    background-color: rgb(115, 20, 170);
     display: grid;
     width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    padding: 15px; 
-}
+    max-width: 400px;
+    margin: 100px 0px 0px 0px;
+    border: 1px solid #b862f1;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .card div {
+    padding: 1rem;
+  }
+  
+  .card label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card h6 {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    color: #666;
+  }
+  
+  .card textarea {
+    border: none;
+    resize: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    height: 5rem;
+    overflow: hidden;
+  }
+  
 
-.caja:hover{
-    transform: scale(1.1);
-    z-index: 3;
-}
 
 
-@media screen and (max-width: 768px){
-    .contenedor2{
-        width: 80%;
-        height: 100%;
-        display: inline;
-        justify-content: center;
-        padding: 100px 0px 0px 0px;
-    }
-}    
-@media screen and (max-width: 200px){
-    .caja{
-        width: 10%;
-    }
-}
+    
+
 
 
