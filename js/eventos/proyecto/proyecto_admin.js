@@ -1,4 +1,4 @@
-let url = 'http://localhost/ApiFundacionDabyc/controllers/proyectos?page'
+let url = 'https://fundaciondabyc.org/ApiFundacionDabyc/controllers/proyectos?page'
 
 fetch(url)
   .then(response => response.json())
@@ -11,7 +11,7 @@ const mostrarDatos = (data) => {
   // Recorrer los objetos JSON y obtener los campos necesarios
   data.forEach((objeto) => {
     const title = objeto.title;
-    const imagen = objeto.imagen;
+    const imagen = objeto.url_image;
     const date_creation = objeto.date_creation;
     const description = objeto.description;
     

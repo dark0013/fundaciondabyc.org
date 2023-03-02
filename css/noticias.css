@@ -1,26 +1,32 @@
 .imagen {
-    background: url(/assets/img/img_noticias/imgnoti.jpg) no-repeat center center fixed;
-    background-size: cover;
-  }
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(/assets/img/img_noticias/imgnoti.jpg) no-repeat center center fixed;
+  background-size: cover;
+  padding: 80px;
+}
 
 .card {
-  justify-items: center;
   position: relative;
   background-color: rgb(115, 20, 170);
-  display: inline-flex;
-  width: 350px;
-  padding: 100px 0px 0px 0px;
-  margin: 150px 15px 0px 0px;
+  width: 100%;
+  max-width: 300px;
+  padding: 0%;
+  margin: 15px;
   border: 1px solid #b862f1;
   border-radius: 15px;
   box-shadow: 0px 0px 10px rgba(209, 89, 89, 0.1);
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .card img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .card div {
@@ -45,5 +51,16 @@
   resize: none;
   font-size: 1rem;
   height: 8rem;
+  flex-grow: 1;
 }
+
+@media only screen and (min-width: 768px) {
+  .imagen {
+    flex-wrap: wrap;
+  }
+  .card {
+    margin: 15px;
+  }
+}
+
 
