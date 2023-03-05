@@ -8,7 +8,7 @@
   </div>
  
   <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Agregar Usuario <i class="fa-solid fa-user-plus"></i></button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left:20px;">Agregar Usuario <i class="fa-solid fa-user-plus"></i></button>
 
 
 <!-- Modal -->
@@ -75,9 +75,9 @@
   </div>
 </div>
 
+</section>
 
-
-
+<section id="tabla">
 <table id="tblDatos"  class="table table-striped table-bordered" style="width: 100%" onclick="openModal()" data-bs-toggle="modal" data-bs-target="#exampleModal">
       <thead>
         <tr >
@@ -93,8 +93,9 @@
         </tr>
       </thead>
     </table>
-
 </section>
+
+
    
   
 

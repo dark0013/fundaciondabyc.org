@@ -216,7 +216,7 @@
 }
 .home-section{
   position: relative;
-  background: #E4E9F7;
+  background: #ffffff;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
@@ -304,7 +304,10 @@
   flex-wrap: nowrap;
 
 }
-
+#tabla{
+  margin-left: 20px;
+  margin-right:20px;
+}
 
 @media screen and  (min-width:560px){
   
