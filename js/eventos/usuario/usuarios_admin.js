@@ -11,11 +11,11 @@ btnGuardar.addEventListener("click", async (e) => {
     const id_rol = document.getElementById("txt_rol").value;
     const identification_card = document.getElementById("txt_cedula").value;
     const name = document.getElementById("txt_nombre").value;
+    const status = "A";
     const pass = document.getElementById("txt_contrasenia").value;
     const user_sesion = "ALCAMPOVERDE";
     const usur_creation = "ALCAMPOVERDE";
-
-    let parametros = JSON.stringify({ name_users, id_rol, identification_card, name, pass, user_sesion, usur_creation });
+    let parametros = JSON.stringify({ name_users, id_rol, identification_card, name, status ,pass, user_sesion, usur_creation });
 
     console.log(parametros);
 
@@ -48,9 +48,9 @@ btnEditar.addEventListener("click", async (e) => {
     const name = document.getElementById("txt_nombre1").value;
     const pass = document.getElementById("txt_contrasenia1").value;
     const user_update = "ALCAMPOVERDE";
-    const usur_creation = "ALCAMPOVERDE";
+    const user_creation = "ALCAMPOVERDE";
 
-    let parametros = JSON.stringify({ id_user, name_users, id_rol, identification_card, name, pass, user_update, usur_creation });
+    let parametros = JSON.stringify({ id_user, name_users, id_rol, identification_card, name, pass, user_update, user_creation });
 
     console.log(parametros);
 
