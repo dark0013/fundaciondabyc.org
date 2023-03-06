@@ -42,11 +42,11 @@ const btnEditar = document.getElementById("btn_editar");
 btnEditar.addEventListener("click", async (e) => {
     e.preventDefault();//
     const id_user = document.getElementById("txt_id_user").value;
-    const name_users = document.getElementById("txt_nombre_user").value;
-    const id_rol = document.getElementById("txt_rol").value;
-    const identification_card = document.getElementById("txt_cedula").value;
-    const name = document.getElementById("txt_nombre").value;
-    const pass = document.getElementById("txt_contrasenia").value;
+    const name_users = document.getElementById("txt_nombre_user1").value;
+    const id_rol = document.getElementById("txt_rol1").value;
+    const identification_card = document.getElementById("txt_cedula1").value;
+    const name = document.getElementById("txt_nombre1").value;
+    const pass = document.getElementById("txt_contrasenia1").value;
     const user_update = "ALCAMPOVERDE";
     const usur_creation = "ALCAMPOVERDE";
 
@@ -189,21 +189,21 @@ function llenarTabla(tabla, filas) {
         if ($(this).hasClass('selected')) {
             $(this).removeClass('selected');
             document.getElementById("txt_id_user").value = "";
-            document.getElementById("txt_nombre_user").value = "";
-            document.getElementById("txt_rol").value = "";
-            document.getElementById("txt_cedula").value = "";
-            document.getElementById("txt_nombre").value = "";
-            document.getElementById("txt_contrasenia").value = "";
+            document.getElementById("txt_nombre_user1").value = "";
+            document.getElementById("txt_rol1").value = "";
+            document.getElementById("txt_cedula1").value = "";
+            document.getElementById("txt_nombre1").value = "";
+            document.getElementById("txt_contrasenia1").value = "";
         } else {
             let cellData = $('#' + tabla).DataTable().row($(this)).data();
 
             idTabla = cellData.id_user;
             document.getElementById("txt_id_user").value = cellData.id_user;
-            document.getElementById("txt_nombre_user").value = cellData.name_users;
-            document.getElementById("txt_rol").value = cellData.id_rol;
-            document.getElementById("txt_cedula").value = cellData.identification_card;
-            document.getElementById("txt_nombre").value = cellData.name;
-            document.getElementById("txt_contrasenia").value = cellData.pass;
+            document.getElementById("txt_nombre_user1").value = cellData.name_users;
+            document.getElementById("txt_rol1").value = cellData.id_rol;
+            document.getElementById("txt_cedula1").value = cellData.identification_card;
+            document.getElementById("txt_nombre1").value = cellData.name;
+            document.getElementById("txt_contrasenia1").value = cellData.pass;
 
         }
 
@@ -222,4 +222,13 @@ const limpiarCampos = _ => {
     document.getElementById("txt_cedula").value = " ";
     document.getElementById("txt_nombre").value = " ";
     document.getElementById("txt_contrasenia").value = " ";
+}
+
+const limpiarCampos1 = _ => {
+    document.getElementById("txt_id_user").value = " ";
+    document.getElementById("txt_nombre_user1").value = " ";
+    document.getElementById("txt_rol1").value = " ";
+    document.getElementById("txt_cedula1").value = " ";
+    document.getElementById("txt_nombre1").value = " ";
+    document.getElementById("txt_contrasenia1").value = " ";
 }

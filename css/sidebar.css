@@ -305,8 +305,9 @@
 
 }
 #tabla{
-  margin-left: 20px;
-  margin-right:20px;
+  margin-left: 35px;
+  margin-right:35px;
+  margin-top: 30px;
 }
 
 @media screen and  (min-width:560px){
@@ -362,7 +363,7 @@
   }
   
   .input1{
-    width: 200px;
+    width: 200%;
     background-color:#287bff;
     margin-left: 15px;
     border-radius: 5px;
@@ -370,6 +371,20 @@
   }
   
   .input1:hover{
+    color: #287bff;
+    background-color:#ffff;
+   
+  }
+
+  .input2{
+    width: 200px;
+    background-color:#287bff;
+    margin-left: 15px;
+    border-radius: 5px;
+    color:#fefefe
+  }
+  
+  .input2:hover{
     color: #287bff;
     background-color:#ffff;
    
@@ -392,6 +407,26 @@
   }
   
   #txt_contrasenia{
+    width: 244%;
+  }
+
+  #txt_nombre1{
+    width: 244%;
+  }
+  
+  #txt_nombre_user1{
+    width: 244%;
+  }
+  
+  #txt_rol1{
+    width: 244%;
+  }
+  
+  #txt_cedula1{
+    width: 244%;
+  }
+  
+  #txt_contrasenia1{
     width: 244%;
   }
   
