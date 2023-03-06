@@ -1,3 +1,4 @@
+<php?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,7 +22,7 @@
             <div class="bg-light shadow justify-content-center">
                 <div class="container menu-fixed">
                     <nav class="navbar navbar-expand-lg navbar-light  bg-light">
-                        <a href="page/admin/admin_.php"><img src="assets/img/img_donacion/logo.png" alt=""></a>
+                        <a href="page/Admin/admin_.php"><img src="assets/img/img_donacion/logo.png" alt=""></a>
 
                         <div class="container-fluid"><a href="#" class="navbar-brand"></a> <button type="button"
                                 data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -52,7 +53,7 @@
                                     </li>
                                 </ul>
                                 <ul class="btn btn-outline-success">
-                                    <li class="nav-item"><a href="login.html"
+                                    <li class="nav-item"><a href="login.php"
                                         class="nav-link DroidSerif-Regular">Login 👤</a>
                                     </li>
                                 </ul>
@@ -164,13 +165,13 @@
                         <div class="contact-info">
                             <h5>Informacion Contactos</h5>
                             <p>
-                                <img src="../assets/ico/hogar.png" width="8%">
+                                <img src="assets/ico/hogar.png" width="8%">
                                 Matriz - Sauces 4</img>
                                 <br>
-                                <img src="../assets/ico/correo-electronico.png" width="8%">
+                                <img src="assets/ico/correo-electronico.png" width="8%">
                                 fundaciondabyc@gmail.com</img>
                                 <br>
-                                <img src="../assets/ico/telefono.png" width="8%">
+                                <img src="assets/ico/telefono.png" width="8%">
                                 +593 978728242</img>
                             </p>
                         </div>
@@ -219,3 +220,4 @@
 </body>
 
 </html>
+</php>

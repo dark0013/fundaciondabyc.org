@@ -1,3 +1,5 @@
+<php?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +21,7 @@
             <form>
                 <div class="form-group ">
                     <small id="emailHelp" class="form-text  etiquetas">USUARIO</small>
-                    <input type="email" class="form-control rounded-0 txt_formulario" id="exampleInputEmail1"
+                    <input type="text" class="form-control rounded-0 txt_formulario" id="exampleInputEmail1"
                         aria-describedby="emailHelp">
                 </div>
 
@@ -32,12 +34,11 @@
                     <label class="form-check-label etiquetas" for="exampleCheck1">Check me out</label>
                 </div>
                 <div class="col-md-12">
-                   <button class="btn-boton-x mb-2"> Registrar</button>
-                </div>
-                <div class="col-md-12">
-                    <a href="index.html"><button class="btn-boton-x mb-2"> Inicio </button></a>
+                    <a href="page/Admin/admin_.php"><button class="btn-boton-x mb-2"> Inicio </button></a>
                  </div>
-
+                 <div class="col-md-12">
+                    <a href="index.php"><button class="btn-boton-x mb-2"> Regresar al inicio</button></a>
+                 </div>
 
             </form>
 
@@ -50,3 +51,4 @@
 </body>
 
 </html>
+</php>
