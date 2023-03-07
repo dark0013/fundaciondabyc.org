@@ -68,6 +68,7 @@
                                 <h2 class="titulo">Formulario de Viveres</h2><br>
                                 <div class="container" id="general">
                                     <div class="centrado">
+                                        <input type="text" name="Cedula" placeholder="Cedula" class="justify-content-center letra gmail form-control">
                                         <input type="text" name="Nombre" placeholder="Nombres y Apellidos" class="justify-content-center letra gmail form-control">
                                         <input type="email" name="gmail" placeholder="Correo electronico" class="justify-content-center letra gmail form-control">
                                         <input type="number" name="Edad" placeholder="Edad" class="justify-content-center letra edad form-control">
