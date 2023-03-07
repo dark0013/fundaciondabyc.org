@@ -221,6 +221,7 @@
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .sidebar.close ~ .home-section{
   left: 0px;        /*poner 78px en caso de que quiera que aparezca el sidebar*/
@@ -288,7 +289,7 @@
 }
 
 .input1{
-  width: 200px;
+  width: 100%;
   background-color:#287bff;
   margin-left: 15px;
   border-radius: 5px;
@@ -296,7 +297,7 @@
 }
 
 .input1:hover{
-  color: #287bff;
+  color: #030303;
   background-color:#ffff;
  
 }
@@ -309,6 +310,11 @@
   margin-right:35px;
   margin-top: 30px;
 }
+
+#btn_inactivar{
+  background-color:#f86d6f;
+}
+
 
 @media screen and  (min-width:560px){
   
