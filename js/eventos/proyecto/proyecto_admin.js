@@ -187,7 +187,6 @@ window.onload = () => { getData(); };
 
 const limpiarCampos = _ => {
     document.getElementById("title1").value = " ";
-    document.getElementById("file1").file = new File([]);
     document.getElementById("description1").value = " ";
     document.getElementById("date1").value = " ";
 }
