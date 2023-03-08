@@ -1,98 +1,192 @@
-let url = 'https://fundaciondabyc.org/ApiFundacionDabyc/controllers/proyectos?page'
 
-fetch(url)
-  .then(response => response.json())
-  .then(data => mostrarDatos(data))
-  .catch(error => console.log(error))
+let idTabla = 0;
 
-const mostrarDatos = (data) => {
-  console.log(JSON.stringify(data))
-  
-  // Recorrer los objetos JSON y obtener los campos necesarios
-  data.forEach((objeto) => {
-    const title = objeto.title;
-    const imagen = objeto.url_image;
-    const date_creation = objeto.date_creation;
-    const description = objeto.description;
-    
-    // Mostrar los valores en la página web
-    const cardHtml = document.createElement('div');
-    cardHtml.className = 'card';
 
-    const imagenHtml = document.createElement('img');
-    imagenHtml.src = imagen;
+const btnGuardar = document.getElementById("btn_guardar");
 
-    const cardBodyHtml = document.createElement('div');
-    cardBodyHtml.className = 'card-body';
+btnGuardar.addEventListener("click", async (e) => {
+    e.preventDefault();//
+    const title= document.getElementById("title").value;
+    const url_image = document.getElementById("file").value;
+    const description= document.getElementById("description").value;
+    const date_creation= document.getElementById("date").value;
+    const status = "A";
+    const user_sesion = "ALCAMPOVERDE";
+    const user_creation = "ALCAMPOVERDE";
+    let parametros = JSON.stringify({ title,url_image,description,date_creation,status, user_sesion, user_creation,});
 
-    const titleHtml = document.createElement('h2');
-    titleHtml.innerHTML = title;
-    titleHtml.className = 'card-title';
+    console.log(parametros);
 
-    const date_creationHtml = document.createElement('h6');
-    date_creationHtml.innerHTML = date_creation;
-    date_creationHtml.className = 'card-subtitle';
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos', {
+        method: 'POST',
+        headers: {
+            'accept': 'application/json ',
+            'Content-Type': 'application/json'
+        },
+        body: parametros
+    })
 
-    const descriptionHtml = document.createElement('textarea');
-    descriptionHtml.innerHTML = description;
-    descriptionHtml.className = 'card-text';
+    if (data.status == 200) {
+        alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
+        limpiarCampos();
+        location.reload();
+    }
 
-    cardBodyHtml.appendChild(titleHtml);
-    cardBodyHtml.appendChild(date_creationHtml);
-    cardBodyHtml.appendChild(descriptionHtml);
+});
 
-    cardHtml.appendChild(imagenHtml);
-    cardHtml.appendChild(cardBodyHtml);
 
-    document.getElementById('card').appendChild(cardHtml);
-    
-  });
+const btnEditar = document.getElementById("btn_editar");
+btnEditar.addEventListener("click", async (e) => {
+    e.preventDefault();//
+    const id_project  = document.getElementById("txt_id_proyect").value;
+    const title= document.getElementById("title1").value;
+    const url_image = document.getElementById("file1").value;
+    const description= document.getElementById("description1").value;
+    const date_creation= document.getElementById("date1").value;
+    const user_sesion = "ALCAMPOVERDE";
+    const user_update = "ALCAMPOVERDE";
+
+    let parametros = JSON.stringify({ id_project,title,url_image,description,date_creation, user_sesion, user_update});
+
+    console.log(parametros);
+
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos', {
+        method: 'PUT',
+        headers: {
+            'accept': 'application/json ',
+            'Content-Type': 'application/json'
+        },
+        body: parametros
+    })
+
+    if (data.status == 200) {
+        alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
+        limpiarCampos();
+        location.reload();
+    }
+
+});
+
+
+
+
+const btnInactivar = document.getElementById("btn_inactivar");
+btnInactivar.addEventListener("click", async (e) => {
+    e.preventDefault();//
+
+    alert("Inactivar");
+    const id_project= document.getElementById("txt_id_proyect").value;
+
+    /*  const user_update = "ALCAMPOVERDE";
+     const usur_creation = "ALCAMPOVERDE"; */
+
+    let parametros = JSON.stringify({ id_project });
+
+    console.log(parametros);
+
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos', {
+        method: 'DELETE',
+        headers: {
+            'accept': 'application/json ',
+            'Content-Type': 'application/json'
+        },
+        body: parametros
+    })
+
+    if (data.status == 200) {
+        alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
+        limpiarCampos();
+        location.reload();
+
+    }
+
+});
+
+
+
+
+
+
+
+
+
+
+
+const getData = async () => {
+    const data = await fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos?page');
+    console.log(data);
+    if (data.status === 200) {
+        const datos = await data.json();
+        console.log(datos);
+        llenarTabla("tblDatos", datos)
+    }
 }
 
 
-/*
-let url = 'http://localhost/ApiFundacionDabyc/controllers/proyectos?page'
+function llenarTabla(tabla, filas) {
+    $('#' + tabla + ' tbody').remove();
+    $('#' + tabla).dataTable().fnDestroy();
+    $('#' + tabla).DataTable({
+        language: {
+            search: "Buscar",
+            info: "Total: _TOTAL_ registros. ",
+            emptyTable: "No hay información.",
+            infoEmpty: "Total: 0 registros.",
+            infoFiltered: "(filtrado de un total de _MAX_ registros)",
+            select: { rows: " %d filas seleccionadas." }
+        },
+        select: true,
+        scrollY: 300,
+        scrollX: true,
+        scrollCollapse: true,
+        paging: false,
+        fixedColumns: false,
+        data: filas,
+        columns: [
+            { data: 'id_project' },
+            { data: 'title' },
+            { data: 'url_image' },
+            { data: 'description' },
+            { data: 'date_creation' },
+            { data: 'status' },
+            
+        ],
+        columnDefs: [{
+            targets: [], //OCULTAR COLUMNAS
+            visible: false,
+            searchable: true
+        }]
+    });
 
-fetch(url)
-  .then(response => response.json())
-  .then(data => mostrarData(data))
-  .catch(error => console.log(error))
+    //MANEJO DE EVENTO DE LA TABLA
+    $('#' + tabla + ' tbody').on('click', 'tr', function () {
 
-const mostrarData = (data) => {
-  console.log(JSON.stringify(data))
-  
-  // Obtener los valores de los campos del objeto JSON
-  const title = data.title;
-  const imagen = data.imagen;
-  const date_creation = data.date_creation;
-  const description = data.description;
-  
-  // Mostrar los valores en la página web
-  document.getElementById('text_titulo').innerHTML = title;
-  document.getElementById('text_imagen').src = imagen;
-  document.getElementById('text_fecha').innerHTML = date_creation;
-  document.getElementById('text_area').innerHTML = description;
-}
-*/
+        if ($(this).hasClass('selected')) {
+            $(this).removeClass('selected');
+            document.getElementById("txt_id_proyect").value="";
+            document.getElementById("title1").value="";
+            document.getElementById("description1").value="";
+            document.getElementById("date1").value="";
+        } else {
+            let cellData = $('#' + tabla).DataTable().row($(this)).data();
 
+            idTabla = cellData.id_project;
+            document.getElementById("txt_id_proyect").value= cellData.id_project;
+            document.getElementById("title1").value = cellData.title;
+            document.getElementById("description1").value = cellData.description;
+            document.getElementById("date1").value = cellData.date_creation;
 
-
-
-
-
-/*
-let url = 'http://localhost/ApiFundacionDabyc/controllers/proyectos?page'
-let im1 = 'https://www.adslzone.net/app/uploads-adslzone.net/2019/04/borrar-fondo-imagen.jpg'
-fetch(url)
-    .then(response => response.json())
-    .then(data => mostrarData(data))
-    .catch(error => console.log(error))
-
-    const mostrarData = (data) => {
-        console.log(JSON.stringify(data))
-        document.getElementById('text_titulo').innerHTML='hola jesus';
-        document.getElementById('text_imagen').src = im1;
-        document.getElementById('text_fecha').innerHTML = '2023-12-12';
-        document.getElementById('text_area').innerHTML = 'hola ad';
         }
-*/
+
+    });
+}
+
+
+window.onload = () => { getData(); };
+
+
+const limpiarCampos = _ => {
+    document.getElementById("title1").value = " ";
+    document.getElementById("description1").value = " ";
+    document.getElementById("date1").value = " ";
+}

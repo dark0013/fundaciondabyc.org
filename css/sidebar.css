@@ -216,11 +216,12 @@
 }
 .home-section{
   position: relative;
-  background: #E4E9F7;
+  background: #ffffff;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
+  overflow: hidden;
 }
 .sidebar.close ~ .home-section{
   left: 0px;        /*poner 78px en caso de que quiera que aparezca el sidebar*/
@@ -288,7 +289,7 @@
 }
 
 .input1{
-  width: 200px;
+  width: 100%;
   background-color:#287bff;
   margin-left: 15px;
   border-radius: 5px;
@@ -296,13 +297,22 @@
 }
 
 .input1:hover{
-  color: #287bff;
+  color: #030303;
   background-color:#ffff;
  
 }
 #modalfoot{
   flex-wrap: nowrap;
 
+}
+#tabla{
+  margin-left: 35px;
+  margin-right:35px;
+  margin-top: 30px;
+}
+
+#btn_inactivar{
+  background-color:#f86d6f;
 }
 
 
@@ -359,7 +369,7 @@
   }
   
   .input1{
-    width: 200px;
+    width: 200%;
     background-color:#287bff;
     margin-left: 15px;
     border-radius: 5px;
@@ -367,6 +377,20 @@
   }
   
   .input1:hover{
+    color: #287bff;
+    background-color:#ffff;
+   
+  }
+
+  .input2{
+    width: 200px;
+    background-color:#287bff;
+    margin-left: 15px;
+    border-radius: 5px;
+    color:#fefefe
+  }
+  
+  .input2:hover{
     color: #287bff;
     background-color:#ffff;
    
@@ -389,6 +413,26 @@
   }
   
   #txt_contrasenia{
+    width: 244%;
+  }
+
+  #txt_nombre1{
+    width: 244%;
+  }
+  
+  #txt_nombre_user1{
+    width: 244%;
+  }
+  
+  #txt_rol1{
+    width: 244%;
+  }
+  
+  #txt_cedula1{
+    width: 244%;
+  }
+  
+  #txt_contrasenia1{
     width: 244%;
   }
   
