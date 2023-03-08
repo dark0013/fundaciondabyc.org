@@ -8,7 +8,7 @@
         <i class='bx bx-menu'></i>
     </div>
     <div class="container">
-        <form action="action_page.php">
+        <form action="action_page.php" enctype="multipart/form-data">
             <label for="title">Titulo:</label>
             <input type="text" id="title" name="title" placeholder="Título..">
             <label for="date">Fecha:</label>
