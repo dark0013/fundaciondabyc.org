@@ -23,11 +23,11 @@
                     <label for="title">Titulo:</label>
                     <input type="text" id="title" name="title" placeholder="Título..">
                     <label for="date">Fecha:</label>
-                    <input type="datetime-local" id="date" name="date" placeholder="Fecha..">
+                    <input type="date" id="date" name="date" placeholder="Fecha..">
                     <label for="description">Descripción:</label>
                     <textarea id="description" name="description" placeholder="Descripción.." style="height:200px"></textarea>
                     <label for="file">Archivo:</label>
-                    <input type="file" id="file" name="file" placeholder="Archivo..">
+                    <input type="file" id="file" name="file" placeholder="Archivo.." >
                 </form>
                   <div class="modal-footer" id="modalfoot">
                     <input type="button" id="btn_guardar" value="Guardar" class="input1">
@@ -54,7 +54,7 @@
                     <label for="title">Titulo:</label>
                     <input type="text" id="title1" name="title" placeholder="Título..">
                     <label for="date">Fecha:</label>
-                    <input type="datetime-local" id="date1" name="date" placeholder="Fecha..">
+                    <input type="datetime" id="date1" name="date" placeholder="Fecha..">
                     <label for="description">Descripción:</label>
                     <textarea id="description1" name="description" placeholder="Descripción.." style="height:200px"></textarea>
                     <label for="file">Archivo:</label>

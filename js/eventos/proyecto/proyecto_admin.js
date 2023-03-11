@@ -1,6 +1,4 @@
-
 let idTabla = 0;
-
 
 const btnGuardar = document.getElementById("btn_guardar");
 
@@ -13,6 +11,13 @@ btnGuardar.addEventListener("click", async (e) => {
     const status = "A";
     const user_sesion = "ALCAMPOVERDE";
     const user_creation = "ALCAMPOVERDE";
+    
+    // Verificamos que todos los datos hayan sido ingresados
+    if(title === '' || url_image === '' || description === '' || date_creation === '') {
+        alert('Debe ingresar todos los datos');
+        return;
+    }
+    
     let parametros = JSON.stringify({ title,url_image,description,date_creation,status, user_sesion, user_creation,});
 
     console.log(parametros);
@@ -33,7 +38,6 @@ btnGuardar.addEventListener("click", async (e) => {
     }
 
 });
-
 
 const btnEditar = document.getElementById("btn_editar");
 btnEditar.addEventListener("click", async (e) => {
