@@ -11,12 +11,11 @@ btnEnviarMensaje.addEventListener("click", async (e) => {
     const phone = document.getElementById("txt_numero_telefonico").value;
     const address = document.getElementById("txt_direccion").value;
     const description = document.getElementById("txt_escribe_tu_mensaje").value;
-    const status = document.getElementById("txt_escribe_tu_mensaje").value;
     const user_sesion = "ALCAMPOVERDE";
     const usur_creation = "ALCAMPOVERDE";
 
     let parametros = JSON.stringify({ identification_card, full_name,
-         email,phone,direccion,address,description,status,user_sesion,usur_creation });
+         email,phone,direccion,address,description,user_sesion,usur_creation });
 
     console.log(parametros);
 
@@ -47,12 +46,11 @@ btnSUBSCRIBIRSE.addEventListener("click", async (e) => {
     const phone = document.getElementById("txt_numero_telefonico").value;
     const address = document.getElementById("txt_direccion").value;
     const description = document.getElementById("txt_escribe_tu_mensaje").value;
-    const status = document.getElementById("txt_escribe_tu_mensaje").value;
     const user_sesion = "ALCAMPOVERDE";
     const usur_creation = "ALCAMPOVERDE";
 
     let parametros = JSON.stringify({ identification_card, full_name,
-         email,phone,direccion,address,description,status,user_sesion,usur_creation });
+         email,phone,direccion,address,description,user_sesion,usur_creation });
 
     console.log(parametros);
 

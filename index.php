@@ -21,23 +21,23 @@
                 <div class="bg-light shadow justify-content-center">
                     <div class="container menu-fixed">
                         <nav class="navbar navbar-expand-lg navbar-light  bg-light">
-                            <a href="page/Admin/admin_.php"><img src="assets/img/img_donacion/logo.png" alt=""></a>
+                            <a href="index.php"><img src="assets/img/img_donacion/logo.png" alt=""></a>
 
                             <div class="container-fluid"><a href="#" class="navbar-brand"></a> <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
                                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
                                     <ul class="navbar-nav ms-auto col-md-8 mb-5 mb-lg-1">
-                                        <li class="nav-item"><a aria-current="page" href="#" class="nav-link active DroidSerif-Regular">INICIO</a></li>
-                                        <li class="nav-item"><a href="page/donantes.html" class="nav-link DroidSerif-Regular">DONANTES</a>
+                                        <li class="nav-item"><a aria-current="index.php" href="#" class="nav-link active DroidSerif-Regular">INICIO</a></li>
+                                        <li class="nav-item"><a href="page/donantes.php" class="nav-link DroidSerif-Regular">DONANTES</a>
                                         </li>
-                                        <li class="nav-item"><a href="page/noticias.html" class="nav-link DroidSerif-Regular">NOTICIAS</a>
+                                        <li class="nav-item"><a href="page/noticias.php" class="nav-link DroidSerif-Regular">NOTICIAS</a>
                                         </li>
-                                        <li class="nav-item"><a href="page/kits.html" class="nav-link DroidSerif-Regular">KITS</a></li>
-                                        <li class="nav-item"><a href="page/nosotros.html" class="nav-link DroidSerif-Regular">NOSOTROS</a>
+                                        <li class="nav-item"><a href="page/kits.php" class="nav-link DroidSerif-Regular">KITS</a></li>
+                                        <li class="nav-item"><a href="page/nosotros.php" class="nav-link DroidSerif-Regular">NOSOTROS</a>
                                         </li>
                                         </li>
-                                        <li class="nav-item"><a href="page/sostenibilidad.html" class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
+                                        <li class="nav-item"><a href="page/sostenibilidad.php" class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
                                         </li>
-                                        <li class="nav-item"><a href="page/contacto.html" class="nav-link DroidSerif-Regular">CONTACTOS</a>
+                                        <li class="nav-item"><a href="page/contacto.php" class="nav-link DroidSerif-Regular">CONTACTOS</a>
                                         </li>
                                     </ul>
                                     <ul class="btn btn-outline-success">

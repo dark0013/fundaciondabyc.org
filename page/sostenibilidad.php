@@ -5,25 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BABYC | Donantes</title>
+    <title>BABYC | Sostenibilidad</title>
     <link rel="icon" href="../assets/ico/ico.png" type="image/jpg" />
-    <link rel="stylesheet" href="../module/boostrap/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../module/boostrap/css/bootstrap.min.css">
     <link href="../module/boostrap/css/owl.carousel.css" rel="stylesheet"><!-- Style CSS -->
+    <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
     <link href="../module/boostrap/css/flaticon.css" rel="stylesheet"><!-- Owl Carousel CSS -->
     <link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet"><!-- Line Awesome CSS -->
     <link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet"><!-- Animate CSS-->
-    <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
-    <link href="../css/donantes.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/ico.css">
+    <link rel="stylesheet" href="../css/sostenibilidad.css">
     <script src="https://kit.fontawesome.com/1b1959dac0.js" crossorigin="anonymous"></script>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
 </head>
-<!--Menu-->
 
 <body>
+    <!--Menu-->
     <header>
         <div class="bg-dark">
-            <div class="bg-light shadow ">
+            <div class="bg-light shadow">
                 <div class="container menu-fixed">
                     <nav class="navbar navbar-expand-lg navbar-light  bg-light">
                         <img src="../assets/img/img_donacion/logo.png" alt="">
@@ -34,26 +36,20 @@
                                     class="navbar-toggler-icon"></span></button>
                             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                                 <ul class="navbar-nav ms-auto col-md-8 mb-5 mb-lg-1">
-                                    <li class="nav-item"><a aria-current="page" href="../index.php"
-                                            class="nav-link">INICIO</a></li>
-                                    <li class="nav-item"><a href="donantes.html"
-                                            class="nav-link DroidSerif-Regular">DONANTES</a>
-                                    </li>
-                                    <li class="nav-item"><a href="noticias.html"
-                                            class="nav-link DroidSerif-Regular">NOTICIAS</a>
-                                    </li>
-                                    <li class="nav-item"><a href="kits.html"
-                                            class="nav-link DroidSerif-Regular">KITS</a></li>
-                                    <li class="nav-item"><a href="nosotros.html"
-                                            class="nav-link DroidSerif-Regular">NOSOTROS</a>
-                                    </li>
-                                    <li class="nav-item"><a href="sostenibilidad.html"
-                                            class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
-                                    </li>
-                                    <li class="nav-item"><a href="contacto.html"
-                                            class="nav-link DroidSerif-Regular">CONTACTOS</a>
-                                    </li>
-                                </ul>
+                                        <li class="nav-item"><a aria-current="../index.php" href="#" class="nav-link active DroidSerif-Regular">INICIO</a></li>
+                                        <li class="nav-item"><a href="donantes.php" class="nav-link DroidSerif-Regular">DONANTES</a>
+                                        </li>
+                                        <li class="nav-item"><a href="noticias.php" class="nav-link DroidSerif-Regular">NOTICIAS</a>
+                                        </li>
+                                        <li class="nav-item"><a href="kits.php" class="nav-link DroidSerif-Regular">KITS</a></li>
+                                        <li class="nav-item"><a href="nosotros.php" class="nav-link DroidSerif-Regular">NOSOTROS</a>
+                                        </li>
+                                        </li>
+                                        <li class="nav-item"><a href="sostenibilidad.php" class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
+                                        </li>
+                                        <li class="nav-item"><a href="contacto.php" class="nav-link DroidSerif-Regular">CONTACTOS</a>
+                                        </li>
+                                    </ul>
                                 <ul class="btn btn-outline-success">
                                     <li class="nav-item"><a href="/login.html"
                                         class="nav-link DroidSerif-Regular">Login 👤</a>
@@ -78,83 +74,79 @@
             <a href="https://www.tiktok.com/@fundaciondabyc?_t=8WQXAvMGJ41&_r=1" class="icon tick fa-brands fa-tiktok"
                 style="width: 45.6px;" target="_blank"></a>
         </div>
-        <!-- Cascada img -->
-        <div class="testimonial-slider-bg section-padding">
-            <div class="container mt-5">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="team-carousel owl-carousel">
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/branding.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/capry.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/diakonia.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/distribuidores.jpeg"
-                                        alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/donuts.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/fpc.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/iglesi.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/imprograf.jpeg"
-                                        alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/kfc.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/mayas.jpg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/maypan.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/picapan.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/tia.jpeg" alt="">
-                                </div>
-                            </div>
-                            <div class="single-logo-wrapper">
-                                <div class="logo-inner-item"><img src="../assets/img/img_donacion/toscano.jpeg" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    </header>
+    <!--Sostenibilidad-->
+    <div class="Nose">
+        <div class="Encabezado mt-5">
+            <h1>SOSTENIBILIDAD</h1>
+        </div>
+    </div><br><br>
+    <div class="Imgfondo"></div>
+    <div class="Encabezado mt-5">
+        <div class="tit0">
+            <h1><b>OBJETIVO</b></h1>
+        </div>
+    </div>
+    <div class="Nose">
+        <div class="all">
+            <div class="card" style="background-color: darkgoldenrod;">
+                <div class="Conten">
+                    <a href="https://www.undp.org/es/sustainable-development-goals#hambre-cero">
+                        <h1 style="color: black;"> Objetivo 2 </h1>
+                    </a>
+                </div>
+            </div>
+            <div class="card2" style="background-color: green">
+                <div class="Conten2">
+                    <a href="https://www.undp.org/es/sustainable-development-goals#salud-bienestar">
+                        <h1 style="color: black;"> Objetivo 3 </h1>
+                    </a>
+                </div>
+            </div>
+            <div class="card3" style="background-color: brown">
+                <div class="Conten3">
+                    <a href="https://www.undp.org/es/sustainable-development-goals#educacion-calidad">
+                        <h1 style="color: black;"> Objetivo 4 </h1>
+                    </a>
+                </div>
+            </div>
+            <div class="card4" style="background-color: chocolate">
+                <div class="Conten4">
+                    <a href="https://www.undp.org/es/sustainable-development-goals#produccion-consumo-responsables">
+                        <h1 style="color: black;"> Objetivo 12 </h1>
+                    </a>
+                </div>
+            </div>
+            <div class="card5" style="background-color: darkgreen">
+                <div class="Conten5">
+                    <a href="https://www.undp.org/es/sustainable-development-goals#accion-por-el-clima">
+                        <h1 style="color: black;"> Objetivo 13 </h1>
+                    </a>
+                </div>
+            </div>
+            <div class="card6" style="background-color: rgb(44, 44, 114)">
+                <div class="Conten6">
+                    <a href="https://www.undp.org/es/sustainable-development-goals#paz-justicia-instituciones-solidas">
+                        <h1 style="color: black;"> Objetivo 16 </h1>
+                    </a>
+                </div>
+            </div>
+            <div class="card7" style="background-color: rgb(2, 2, 49)">
+                <div class="Conten7">
+                    <a href="https://www.undp.org/es/sustainable-development-goals#alianza-para-lograr-los-objetivos">
+                        <h1 style="color: black;"> Objetivo 17 </h1>
+                    </a>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
     <!-- Footer Area -->
     <footer class="footer-area">
         <div class="container">
             <div class="footer-up">
                 <div class="row">
                     <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="logo"><a class="navbar-brand" href="#"><img src="../assets/ico/logo.png" alt=""></a>
+                        <div class="logo"><a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
                         </div>
                         <div class="contact-info">
                             <h5>Informacion Contactos</h5>
@@ -177,14 +169,7 @@
                                     href="contacto.html">Contactanos</a></li>
                         </ul>
                     </div>
-                    <!--<div class="col-lg-3 col-md-6 col-sm-12">
-						<h5>Our Causes</h5>
-						<ul>
-							<li><a href="#">Water Purify</a><a href="#">Food Collect</a><a href="#">Health Fund</a><a
-									href="#">Free Eduction</a><a href="#">Nutritution Fact</a></li>
-						</ul>
-					</div>-->
-                    <div class="col-lg-3 col-md-6 com-sm-12">
+                    <div class="col-lg-3 col-md-6 footer-bottom">
                         <div class="subscribe-form">
                             <h5>DABYC</h5>
                             <p>Fundacion Dabyc es una organización sin fines de lucro que lucha por posicionarse
@@ -207,9 +192,9 @@
                 </div>
             </div>
         </div>
-    </footer>
-    <!-- Scroll Top Area --><a href="#top" class="go-top" style="display: block;"><i
+    </footer><!-- Scroll Top Area --><a href="#top" class="go-top" style="display: block;"><i
             class="fa fa-angle-up"></i></a><!-- Popper JS -->
+    </header>
 
 
 
@@ -220,6 +205,7 @@
     <script src="../module/boostrap/js/jquery.sticky.js"></script><!-- Progress Bar JS -->
     <script src="../module/boostrap/js/jquery.barfiller.js"></script><!-- Main JS -->
     <script src="../module/boostrap/js/main.js"></script>
+
 </body>
 
 </html>

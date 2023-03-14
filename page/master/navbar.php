@@ -4,7 +4,7 @@
     </div>
     <ul class="nav-links">
       <li>
-        <a href="../admin/admin_.php">
+        <a href="../Admin/admin_.php">
           <i class='bx bx-grid-alt' ></i>
           <span class="link_name">inicio</span>
         </a>
@@ -24,7 +24,7 @@
       </li>
       <li>
         <div class="iocn-link">
-          <a href="#">
+          <a href="">
             <i class='bx bx-book-alt' ></i>
             <span class="link_name">Proyectos</span>
           </a>
