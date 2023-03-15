@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="module/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/inicio.css">
-    <script src="https://kit.fontawesome.com/1b1959dac0.js" crossorigin="anonymous"></script>
+    <script src="module/boostrap/js/kits.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/ico.css">
 </head>

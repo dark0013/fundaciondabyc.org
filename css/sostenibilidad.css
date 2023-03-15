@@ -1,17 +1,29 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-sm-4 {
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .row img{
+    width: 100%;
+    height: 100%;
+  }
 .Nose{
     display: inline-flex;
     width: 100%;
     margin-top: 1.8rem !important
 }
-.Imgfondo {
-    background: url(../assets/img/img_sostenibilidad/17536\ \(1\).jpg);
-    height: 400px;
-    width: 80%;
-    margin-left: 12%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
+
 .Encabezado{
     padding: 35px;
     background-color: #163c50;

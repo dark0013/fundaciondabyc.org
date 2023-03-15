@@ -15,7 +15,7 @@
     <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
     <link href="../css/proteina.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/ico.css">
-    <script src="https://kit.fontawesome.com/1b1959dac0.js" crossorigin="anonymous"></script>
+    <script src="../module/boostrap/js/kits.js" crossorigin="anonymous"></script>
 
 </head>
 <!--Menu-->
@@ -74,94 +74,34 @@
                 style="width: 45.6px;" target="_blank"></a>
         </div>
         <!-- Cascada img -->
-
-        <div class="container justify-content-center">
-            <div class="contact-section section-padding">
-                <!-- <div class="container col-md-6"> -->
-                <div class="row">
-                    <form action="" style="width: 70%; margin:auto">
-                        <div class="justify-content-center"><br><br>
-                            <h2 class="titulo">Formulario de Proteinas Solidarias</h2><br>
-                            <div class="container" id="general">
-
-                                <div class="row">
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Nombre</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Apellido</label>
-                                            <input type="text" class="form-control" id="exampleFormControlInput1">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Correo</label>
-                                            <input type="email" class="form-control" id="exampleFormControlInput1">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <h5 class="subtitulo">Proteinas Solidarias:</h5>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Pollo</label>
-                                            <input type="number" class="form-control" id="exampleFormControlInput1">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Pescado</label>
-                                            <input type="number" class="form-control" id="exampleFormControlInput1">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Carne de res</label>
-                                            <input type="number" class="form-control" id="exampleFormControlInput1">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Carne de cerdo</label>
-                                            <input type="number" class="form-control" id="exampleFormControlInput1">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleFormControlInput1">Huevos</label>
-                                            <input type="number" class="form-control" id="exampleFormControlInput1">
-                                        </div>
-                                    </div>
-
-                                </div>
-
-
-                                <div class="container">
-
-                                    <input type="submit" name="Enviar" value="enviar">
-                                    <input type="submit" name="Regresar" value="regresar">
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <!--  </div> -->
-            </div>
+    </header>    
+        <div class="container1">
+            <form class="form1">
+                <h2>Donacion de Proteinas</h2>
+                <h1>Nombres:</h1>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombres completos" required>
+                <h1>Apellidos:</h1>
+                    <input type="text" id="apellido" name="apellido" placeholder="Apellidos completos" required>
+                <h1>Correo-electronico:</h1>
+                    <input type="email" id="email" name="email" placeholder="Digite su correo-electronico" required>
+                <h5>Proteinas Solidarias</h5>
+                <h3>Pollo:</h3>
+                    <input type="number" id="pollo" name="pollo">
+                <h3>Pescado:</h3>
+                    <input type="number" id="pescado" name="pescado">
+                <h3>Carne de res</h3>
+                    <input type="number" id="res" name="res">
+                <h3>Carne de cerdo:</h3>
+                    <input type="number" id="cerdo" name="cerdo">
+                <h3>Huevo</h3>
+                    <input type="number" id="huevo" name="huevo">
+                    <input type="button" id="btn_guardar" value="Guardar">
+                    <a href="kits.html"><input type="button" value="Regresar"></a>
+            </form>
         </div>
-
-    </header>
+           
+        
+    
     <!-- Footer Area -->
     <footer class="footer-area">
         <div class="container">

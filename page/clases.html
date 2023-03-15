@@ -15,7 +15,7 @@
     <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
     <link href="../css/clases.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/ico.css">
-    <script src="https://kit.fontawesome.com/1b1959dac0.js" crossorigin="anonymous"></script>
+    <script src="../module/boostrap/js/kits.js" crossorigin="anonymous"></script>
 
 </head>
 <!--Menu-->
@@ -73,107 +73,72 @@
                 style="width: 45.6px;" target="_blank"></a>
         </div>
         <!-- Cascada img -->
-
-    <div class="container justify-content-center">    
-        <div class="contact-section section-padding">
-            <div class="container col-md-6">
-                <div class="row">
-                    <div class="justify-content-center"><br><br>
-                        <h2 class="titulo">Formulario de Regreso a Clases</h2><br>
-                        <div class="container" id="general">
-                            <div class="centrado">
-                                <input type="text" name="Nombre" placeholder="Nombres y Apellidos" class="justify-content-center letra gmail form-control">
-                                <input type="email" name="gmail" placeholder="Correo electronico" class="justify-content-center letra gmail form-control">
-                                <input type="number" name="Edad" placeholder="Edad" class="justify-content-center letra edad form-control">
-                            </div>
-                            <h5 class="subtitulo">Lista de Utiles Escolares:</h5>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="form-group col-6">
-                                        <label for="#">1 Resma de Hojas:</label>
-                                        <input type="number" name="Hojas" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">Lapiz:</label>
-                                        <input type="number" name="Lapiz" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">2 Cuad. Cuadro universitario:</label>
-                                        <input type="number" name="cuad" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">Sacapuntas:</label>
-                                        <input type="number" name="Sacapuntas" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">2 Cuad. Linea universitario:</label>
-                                        <input type="number" name="papel" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">Borrador:</label>
-                                        <input type="number" name="Borrador" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">1 Funda de Hojas de Cuadro:</label>
-                                        <input type="number" name="funda" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">Pluma Azul:</label>
-                                        <input type="number" name="azul" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">1 Funda de Hojas de Lineas:</label>
-                                        <input type="number" name="funda" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">Pluma Negra:</label>
-                                        <input type="number" name="Negra" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">Caja de lapices de colores:</label>
-                                        <input type="number" name="colores" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">Pluma Roja:</label>
-                                        <input type="number" name="Roja" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                    <div class="form-group col-6">
-                                        <label for="#">Caja de Marcadores:</label>
-                                        <input type="number" name="Marcadores" placeholder="cantidad" class="cantidad form-control">
-                                    </div>
-                                </div>
-                            </div>    
-                            <div class="form-group container">
-                                <h5 class="subtitulo">Opcional:</h5>
-                                <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
-                                <input type="number" name="cantid" placeholder="cant" class="cant">
-                                <br>
-                                <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
-                                <input type="number" name="cantid" placeholder="cant" class="cant">
-                                <br>
-                                <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
-                                <input type="number" name="cantid" placeholder="cant" class="cant">
-                                <br>
-                                <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
-                                <input type="number" name="cantid" placeholder="cant" class="cant">
-                                <br>
-                            </div>
-                            <div class="container">
-                                <div class="centrado">
-                                    <form>
-                                        <input type="submit" name="Enviar" value="enviar" class="boton1">
-                                        <input type="submit" name="Regresar" value="regresar">   
-                                    </form> 
-                                </div>
-                            </div>    
+    </header>
+        <div class="container1">
+            <form class="form1">
+                <h2>Donacion de Utiles escolares</h2>
+                <h3>Nombres:</h3>
+                    <input type="text" name="nombre" id="nombre" placeholder="digite sus Nombres">
+                <h3>Apellidos:</h3>
+                    <input type="text" name="apellido" id="apellido" placeholder="digite sus apellidos">
+                <h3>Correo electronico:</h3>
+                    <input type="email" name="email" id="email" placeholder="digite su correo-electronico">
+                <h5>Lista de Utiles escolares</h5>
+                <h3>Tipo de cuaderno:</h3>
+                <div class="container text-center">
+                    <div class="row justify-content-start">
+                      <div class="row justify-content-evenly">
+                        <div class="col-4">
+                            <h3>Linea <input type="number" name="linea" id="linea"></h3>
                         </div>
+                        <div class="col-4">
+                            <h3>Cuadro <input type="number" name="cuadro" id="cuadro"></h3> 
+                        </div>
+                      </div>
                     </div>
                 </div>
-            </div>
+                <h3>Colores de pluma:</h3><br>
+                <div class="container text-center">
+                    <div class="row align-items-center"> 
+                      <div class="col">
+                        <h3>Rojo <input type="number" name="cantidad" id="rojo"></h3>
+                      </div>
+                      <div class="col">
+                        <h3>Azul <input type="number" name="cantidad" id="azul"></h3>
+                      </div>
+                      <div class="col">
+                        <h3>Negro <input type="number" name="cantidad" id="negro"></h3>
+                      </div>
+                    </div>
+                </div>
+                <h3>Cajas lapices de Colores <input type="number" name="colores" id="colores"></h3>
+                <div class="container text-center">
+                    <div class="row align-items-center"> 
+                      <div class="col">
+                        <h2>Sacapuntas <input type="number" name="sacapunta" id="sacapunta"></h2>
+                      </div>
+                      <div class="col">
+                        <h2>Borrador <input type="number" name="borrador" id="borrador"></h2>
+                      </div>
+                      <div class="col">
+                        <h2>Caja de marcadores <input type="number" name="marcadores" id="marcadores"></h2>
+                      </div>
+                    </div>
+                </div>
+                <div class="container text-center">
+                    <div class="row align-items-center"> 
+                      <div class="col">
+                        <h2>Fundas de Hojas de cuadro <input type="number" name="hojas_cuadro" id="hojas_cuadro"></h2>
+                      </div>
+                      <div class="col">
+                        <h2>Fundas de Hojas de linea <input type="number" name="hojas_linea" id="hojas_linea"></h2>
+                      </div>
+                    </div>
+                </div>
+                <input type="button" id="btn_guardar" value="Guardar">
+                <a href="kits.html"><input type="button" value="Regresar"></a>
+              </form>
         </div>
-    </div>
-    
-    </header>
     <!-- Footer Area -->
     <footer class="footer-area">
         <div class="container">
