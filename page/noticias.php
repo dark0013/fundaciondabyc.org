@@ -85,7 +85,7 @@
                     <div class="footer-up">
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="logo"><a class="navbar-brand" href="#"><img src="assets/img/logo.png"
+                                <div class="logo"><a class="navbar-brand" href="#"><img src="../assets/img/img_donacion/logo.png"
                                             alt=""></a>
                                 </div>
                                 <div class="contact-info">

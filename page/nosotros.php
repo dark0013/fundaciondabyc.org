@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../module/boostrap/css/bootstrap.min.css">
     <link href="../module/boostrap/css/owl.carousel.css" rel="stylesheet"><!-- Style CSS -->
     <link href="../module/boostrap/css/flaticon.css" rel="stylesheet"><!-- Owl Carousel CSS -->
-    <link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet"><!-- Line Awesome CSS -->
-    <link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet"><!-- Animate CSS-->
+    <!--<link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet"> Line Awesome CSS -->
+    <!--<link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet"> Animate CSS-->
     <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
     <link rel="stylesheet" href="../css/nosotros.css" />
     <link rel="stylesheet" href="../css/ico.css">

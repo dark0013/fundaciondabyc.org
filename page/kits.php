@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="../css/kits.css">
     <link rel="icon" href="../assets/ico/ico.png" type="image/jpg" />
     <link rel="stylesheet" href="../module/boostrap/css/bootstrap.min.css">
-    <link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet"><!-- Line Awesome CSS -->
-    <link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet"><!-- Animate CSS-->
+    <!--<link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet"> Line Awesome CSS -->
+    <!-- <link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet">Animate CSS-->
     <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
     <link rel="stylesheet" href="../css/ico.css">
     <script src="https://kit.fontawesome.com/1b1959dac0.js" crossorigin="anonymous"></script>
