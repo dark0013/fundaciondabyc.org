@@ -8,16 +8,20 @@ btnLogin.addEventListener('click', async (event) => {
 
   try {
     const response = await fetch('http://localhost/ApiFundacionDabyc/controllers/usuario?page');
-    const data = await response.json();
-    // Verificar si las credenciales son válidas
-    const usuario = data.find(usuario => usuario.nombre_user === txt_nombre_user && usuario.contrasenia === txt_contrasenia);
-    if (usuario) {
-      window.location.href = 'page/Admin/admin_.php';
-      alert('Acceso exitoso');
+    if (response.ok) {
+      const data = await response.json();
+      const usuario = data.find(usuario => usuario.name_users === txt_nombre_user && usuario.pass === txt_contrasenia);
+      if (usuario) {
+        window.location.href = 'page/Admin/admin_.php';
+        alert('Acceso exitoso');
+      } else {
+        alert('Contraseña incorrecta');
+      }
     } else {
-      alert('Contraseña incorrecta');
+      console.error('Error en la respuesta del servidor:', response.status);
     }
-  } catch (error) {
+  }  catch (error) {
     console.error(error);
   }
-});
+})
+

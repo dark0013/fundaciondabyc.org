@@ -71,15 +71,14 @@
                         </div>
                         <div class="contact-form">
                             <h3>Danos tu mensaje</h3>
-                            <form name="contact-form" id="contactForm">
+                            <form >
+                            <input type="hidden" class="form-control" id="txt_id_user">
                                 <input type="text" name="txt_nombre_completo" id="txt_nombre_completo" required="" placeholder="Nombre Completo">
                                 <input type="email" name="txt_correo_electronico" id="txt_correo_electronico" required="" placeholder="Correo Electronico">
                                 <input type="text" name="txt_numero_telefonico" id="txt_numero_telefonico" placeholder="Numero Telefonico">
                                 <textarea name="txt_escribe_tu_mensaje" id="txt_escribe_tu_mensaje" cols="30" rows="10" required="" placeholder="Escribe tu mensaje"></textarea>
-                                <button id="btn_Enviar_Mensaje" type="submit" name="submit">Enviar Mensaje</button>
-
                             </form>
-
+                            <button id="btn_Enviar_Mensaje" type="submit" name="submit">Enviar Mensaje</button>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 espaciado">
@@ -95,7 +94,7 @@
                                 <input type="email" name="email" id="txt_correo_electronico" required="" placeholder="Correo Electronico">
                                 <input type="text" name="Numero Telefonico" id="txt_numero_telefonico" placeholder="Numero Telefonico">
                                 <input name="Direccion" id="txt_escribe_tu_mensaje" cols="30" rows="10" required="" placeholder="Direccion">
-                                <button type="submit" id="btn_subscrubirse" name="submit">Subscribirse</button>
+                                <button type="submit" id="btn_subscribirse" name="submit">Subscribirse</button>
                             </div>
                     </div>
                 </div>

@@ -13,8 +13,9 @@ btnGuardar.addEventListener("click", async (e) => {
     const name = document.getElementById("txt_nombre").value;
     const status = "A";
     const pass = document.getElementById("txt_contrasenia").value;
-    const user_sesion = "ALCAMPOVERDE";
-    const usur_creation = "ALCAMPOVERDE";
+    const user_sesion = new Date();
+    const date_creation = new Date();
+    const user_creation = "ALCAMPOVERDE";
 
     if (name_users == "" || id_rol == "" || identification_card == "" || name == "" || pass == "") {
         alert('Debe ingresar todos los datos');
@@ -23,7 +24,7 @@ btnGuardar.addEventListener("click", async (e) => {
     
 
 
-    let parametros = JSON.stringify({ name_users, id_rol, identification_card, name, status ,pass, user_sesion, usur_creation });
+    let parametros = JSON.stringify({ name_users, id_rol, identification_card, name, status ,pass, user_creation,date_creation,user_sesion });
 
     console.log(parametros);
 
@@ -181,7 +182,7 @@ function llenarTabla(tabla, filas) {
             { data: 'name' },
             { data: 'id_rol' },
             { data: 'status' },
-            { data: 'status' },
+            { data: 'user_creation' },
             { data: 'date_creation' },
         ],
         columnDefs: [{

@@ -9,8 +9,8 @@ btnGuardar.addEventListener("click", async (e) => {
     const description= document.getElementById("description").value;
     const date_creation= document.getElementById("date").value;
     const status = "A";
-    const user_sesion = "ALCAMPOVERDE";
     const user_creation = "ALCAMPOVERDE";
+    const user_sesion = new Date();
     
     // Verificamos que todos los datos hayan sido ingresados
     if(title === '' || url_image === '' || description === '' || date_creation === '') {
@@ -47,8 +47,8 @@ btnEditar.addEventListener("click", async (e) => {
     const url_image = document.getElementById("file1").value;
     const description= document.getElementById("description1").value;
     const date_creation= document.getElementById("date1").value;
-    const user_sesion = "ALCAMPOVERDE";
-    const user_update = "ALCAMPOVERDE";
+    const user_sesion = new Date();
+    const user_update = new Date();
 
     let parametros = JSON.stringify({ id_project,title,url_image,description,date_creation, user_sesion, user_update});
 
