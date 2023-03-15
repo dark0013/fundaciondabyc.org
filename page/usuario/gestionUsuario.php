@@ -151,7 +151,7 @@
           <th>name</th>
           <th>id_rol</th>
           <th>status</th>
-          <th>status</th>
+          <th>usuario_creacion</th>
           <th>date_creation</th>
         </tr>
       </thead>

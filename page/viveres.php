@@ -31,17 +31,18 @@
                             <div class="container-fluid"><a href="#" class="navbar-brand"></a> <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
                                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
                                     <ul class="navbar-nav ms-auto col-md-8 mb-5 mb-lg-1">
-                                        <li class="nav-item"><a aria-current="page" href="../index.html" class="nav-link active DroidSerif-Regular">INICIO</a></li>
-                                        <li class="nav-item"><a href="donantes.html" class="nav-link DroidSerif-Regular">DONANTES</a>
+                                        <li class="nav-item"><a aria-current="../index.php" href="#" class="nav-link active DroidSerif-Regular">INICIO</a></li>
+                                        <li class="nav-item"><a href="donantes.php" class="nav-link DroidSerif-Regular">DONANTES</a>
                                         </li>
-                                        <li class="nav-item"><a href="noticias.html" class="nav-link DroidSerif-Regular">NOTICIAS</a>
+                                        <li class="nav-item"><a href="noticias.php" class="nav-link DroidSerif-Regular">NOTICIAS</a>
                                         </li>
-                                        <li class="nav-item"><a href="kits.html" class="nav-link DroidSerif-Regular">KITS</a></li>
-                                        <li class="nav-item"><a href="nosotros.html" class="nav-link DroidSerif-Regular">NOSOTROS</a>
+                                        <li class="nav-item"><a href="kits.php" class="nav-link DroidSerif-Regular">KITS</a></li>
+                                        <li class="nav-item"><a href="nosotros.php" class="nav-link DroidSerif-Regular">NOSOTROS</a>
                                         </li>
-                                        <li class="nav-item"><a href="sostenibilidad.html" class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
                                         </li>
-                                        <li class="nav-item"><a href="contacto.html" class="nav-link DroidSerif-Regular">CONTACTOS</a>
+                                        <li class="nav-item"><a href="sostenibilidad.php" class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
+                                        </li>
+                                        <li class="nav-item"><a href="contacto.php" class="nav-link DroidSerif-Regular">CONTACTOS</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -59,6 +60,7 @@
                 <a href="https://www.tiktok.com/@fundaciondabyc?_t=8WQXAvMGJ41&_r=1" class="icon tick fa-brands fa-tiktok" style="width: 45.6px;" target="_blank"></a>
             </div>
             <!-- Cascada img -->
+<<<<<<< HEAD
         </header>
         <div class="container1">
             <form class="form1">
@@ -75,6 +77,100 @@
                       <div class="row justify-content-evenly">
                         <div class="col-4">
                             <h2>Sobres de sopas <input type="number" name="sopa" id="sopa"></h2>
+=======
+
+            <div class="container justify-content-center">
+                <div class="contact-section section-padding">
+                    <div class="container col-md-6">
+                        <div class="row">
+                            <div class="justify-content-center"><br><br>
+                                <h2 class="titulo">Formulario de Viveres</h2><br>
+                                <div class="container" id="general">
+                                    <div class="centrado">
+                                        <input type="text" name="Cedula" placeholder="Cedula" class="justify-content-center letra gmail form-control">
+                                        <input type="text" name="Nombre" placeholder="Nombres y Apellidos" class="justify-content-center letra gmail form-control">
+                                        <input type="email" name="gmail" placeholder="Correo electronico" class="justify-content-center letra gmail form-control">
+                                        <input type="number" name="Edad" placeholder="Edad" class="justify-content-center letra edad form-control">
+                                    </div>
+                                    <h5 class="subtitulo">Lista de Viveres:</h5>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="form-group col-6">
+                                                <label for="#">Harina:</label>
+                                                <input type="number" name="Harina" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Aceite:</label>
+                                                <input type="number" name="Aceite" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Mantequilla:</label>
+                                                <input type="number" name="Mantequilla" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Leche:</label>
+                                                <input type="number" name="Leche" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Chocolate/Cafe:</label>
+                                                <input type="number" name="Chocolate" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Sal:</label>
+                                                <input type="number" name="Sal" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Sobres de sopa:</label>
+                                                <input type="number" name="sopa" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Arroz:</label>
+                                                <input type="number" name="Arroz" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Arroz:</label>
+                                                <input type="number" name="Arroz" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Avena:</label>
+                                                <input type="number" name="Avena" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Enlatados en general:</label>
+                                                <input type="number" name="enlatados" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                            <div class="form-group col-6">
+                                                <label for="#">Azucar:</label>
+                                                <input type="number" name="Azucar" placeholder="cantidad" class="cantidad form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group container">
+                                        <h5 class="subtitulo">Opcional:</h5>
+                                        <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
+                                        <input type="number" name="cantid" placeholder="cant" class="cant">
+                                        <br>
+                                        <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
+                                        <input type="number" name="cantid" placeholder="cant" class="cant">
+                                        <br>
+                                        <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
+                                        <input type="number" name="cantid" placeholder="cant" class="cant">
+                                        <br>
+                                        <input class="texto" type="text" name="opc" id="opc" placeholder="Escribe el producto">
+                                        <input type="number" name="cantid" placeholder="cant" class="cant">
+                                        <br>
+                                    </div>
+                                    <div class="container">
+                                        <div class="centrado">
+                                            <form>
+                                                <input type="submit" name="Enviar" value="enviar" class="boton1">
+                                                <input type="submit" name="Regresar" value="regresar">
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+>>>>>>> 991c99f4b4b3495ca0f12bc175cdbb6b3c8a409f
                         </div>
                         <div class="col-4">
                             <h2>Sal <input type="number" name="sal" id="sal"></h2> 

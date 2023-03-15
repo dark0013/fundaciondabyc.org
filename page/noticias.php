@@ -29,25 +29,19 @@
                                     aria-label="Toggle navigation" class="navbar-toggler"><span
                                         class="navbar-toggler-icon"></span></button>
                                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                                    <ul class="navbar-nav ms-auto col-md-8 mb-5 mb-lg-1">
-                                        <li class="nav-item"><a aria-current="page" href="/index.html"
-                                                class="nav-link active DroidSerif-Regular">INICIO</a></li>
-                                        <li class="nav-item"><a href="donantes.html"
-                                                class="nav-link DroidSerif-Regular">DONANTES</a>
+                                <ul class="navbar-nav ms-auto col-md-8 mb-5 mb-lg-1">
+                                        <li class="nav-item"><a aria-current="../index.php" href="#" class="nav-link active DroidSerif-Regular">INICIO</a></li>
+                                        <li class="nav-item"><a href="donantes.php" class="nav-link DroidSerif-Regular">DONANTES</a>
                                         </li>
-                                        <li class="nav-item"><a href="noticias.html"
-                                                class="nav-link DroidSerif-Regular">NOTICIAS</a>
+                                        <li class="nav-item"><a href="noticias.php" class="nav-link DroidSerif-Regular">NOTICIAS</a>
                                         </li>
-                                        <li class="nav-item"><a href="kits.html"
-                                                class="nav-link DroidSerif-Regular">KITS</a></li>
-                                        <li class="nav-item"><a href="nosotros.html"
-                                                class="nav-link DroidSerif-Regular">NOSOTROS</a>
+                                        <li class="nav-item"><a href="kits.php" class="nav-link DroidSerif-Regular">KITS</a></li>
+                                        <li class="nav-item"><a href="nosotros.php" class="nav-link DroidSerif-Regular">NOSOTROS</a>
                                         </li>
-                                        <li class="nav-item"><a href="sostenibilidad.html"
-                                                class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
                                         </li>
-                                        <li class="nav-item"><a href="contacto.html"
-                                                class="nav-link DroidSerif-Regular">CONTACTOS</a>
+                                        <li class="nav-item"><a href="sostenibilidad.php" class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
+                                        </li>
+                                        <li class="nav-item"><a href="contacto.php" class="nav-link DroidSerif-Regular">CONTACTOS</a>
                                         </li>
                                     </ul>
                                     <ul class="btn btn-outline-success">
@@ -91,7 +85,7 @@
                     <div class="footer-up">
                         <div class="row">
                             <div class="col-lg-3 col-md-6 col-sm-12">
-                                <div class="logo"><a class="navbar-brand" href="#"><img src="assets/img/logo.png"
+                                <div class="logo"><a class="navbar-brand" href="#"><img src="../assets/img/img_donacion/logo.png"
                                             alt=""></a>
                                 </div>
                                 <div class="contact-info">

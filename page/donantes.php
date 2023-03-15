@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../module/boostrap/css/bootstrap.min.css"> 
     <link href="../module/boostrap/css/owl.carousel.css" rel="stylesheet"><!-- Style CSS -->
     <link href="../module/boostrap/css/flaticon.css" rel="stylesheet"><!-- Owl Carousel CSS -->
-    <link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet"><!-- Line Awesome CSS -->
-    <link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet"><!-- Animate CSS-->
+    <!-- <link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet">Line Awesome CSS -->
+    <!-- <link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet"> Animate CSS-->
     <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
     <link href="../css/donantes.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/ico.css">
@@ -34,28 +34,28 @@
                                     class="navbar-toggler-icon"></span></button>
                             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                                 <ul class="navbar-nav ms-auto col-md-8 mb-5 mb-lg-1">
-                                    <li class="nav-item"><a aria-current="page" href="../index.html"
+                                    <li class="nav-item"><a aria-current="page" href="../index.php"
                                             class="nav-link">INICIO</a></li>
-                                    <li class="nav-item"><a href="donantes.html"
+                                    <li class="nav-item"><a href="donantes.php"
                                             class="nav-link DroidSerif-Regular">DONANTES</a>
                                     </li>
-                                    <li class="nav-item"><a href="noticias.html"
+                                    <li class="nav-item"><a href="noticias.php"
                                             class="nav-link DroidSerif-Regular">NOTICIAS</a>
                                     </li>
-                                    <li class="nav-item"><a href="kits.html"
+                                    <li class="nav-item"><a href="kits.php"
                                             class="nav-link DroidSerif-Regular">KITS</a></li>
-                                    <li class="nav-item"><a href="nosotros.html"
+                                    <li class="nav-item"><a href="nosotros.php"
                                             class="nav-link DroidSerif-Regular">NOSOTROS</a>
                                     </li>
-                                    <li class="nav-item"><a href="sostenibilidad.html"
+                                    <li class="nav-item"><a href="sostenibilidad.php"
                                             class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
                                     </li>
-                                    <li class="nav-item"><a href="contacto.html"
+                                    <li class="nav-item"><a href="contacto.php"
                                             class="nav-link DroidSerif-Regular">CONTACTOS</a>
                                     </li>
                                 </ul>
                                 <ul class="btn btn-outline-success">
-                                    <li class="nav-item"><a href="/login.html"
+                                    <li class="nav-item"><a href="/login.php"
                                         class="nav-link DroidSerif-Regular">Login 👤</a>
                                     </li>
                                 </ul>
@@ -173,8 +173,8 @@
                     <div class="col-lg-3 col-md-6 com-sm-12">
                         <h5>Enlaces útiles</h5>
                         <ul>
-                            <li><a href="/index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a
-                                    href="contacto.html">Contactanos</a></li>
+                            <li><a href="/index.php">Inicio</a><a href="nosotros.php">Nosotros</a><a
+                                    href="contacto.php">Contactanos</a></li>
                         </ul>
                     </div>
                     <!--<div class="col-lg-3 col-md-6 col-sm-12">
@@ -189,7 +189,7 @@
                             <h5>DABYC</h5>
                             <p>Fundacion Dabyc es una organización sin fines de lucro que lucha por posicionarse
                                 como benefactora de la alimentacion de personas en situación vulnerable</p>
-                            <form action="index.html"><input type="email" placeholder="Email"><button><i
+                            <form action="index.php"><input type="email" placeholder="Email"><button><i
                                         class="fa fa-paper-plane"></i></button></form>
                         </div>
                     </div>
@@ -198,7 +198,7 @@
             <div class="footer-bottom">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-lg-6 col-md-6 col-sm-12">
-                        <p class="copyright-line">© 2020 Todos los Derechos Reservados<a href="index.html" title="">|
+                        <p class="copyright-line">© 2020 Todos los Derechos Reservados<a href="index.php" title="">|
                                 DABYC</a>.</p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">

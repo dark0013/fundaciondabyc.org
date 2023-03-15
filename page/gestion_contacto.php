@@ -13,37 +13,37 @@
         <div class="navigation">
             <ul>
                 <li> 
-                    <a href="#">
+                    <a href="Admin/admin_.php">
                         <!--<img src="img/logo.jpeg" alt=""> -->
                         <span class="title">Fundacion | DABYC</span>
                     </a>
                 </li>
                 <li> 
-                    <a href="/page/admin_.html">
+                    <a href="Admin/admin_.html">
                         <span class="icon"><ion-icon name="home"></ion-icon></span>
                         <span class="title">Inicio</span>
                     </a>
                 </li>
                 <li> 
-                    <a href="/page/usuarios_admin.html">
+                    <a href="usuarios_admin.php">
                         <span class="icon"><ion-icon name="person-add"></ion-icon></span>
                         <span class="title">Usuarios</span>
                     </a>
                 </li>
                 <li> 
-                    <a href="/page/proyecto_admin.html">
+                    <a href="proyecto_admin.php">
                         <span class="icon"><ion-icon name="cloud-upload"></ion-icon></span>
                         <span class="title">Proyectos</span>
                     </a>
                 </li>
                 <li> 
-                    <a href="/page/gestion_contacto.html">
+                    <a href="gestion_contacto.php">
                         <span class="icon"><ion-icon name="clipboard"></ion-icon></span>
                         <span class="title">Gestion de Contactos</span>
                     </a>
                 </li>
                 <li> 
-                    <a href="#">
+                    <a href="../index.php">
                         <span class="icon"><ion-icon name="log-out"></ion-icon></span>
                         <span class="title">Salir</span>
                     </a>

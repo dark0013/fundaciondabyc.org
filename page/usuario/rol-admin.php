@@ -64,9 +64,9 @@
             <!--cartas-->
             <div class="cardBox" style="margin-left: 20%;">
                 <div class="card">
-                    <a class="cardName" href="/page/roles.html">Agregar Roles</a>
+                    <a class="cardName" href="page/usuario/roles.php">Agregar Roles</a>
                     <div class="iconBox">
-                        <a class="icono" href="/page/roles.html">
+                        <a class="icono" href="page/usuario/roles.php">
                             <i class="fa-solid fa-user-plus"></i>
                         </a>
                     </div>

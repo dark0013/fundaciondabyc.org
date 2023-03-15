@@ -29,28 +29,28 @@
           <div class="form-group ">
             <label for="staticEmail" class="col-sm-2 col-form-label">Rol de Usuario</label>
             <div class="col-sm-5">
-              <input type="text" class="form-control" id="txt_nombre_user" class="inputform">
+              <input type="text" class="form-control" id="txt_nombreRolUser" class="inputform">
             </div>
           </div><br>
 
           <div class="form-group ">
             <label for="inputPassword" class="col-sm-2 col-form-label">Codigo de Rol</label>
             <div class="col-sm-5">
-              <input type="text" class="form-control" id="txt_rol" class="inputform">
+              <input type="text" class="form-control" id="txt_codRol" class="inputform">
             </div>
           </div><br>
 
           <div class="form-group ">
             <label for="inputPassword" class="col-sm-2 col-form-label">Nombre de Usuario</label>
             <div class="col-sm-5">
-              <input type="text" class="form-control" id="txt_cedula" class="inputform">
+              <input type="text" class="form-control" id="txt_nameUser" class="inputform">
             </div>
           </div><br>
 
           <div class="form-group">
             <label for="inputPassword" class="col-sm-2 col-form-label">Estado</label>
             <div class="col-sm-5">
-              <input type="text" class="form-control" id="txt_nombre" class="inputform">
+              <input type="text" class="form-control" id="txt_estado" class="inputform">
             </div>
           </div><br>
 

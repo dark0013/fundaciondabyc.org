@@ -7,14 +7,15 @@ const btnGuardar = document.getElementById("btn_guardar");
 
 btnGuardar.addEventListener("click", async (e) => {
     e.preventDefault();//
-    const rol_user= document.getElementById("txt_rol").value;
-    const cod_rol= document.getElementById("txt_cod").value;
-    const user_name= document.getElementById("txt_name").value;
-    const status= document.getElementById("txt_status").value;
-    const user_sesion= "JORDAN";
-    const usur_creation= "Jordan";
-
-    let parametros = JSON.stringify({rol_user,cod_rol,user_name,status,user_sesion,usur_creation });
+    const rol_user= document.getElementById("txt_nombreRolUser").value;
+    const cod_rol= document.getElementById("txt_codRol").value;
+    const user_name= document.getElementById("txt_nameUser").value;
+    const status= document.getElementById("txt_estado").value;
+    const user_sesion = new Date();
+    const date_creation = new Date();  
+    const user_creation= "Jordan";
+    debugger
+    let parametros = JSON.stringify({rol_user,cod_rol,user_name,status,user_sesion,user_creation ,date_creation});
 
     console.log(parametros);
 
@@ -40,15 +41,16 @@ btnGuardar.addEventListener("click", async (e) => {
 const btnEditar = document.getElementById("btn_editar");
 btnEditar.addEventListener("click", async (e) => {
     e.preventDefault();//
-    const id_rol= document.getElementById("txt_id_rol").value;
-    const rol_user = document.getElementById("txt_rol").value;
-    const cod_rol = document.getElementById("txt_cod").value;
-    const user_name = document.getElementById("txt_name").value;
-    const status = document.getElementById("txt_status").value;
-    const user_sesion = "JORDAN";
-    const usur_creation = "Jordan";
+    const id_rol= document.getElementById("txt_id_user").value;
+    const rol_user = document.getElementById("txt_nombreRolUser").value;
+    const cod_rol = document.getElementById("txt_codRol").value;
+    const user_name = document.getElementById("txt_nameUser").value;
+    const status = document.getElementById("txt_estado").value;
+    const user_sesion = new Date();
+    const user_update = new Date();
+    const user_creation = "Jordan";
 
-    let parametros = JSON.stringify({ id_rol, rol_user, cod_rol, user_name, status , user_sesion, user_update, usur_creation });
+    let parametros = JSON.stringify({ id_rol, rol_user, cod_rol, user_name, status , user_sesion,user_creation,user_update });
 
     console.log(parametros);
 
@@ -77,7 +79,7 @@ btnInactivar.addEventListener("click", async (e) => {
     e.preventDefault();//
 
     alert("Inactivar");
-    const id_rol= document.getElementById("txt_id_rol").value;
+    const id_rol= document.getElementById("txt_id_user").value;
 
     /*  const user_update = "ALCAMPOVERDE";
      const usur_creation = "ALCAMPOVERDE"; */
@@ -135,8 +137,8 @@ function llenarTabla(tabla, filas) {
         fixedColumns: false,
         data: filas,
         columns: [
-            { data: 'ID_rol' },
-            { data: 'Rol_users' },
+            { data: 'id_rol' },
+            { data: 'rol_user' },
             { data: 'cod_rol' },
             { data: 'user_name' },
             { data: 'status' },
@@ -154,21 +156,21 @@ function llenarTabla(tabla, filas) {
 
         if ($(this).hasClass('selected')) {
             $(this).removeClass('selected');
-            document.getElementById("txt_id_rol").value = "";
-            document.getElementById("txt_rol").value = "";
-            document.getElementById("txt_cod").value = "";
-            document.getElementById("txt_name").value = "";
-            document.getElementById("txt_status").value = "";
+            document.getElementById("txt_id_user").value = "";
+            document.getElementById("txt_nombreRolUser").value = "";
+            document.getElementById("txt_codRol").value = "";
+            document.getElementById("txt_nameUser").value = "";
+            document.getElementById("txt_estado").value = "";
             
         } else {
             let cellData = $('#' + tabla).DataTable().row($(this)).data();
 
             idTabla = cellData.id_rol;
-            document.getElementById("txt_id_rol").value = cellData.id_rol;
-            document.getElementById("txt_rol").value = cellData.rol_user;
-            document.getElementById("txt_cod").value = cellData.cod_rol;
-            document.getElementById("txt_name").value = cellData.user_name;
-            document.getElementById("txt_status").value = cellData.status;
+            document.getElementById("txt_id_user").value = cellData.id_rol;
+            document.getElementById("txt_nombreRolUser").value = cellData.rol_user;
+            document.getElementById("txt_codRol").value = cellData.cod_rol;
+            document.getElementById("txt_nameUser").value = cellData.user_name;
+            document.getElementById("txt_estado").value = cellData.status;
             
 
         }
@@ -182,10 +184,9 @@ window.onload = () => { getData(); };
 
 
 const limpiarCampos = _ => {
-    document.getElementById("txt_id_rol").value = " ";
-    document.getElementById("txt_rol").value = " ";
-    document.getElementById("txt_cod").value = " ";
-    document.getElementById("txt_name").value = " ";
-    document.getElementById("txt_status").value = " ";
+    document.getElementById("txt_nombreRolUser").value = " ";
+    document.getElementById("txt_codRol").value = " ";
+    document.getElementById("txt_nameUser").value = " ";
+    document.getElementById("txt_estado").value = " ";
    
 }

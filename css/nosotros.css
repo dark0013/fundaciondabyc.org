@@ -10,9 +10,20 @@ p {
     font-size: 13px;
 }
 
+<<<<<<< HEAD
 .contenedor {
     background: url(/assets/img/img_fondo/testimonial-slider-bg.jpg) no-repeat center center fixed;
     background-size: cover;
+=======
+.contenedor{
+    width: 100%;
+    padding: 6%;
+    margin:auto;
+    background: linear-gradient(rgba(5,7,12,0.55),rgba(5,7,12,0.55)),url(../assets/img/img_fondo/testimonial-slider-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    background-attachment: fixed;
+>>>>>>> 991c99f4b4b3495ca0f12bc175cdbb6b3c8a409f
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BABYC | Formulario de Clases</title>
+    <title>BABYC | Formulario de Higiene</title>
     <link rel="icon" href="../assets/ico/ico.png" type="image/jpg" />
     <link rel="stylesheet" href="../module/boostrap/css/bootstrap.min.css"> 
     <link href="../module/boostrap/css/owl.carousel.css" rel="stylesheet"><!-- Style CSS -->
@@ -13,7 +13,7 @@
     <link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet"><!-- Line Awesome CSS -->
     <link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet"><!-- Animate CSS-->
     <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
-    <link href="../css/clases.css" rel="stylesheet">
+    <link href="../css/higiene.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/ico.css">
     <script src="../module/boostrap/js/kits.js" crossorigin="anonymous"></script>
 
@@ -32,27 +32,21 @@
                                 aria-label="Toggle navigation" class="navbar-toggler"><span
                                     class="navbar-toggler-icon"></span></button>
                             <div id="navbarSupportedContent" class="collapse navbar-collapse">
-                                <ul class="navbar-nav ms-auto col-md-8 mb-5 mb-lg-1">
-                                    <li class="nav-item"><a aria-current="page" href="../index.html"
-                                            class="nav-link active DroidSerif-Regular">INICIO</a></li>
-                                    <li class="nav-item"><a href="donantes.html"
-                                            class="nav-link DroidSerif-Regular">DONANTES</a>
-                                    </li>
-                                    <li class="nav-item"><a href="noticias.html"
-                                            class="nav-link DroidSerif-Regular">NOTICIAS</a>
-                                    </li>
-                                    <li class="nav-item"><a href="kits.html"
-                                            class="nav-link DroidSerif-Regular">KITS</a></li>
-                                    <li class="nav-item"><a href="nosotros.html"
-                                            class="nav-link DroidSerif-Regular">NOSOTROS</a>
-                                    </li>
-                                    <li class="nav-item"><a href="sostenibilidad.html"
-                                            class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
-                                    </li>
-                                    <li class="nav-item"><a href="contacto.html"
-                                            class="nav-link DroidSerif-Regular">CONTACTOS</a>
-                                    </li>
-                                </ul>
+                            <ul class="navbar-nav ms-auto col-md-8 mb-5 mb-lg-1">
+                                        <li class="nav-item"><a aria-current="../index.php" href="#" class="nav-link active DroidSerif-Regular">INICIO</a></li>
+                                        <li class="nav-item"><a href="donantes.php" class="nav-link DroidSerif-Regular">DONANTES</a>
+                                        </li>
+                                        <li class="nav-item"><a href="noticias.php" class="nav-link DroidSerif-Regular">NOTICIAS</a>
+                                        </li>
+                                        <li class="nav-item"><a href="kits.php" class="nav-link DroidSerif-Regular">KITS</a></li>
+                                        <li class="nav-item"><a href="nosotros.php" class="nav-link DroidSerif-Regular">NOSOTROS</a>
+                                        </li>
+                                        </li>
+                                        <li class="nav-item"><a href="sostenibilidad.php" class="nav-link DroidSerif-Regular">SOSTENIBILIDAD</a>
+                                        </li>
+                                        <li class="nav-item"><a href="contacto.php" class="nav-link DroidSerif-Regular">CONTACTOS</a>
+                                        </li>
+                                    </ul>
                             </div>
                         </div>
                     </nav>
@@ -74,71 +68,60 @@
         </div>
         <!-- Cascada img -->
     </header>
-        <div class="container1">
-            <form class="form1">
-                <h2>Donacion de Utiles escolares</h2>
-                <h3>Nombres:</h3>
-                    <input type="text" name="nombre" id="nombre" placeholder="digite sus Nombres">
-                <h3>Apellidos:</h3>
-                    <input type="text" name="apellido" id="apellido" placeholder="digite sus apellidos">
-                <h3>Correo electronico:</h3>
-                    <input type="email" name="email" id="email" placeholder="digite su correo-electronico">
-                <h5>Lista de Utiles escolares</h5>
-                <h3>Tipo de cuaderno:</h3>
-                <div class="container text-center">
-                    <div class="row justify-content-start">
-                      <div class="row justify-content-evenly">
-                        <div class="col-4">
-                            <h3>Linea <input type="number" name="linea" id="linea"></h3>
-                        </div>
-                        <div class="col-4">
-                            <h3>Cuadro <input type="number" name="cuadro" id="cuadro"></h3> 
-                        </div>
-                      </div>
+    <div class="container1">
+        <form class="form1">
+            <h1>Donacion de Higiene y Salud</h1>
+            <h3>Nombres:</h3>
+                <input type="text" name="nombre" id="nombre" placeholder="digite sus Nombres">
+            <h3>Apellidos:</h3>
+                <input type="text" name="apellido" id="apellido" placeholder="digite sus apellidos">
+            <h3>Correo electronico:</h3>
+                <input type="email" name="email" id="email" placeholder="digite su correo-electronico">
+            <h1>Higiene y Salud </h1>
+            <div class="container text-center">
+                <div class="row justify-content-start">
+                  <div class="row justify-content-evenly">
+                    <div class="col-4">
+                        <h2>Paquetes de jabones <input type="number" name="jabones" id="jabones"></h2>
                     </div>
-                </div>
-                <h3>Colores de pluma:</h3><br>
-                <div class="container text-center">
-                    <div class="row align-items-center"> 
-                      <div class="col">
-                        <h3>Rojo <input type="number" name="cantidad" id="rojo"></h3>
-                      </div>
-                      <div class="col">
-                        <h3>Azul <input type="number" name="cantidad" id="azul"></h3>
-                      </div>
-                      <div class="col">
-                        <h3>Negro <input type="number" name="cantidad" id="negro"></h3>
-                      </div>
+                    <div class="col-4">
+                        <h2>Toallas sanitarias <input type="number" name="toallas" id="toallas"></h2> 
                     </div>
+                  </div>
                 </div>
-                <h3>Cajas lapices de Colores <input type="number" name="colores" id="colores"></h3>
-                <div class="container text-center">
-                    <div class="row align-items-center"> 
-                      <div class="col">
-                        <h2>Sacapuntas <input type="number" name="sacapunta" id="sacapunta"></h2>
-                      </div>
-                      <div class="col">
-                        <h2>Borrador <input type="number" name="borrador" id="borrador"></h2>
-                      </div>
-                      <div class="col">
-                        <h2>Caja de marcadores <input type="number" name="marcadores" id="marcadores"></h2>
-                      </div>
-                    </div>
+            </div>
+            <div class="container text-center">
+                <div class="row align-items-center"> 
+                  <div class="col">
+                    <h3>Shampoo <input type="number" name="shampoo" id="shampoo"></h3>
+                  </div>
+                  <div class="col">
+                    <h3>Papel Higienico <input type="number" name="papel" id="papel"></h3>
+                  </div>
+                  <div class="col">
+                    <h3>Alcohol <input type="number" name="alcohol" id="alcohol"></h3>
+                  </div>
                 </div>
-                <div class="container text-center">
-                    <div class="row align-items-center"> 
-                      <div class="col">
-                        <h2>Fundas de Hojas de cuadro <input type="number" name="hojas_cuadro" id="hojas_cuadro"></h2>
-                      </div>
-                      <div class="col">
-                        <h2>Fundas de Hojas de linea <input type="number" name="hojas_linea" id="hojas_linea"></h2>
-                      </div>
-                    </div>
+            </div>
+            <div class="container text-center">
+                <div class="row align-items-center"> 
+                  <div class="col">
+                    <h2>Mascarilla <input type="number" name="mascarilla" id="mascarilla"></h2>
+                  </div>
+                  <div class="col">
+                    <h2>Detergentes <input type="number" name="detergentes" id="detergentes"></h2>
+                  </div>
+                  <div class="col">
+                    <h2>Cloro <input type="number" name="cloro" id="cloro"></h2>
+                  </div>
                 </div>
-                <input type="button" id="btn_guardar" value="Guardar">
-                <a href="kits.html"><input type="button" value="Regresar"></a>
-              </form>
-        </div>
+            </div>
+            <h2>Desinfectantes <input type="number" name="desinfectantes" id="desinfectantes"></h2>
+
+            <input type="button" id="btn_guardar" value="Guardar">
+            <a href="kits.html"><input type="button" value="Regresar"></a>
+        </form>
+    </div>
     <!-- Footer Area -->
     <footer class="footer-area">
         <div class="container">
