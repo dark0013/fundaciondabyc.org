@@ -25,3 +25,12 @@ btnLogin.addEventListener('click', async (event) => {
   }
 })
 
+document.getElementById("exampleCheck1").onclick = function() {
+  var passwordInput = document.getElementById("txt_contrasenia");
+  if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+  } else {
+      passwordInput.type = "password";
+  }
+}
+

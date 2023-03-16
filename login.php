@@ -1,3 +1,4 @@
+<php>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -18,23 +19,23 @@
 
                 <form id="login-form">
                     <div class="form-group ">
-                        <small  for="username" class="form-text etiquetas">USUARIO</small>
-                        <input id="txt_nombre_user" type="text" name="txt_nombre_user"  class="form-control rounded-0 txt_formulario" required>
+                        <small for="username" class="form-text etiquetas">USUARIO</small>
+                        <input id="txt_nombre_user" type="text" name="txt_nombre_user" class="form-control rounded-0 txt_formulario" required>
                     </div>
 
                     <div class="form-group mt-4">
-                        <small  for="password" class="form-text etiquetas">PASSWORD</small>
-                        <input id="txt_contrasenia" type="password" name="txt_contrasenia"  class="form-control rounded-0 txt_formulario" required>
+                        <small for="password" class="form-text etiquetas">PASSWORD</small>
+                        <input id="txt_contrasenia" type="password" name="txt_contrasenia" class="form-control rounded-0 txt_formulario" required>
                     </div>
                     <div class="form-group form-check mt-4">
                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label etiquetas" for="exampleCheck1">Check me out</label>
+                        <label class="form-check-label etiquetas" for="exampleCheck1">Ver contraseña</label>
                     </div>
                     <div class="col-md-12">
-                    <button type="button" id="btn_Login" class="btn-boton-x mb-2">Inicio</button>
+                        <button type="button" id="btn_Login" class="btn-boton-x mb-2">Inicio</button>
                     </div>
                     <div class="col-md-12">
-                    <button class="btn-boton-x mb-2"><a lass="btn-boton-x mb-2" href="index.php"> Regresar al inicio</a></button>
+                        <button class="btn-boton-x mb-2"><a lass="btn-boton-x mb-2" href="index.php"> Regresar al inicio</a></button>
                     </div>
 
                 </form>
@@ -48,3 +49,4 @@
     </body>
 
     </html>
+</php>

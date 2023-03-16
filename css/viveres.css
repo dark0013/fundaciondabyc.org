@@ -2,7 +2,7 @@
 body{
     justify-content: center;
     align-items: center;
-    background: url(/assets/img/img_kits/img1.jpeg) no-repeat center center fixed;
+    background: url(../assets/img/img_kits/img1.jpeg) no-repeat center center fixed;
     background-size: cover;
     font-family: sans-serif;
     font-size: 1.2em;
