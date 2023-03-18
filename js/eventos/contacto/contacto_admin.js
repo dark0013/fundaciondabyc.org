@@ -3,20 +3,23 @@ let idTabla = 0;
 
 const btnENVIARMENSAJE = document.getElementById("btn_Enviar_Mensaje");
 
-btnEnviarMensaje.addEventListener("click", async (e) => {
+btnENVIARMENSAJE.addEventListener("click", async (e) => {
     e.preventDefault();//
-    const identification_card = document.getElementById("txt_cedula").value;
+    /*const dia = fechaActual.getDate();
+    const mes = fechaActual.getMonth() + 1;
+    const anio = fechaActual.getFullYear();
+    const date_creation = `${anio}-${mes}-${dia}`;*/
+    const indentication = "*******";
     const full_name = document.getElementById("txt_nombre_completo").value;
-    const email = document.getElementById("txt_correo_electronico").value;
     const phone = document.getElementById("txt_numero_telefonico").value;
-    const address = document.getElementById("txt_direccion").value;
+    const email = document.getElementById("txt_correo_electronico").value;
+    const address = "*******";
     const description = document.getElementById("txt_escribe_tu_mensaje").value;
-    const status = document.getElementById("txt_escribe_tu_mensaje").value;
-    const user_sesion = "ALCAMPOVERDE";
-    const usur_creation = "ALCAMPOVERDE";
-
-    let parametros = JSON.stringify({ identification_card, full_name,
-         email,phone,direccion,address,description,status,user_sesion,usur_creation });
+    const status = "A";
+    const user_sesion = new Date();
+    const date_creation = new Date();
+    const user_creation = "ALCAMPOVERDE";
+    let parametros = JSON.stringify({ indentication, full_name, phone, email, address, description, status, user_sesion, date_creation, user_creation });
 
     console.log(parametros);
 
@@ -31,13 +34,13 @@ btnEnviarMensaje.addEventListener("click", async (e) => {
 
     if (data.status == 200) {
         alert('EXITO al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
-        limpiarCampos();
+        limpiarCampos2();
         location.reload();
     }
 
 });
 
-const btnSUBSCRIBIRSE = document.getElementById("btn_subscrubirse");
+const btnSUBSCRIBIRSE = document.getElementById("btn_subscribirse");
 
 btnSUBSCRIBIRSE.addEventListener("click", async (e) => {
     e.preventDefault();//
@@ -47,12 +50,15 @@ btnSUBSCRIBIRSE.addEventListener("click", async (e) => {
     const phone = document.getElementById("txt_numero_telefonico").value;
     const address = document.getElementById("txt_direccion").value;
     const description = document.getElementById("txt_escribe_tu_mensaje").value;
-    const status = document.getElementById("txt_escribe_tu_mensaje").value;
-    const user_sesion = "ALCAMPOVERDE";
-    const usur_creation = "ALCAMPOVERDE";
+    const status = "A";
+    const user_sesion = new Date();
+    const date_creation = new Date();
+    const user_creation = "ALCAMPOVERDE";
 
-    let parametros = JSON.stringify({ identification_card, full_name,
-         email,phone,direccion,address,description,status,user_sesion,usur_creation });
+    let parametros = JSON.stringify({
+        identification_card, full_name,
+        email, phone, direccion, address, description, status, user_sesion, user_creation,date_creation
+    });
 
     console.log(parametros);
 
@@ -72,3 +78,22 @@ btnSUBSCRIBIRSE.addEventListener("click", async (e) => {
     }
 
 });
+
+const limpiarCampos = _ => {
+    document.getElementById("txt_cedula").value = " ";
+    document.getElementById("txt_nombre_completo").value = " ";
+    document.getElementById("txt_correo_electronico").value = " ";
+    document.getElementById("txt_numero_telefonico").value = " ";
+    document.getElementById("txt_escribe_tu_mensaje").value = " ";
+    document.getElementById("txt_direccion").value = " ";
+
+}
+
+const limpiarCampos2 = _ => {
+    document.getElementById("txt_cedula").value = " ";
+    document.getElementById("txt_nombre_completo").value = " ";
+    document.getElementById("txt_correo_electronico").value = " ";
+    document.getElementById("txt_numero_telefonico").value = " ";
+    document.getElementById("txt_escribe_tu_mensaje").value = " ";
+
+}

@@ -64,9 +64,9 @@
             <!--cartas-->
             <div class="cardBox" style="margin-left: 20%;">
                 <div class="card">
-                    <a class="cardName" href="/page/roles.html">Agregar Roles</a>
+                    <a class="cardName" href="page/usuario/roles.php">Agregar Roles</a>
                     <div class="iconBox">
-                        <a class="icono" href="/page/roles.html">
+                        <a class="icono" href="page/usuario/roles.php">
                             <i class="fa-solid fa-user-plus"></i>
                         </a>
                     </div>
@@ -125,9 +125,7 @@
             <script src="../js/script.js"></script>
 
 
-            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            <script src="https://kit.fontawesome.com/1b1959dac0.js" crossorigin="anonymous"></script>
+            <script src="../module/boostrap/js/kits.js" crossorigin="anonymous"></script>
 
 
 

@@ -1,5 +1,6 @@
 <php>
 <?php include('menu/navbar_sub.php') ?>
+
     <!DOCTYPE html>
     <html lang="en">
 
@@ -7,7 +8,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BABYC | Formulario de Viveres</title>
+        <title>BABYC | Formulario de Higiene</title>
         <link rel="icon" href="../assets/ico/ico.png" type="image/jpg" />
         <link rel="stylesheet" href="../module/boostrap/css/bootstrap.min.css">
         <link href="../module/boostrap/css/owl.carousel.css" rel="stylesheet"><!-- Style CSS -->
@@ -15,7 +16,7 @@
         <!--<link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet"> Line Awesome CSS -->
         <!--<link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet"> Animate CSS-->
         <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
-        <link href="../css/viveres.css" rel="stylesheet">
+        <link href="../css/higiene.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/ico.css">
         <script src="../module/boostrap/js/kits.js" crossorigin="anonymous"></script>
 
@@ -23,27 +24,24 @@
     <!--Menu-->
 
     <body>
-        <!-- Cascada img -->
-
-
         <div class="container1">
             <form class="form1">
-                <h1>Donacion de Viveres</h1>
+                <h1>Donacion de Higiene y Salud</h1>
                 <h3>Nombres:</h3>
                 <input type="text" name="nombre" id="nombre" placeholder="digite sus Nombres">
                 <h3>Apellidos:</h3>
                 <input type="text" name="apellido" id="apellido" placeholder="digite sus apellidos">
                 <h3>Correo electronico:</h3>
                 <input type="email" name="email" id="email" placeholder="digite su correo-electronico">
-                <h1>Lista de Viveres </h1>
+                <h1>Higiene y Salud </h1>
                 <div class="container text-center">
                     <div class="row justify-content-start">
                         <div class="row justify-content-evenly">
                             <div class="col-4">
-                                <h2>Sobres de sopas <input type="number" name="sopa" id="sopa"></h2>
+                                <h2>Paquetes de jabones <input type="number" name="jabones" id="jabones"></h2>
                             </div>
                             <div class="col-4">
-                                <h2>Sal <input type="number" name="sal" id="sal"></h2>
+                                <h2>Toallas sanitarias <input type="number" name="toallas" id="toallas"></h2>
                             </div>
                         </div>
                     </div>
@@ -51,43 +49,31 @@
                 <div class="container text-center">
                     <div class="row align-items-center">
                         <div class="col">
-                            <h3>Arina <input type="number" name="arina" id="arina"></h3>
+                            <h3>Shampoo <input type="number" name="shampoo" id="shampoo"></h3>
                         </div>
                         <div class="col">
-                            <h3>Aceite <input type="number" name="aceite" id="aceite"></h3>
+                            <h3>Papel Higienico <input type="number" name="papel" id="papel"></h3>
                         </div>
                         <div class="col">
-                            <h3>Mantequilla <input type="number" name="mantequilla" id="mantequilla"></h3>
+                            <h3>Alcohol <input type="number" name="alcohol" id="alcohol"></h3>
                         </div>
                     </div>
                 </div>
                 <div class="container text-center">
                     <div class="row align-items-center">
                         <div class="col">
-                            <h3>Arroz <input type="number" name="arroz" id="arroz"></h3>
+                            <h2>Mascarilla <input type="number" name="mascarilla" id="mascarilla"></h2>
                         </div>
                         <div class="col">
-                            <h3>Avena <input type="number" name="avena" id="avena"></h3>
+                            <h2>Detergentes <input type="number" name="detergentes" id="detergentes"></h2>
                         </div>
                         <div class="col">
-                            <h3>Azucar <input type="number" name="azucar" id="azucar"></h3>
+                            <h2>Cloro <input type="number" name="cloro" id="cloro"></h2>
                         </div>
                     </div>
                 </div>
-                <div class="container text-center">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <h2>Leche <input type="number" name="leche" id="leche"></h2>
-                        </div>
-                        <div class="col">
-                            <h2>Chocolate <input type="number" name="chocolate" id="chocolate"></h2>
-                        </div>
-                        <div class="col">
-                            <h2>Cafe <input type="number" name="cafe" id="cafe"></h2>
-                        </div>
-                    </div>
-                </div>
-                <h2>Enlatados en general <input type="number" name="enlatados" id="enlatados"></h2>
+                <h2>Desinfectantes <input type="number" name="desinfectantes" id="desinfectantes"></h2>
+
                 <input type="button" id="btn_guardar" value="Guardar">
                 <a href="kits.php"><input type="button" value="Regresar"></a>
             </form>

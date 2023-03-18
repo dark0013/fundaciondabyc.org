@@ -7,7 +7,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BABYC | Formulario de Viveres</title>
+        <title>BABYC | Formulario de Proteinas</title>
         <link rel="icon" href="../assets/ico/ico.png" type="image/jpg" />
         <link rel="stylesheet" href="../module/boostrap/css/bootstrap.min.css">
         <link href="../module/boostrap/css/owl.carousel.css" rel="stylesheet"><!-- Style CSS -->
@@ -15,7 +15,7 @@
         <!--<link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet"> Line Awesome CSS -->
         <!--<link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet"> Animate CSS-->
         <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
-        <link href="../css/viveres.css" rel="stylesheet">
+        <link href="../css/proteina.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/ico.css">
         <script src="../module/boostrap/js/kits.js" crossorigin="anonymous"></script>
 
@@ -23,75 +23,33 @@
     <!--Menu-->
 
     <body>
-        <!-- Cascada img -->
-
-
         <div class="container1">
             <form class="form1">
-                <h1>Donacion de Viveres</h1>
-                <h3>Nombres:</h3>
-                <input type="text" name="nombre" id="nombre" placeholder="digite sus Nombres">
-                <h3>Apellidos:</h3>
-                <input type="text" name="apellido" id="apellido" placeholder="digite sus apellidos">
-                <h3>Correo electronico:</h3>
-                <input type="email" name="email" id="email" placeholder="digite su correo-electronico">
-                <h1>Lista de Viveres </h1>
-                <div class="container text-center">
-                    <div class="row justify-content-start">
-                        <div class="row justify-content-evenly">
-                            <div class="col-4">
-                                <h2>Sobres de sopas <input type="number" name="sopa" id="sopa"></h2>
-                            </div>
-                            <div class="col-4">
-                                <h2>Sal <input type="number" name="sal" id="sal"></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container text-center">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <h3>Arina <input type="number" name="arina" id="arina"></h3>
-                        </div>
-                        <div class="col">
-                            <h3>Aceite <input type="number" name="aceite" id="aceite"></h3>
-                        </div>
-                        <div class="col">
-                            <h3>Mantequilla <input type="number" name="mantequilla" id="mantequilla"></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="container text-center">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <h3>Arroz <input type="number" name="arroz" id="arroz"></h3>
-                        </div>
-                        <div class="col">
-                            <h3>Avena <input type="number" name="avena" id="avena"></h3>
-                        </div>
-                        <div class="col">
-                            <h3>Azucar <input type="number" name="azucar" id="azucar"></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="container text-center">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <h2>Leche <input type="number" name="leche" id="leche"></h2>
-                        </div>
-                        <div class="col">
-                            <h2>Chocolate <input type="number" name="chocolate" id="chocolate"></h2>
-                        </div>
-                        <div class="col">
-                            <h2>Cafe <input type="number" name="cafe" id="cafe"></h2>
-                        </div>
-                    </div>
-                </div>
-                <h2>Enlatados en general <input type="number" name="enlatados" id="enlatados"></h2>
+                <h2>Donacion de Proteinas</h2>
+                <h1>Nombres:</h1>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombres completos" required>
+                <h1>Apellidos:</h1>
+                <input type="text" id="apellido" name="apellido" placeholder="Apellidos completos" required>
+                <h1>Correo-electronico:</h1>
+                <input type="email" id="email" name="email" placeholder="Digite su correo-electronico" required>
+                <h5>Proteinas Solidarias</h5>
+                <h3>Pollo:</h3>
+                <input type="number" id="pollo" name="pollo">
+                <h3>Pescado:</h3>
+                <input type="number" id="pescado" name="pescado">
+                <h3>Carne de res</h3>
+                <input type="number" id="res" name="res">
+                <h3>Carne de cerdo:</h3>
+                <input type="number" id="cerdo" name="cerdo">
+                <h3>Huevo</h3>
+                <input type="number" id="huevo" name="huevo">
                 <input type="button" id="btn_guardar" value="Guardar">
                 <a href="kits.php"><input type="button" value="Regresar"></a>
             </form>
         </div>
+
+
+
         <!-- Footer Area -->
         <footer class="footer-area">
             <div class="container">
@@ -150,7 +108,8 @@
                 </div>
             </div>
         </footer>
-        <!-- Scroll Top Area --><a href="#top" class="go-top" style="display: block;"><i class="fa fa-angle-up"></i></a><!-- Popper JS -->
+        <!-- Scroll Top Area --><a href="#top" class="go-top" style="display: block;"><i class="fa fa-angle-up"></i></a>
+        <!-- Popper JS -->
 
 
 
