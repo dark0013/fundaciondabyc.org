@@ -10,15 +10,25 @@ btnGuardar.addEventListener("click", async (e) => {
     const date_creation= document.getElementById("date").value;
     const status = "A";
     const user_creation = "ALCAMPOVERDE";
-    const user_sesion = new Date();
-    
+    const user_sesion = "ALCAMPOVERDE";
+
     // Verificamos que todos los datos hayan sido ingresados
     if(title === '' || url_image === '' || description === '' || date_creation === '') {
         alert('Debe ingresar todos los datos');
         return;
     }
     
-    let parametros = JSON.stringify({ title,url_image,description,date_creation,status, user_sesion, user_creation,});
+    //let parametros = JSON.stringify({ title,url_image,description,date_creation,status, user_sesion, user_creation});
+    let parametros = new FormData( );
+    parametros.append("title" ,title);
+    parametros.append("url_image" ,url_image);
+    parametros.append("description" ,description);
+    parametros.append("date_creation" ,date_creation);
+    parametros.append("status" ,status);
+    parametros.append("user_creation" ,user_creation);
+    parametros.append("user_sesion" ,user_sesion);
+    
+
 
     console.log(parametros);
 
@@ -28,18 +38,18 @@ btnGuardar.addEventListener("click", async (e) => {
             'accept': 'application/json ',
             'Content-Type': 'application/json'
         },
-        body: parametros
+        body: JSON.stringify(parametros)
     })
 
     if (data.status == 200) {
         alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
-        limpiarCampos();
+        //limpiarCampos();
         location.reload();
     }
 
 });
 
-const btnEditar = document.getElementById("btn_editar");
+/*const btnEditar = document.getElementById("btn_editar");
 btnEditar.addEventListener("click", async (e) => {
     e.preventDefault();//
     const id_project  = document.getElementById("txt_id_proyect").value;
@@ -87,7 +97,7 @@ btnInactivar.addEventListener("click", async (e) => {
 
     /*  const user_update = "ALCAMPOVERDE";
      const usur_creation = "ALCAMPOVERDE"; */
-    if (id_project == "") {
+    /*if (id_project == "") {
         alert('El proyecto no existe');
         return;
     }
@@ -111,7 +121,7 @@ btnInactivar.addEventListener("click", async (e) => {
 
     }
 
-});
+});*/
 
 
 
