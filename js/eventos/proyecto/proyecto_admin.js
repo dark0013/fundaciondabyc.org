@@ -77,6 +77,7 @@ btnEditar.addEventListener("click", async (e) => {
     const formData = new FormData();
     formData.append("id_project", id_project);
     formData.append("title", title);
+    formData.append("status", "S");
     formData.append("description", description);
     formData.append("date_creation", date_creation);
     formData.append("user_sesion", user_sesion);
@@ -86,11 +87,11 @@ btnEditar.addEventListener("click", async (e) => {
     if(url_image !== '') {
         const fileInput = document.querySelector('#file1');
         const file = fileInput.files[0];
-        formData.append('file', file);
+        formData.append('file1', file);
     }
 
     try {
-        let data = await fetch(`http://localhost/ApiFundacionDabyc/controllers/proyectos/${id_project}`, {
+        let data = await fetch(`http://localhost/ApiFundacionDabyc/controllers/proyectos`, {
             method: 'PUT',
             body: formData
         });
@@ -105,7 +106,6 @@ btnEditar.addEventListener("click", async (e) => {
         alert('Ha ocurrido un error al editar el proyecto');
     }
 });
-
 
 
 
