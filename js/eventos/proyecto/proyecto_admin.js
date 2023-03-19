@@ -69,11 +69,11 @@ btnEditar.addEventListener("click", async (e) => {
     const user_sesion = "ALCAMPOVERDE";
     const user_update = "ALCAMPOVERDE";
     
-    if (title === '' || description === '' || date_creation === '') {
+    if (title === '' || description === '' || date_proyect === '') {
         alert('Debe ingresar todos los datos');
         return;
     }
-    const fileInput = document.getElementById("file");
+    const fileInput = document.getElementById("file1");
     const file = fileInput.files[0];
     if (file && file instanceof Blob) {
       const reader = new FileReader();
