@@ -12,7 +12,7 @@ const mostrarDatos = (data) => {
   data.forEach((objeto) => {
     const title = objeto.title;
     const imagen = objeto.url_image;
-    const date_creation = objeto.date_creation;
+    const date_creation = objeto.date_proyect;
     const description = objeto.description;
     
     // Mostrar los valores en la página web

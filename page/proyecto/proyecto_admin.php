@@ -51,6 +51,7 @@
             <div class="modal-body">
               <div class="container">
                 <form enctype="multipart/form-data">
+                <input type="hidden" id="txt_id_proyect">
                     <label for="title">Titulo:</label>
                     <input type="text" id="title1" name="title" placeholder="Título..">
                     <label for="date">Fecha:</label>
@@ -77,12 +78,14 @@
       <table id="tblDatos"  class="table table-striped table-bordered" style="width: 100%" onclick="openModal()" data-bs-toggle="modal" data-bs-target="#exampleModal1">
         <thead>
           <tr >
-            <th>ID</th>
-            <th>title</th>
-            <th>url_image</th>
-            <th>description</th>
-            <th>date_creation</th>
-            <th>status</th>
+            <th>#</th>
+            <th>Titulo</th>
+            <th>Imagen</th>
+            <th>Descripcion</th>
+            <th>Fecha de proyecto</th>
+            <th>Fecha de Creacion</th>
+            <th>Fecha de Actualización</th>
+            <th>Estado</th>
           </tr>
         </thead>
       </table>
