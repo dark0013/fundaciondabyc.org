@@ -41,7 +41,7 @@
       </div> 
   </section>
 
-  <!-- <section>
+  <section>
       <div class="modal"  id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content"><div class="modal-header">
@@ -72,7 +72,6 @@
 
       </div> 
   </section>
-   -->  
 
     <section id="tabla">
       <table id="tblDatos"  class="table table-striped table-bordered" style="width: 100%" onclick="openModal()" data-bs-toggle="modal" data-bs-target="#exampleModal1">
