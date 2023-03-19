@@ -39,13 +39,13 @@ btnGuardar.addEventListener("click", async (e) => {
 
 });
 
-const btnEditar = document.getElementById("btn_editar");
+/* const btnEditar = document.getElementById("btn_editar");
 btnEditar.addEventListener("click", async (e) => {
     e.preventDefault();//
     const id_project  = document.getElementById("txt_id_proyect").value;
     const title= document.getElementById("title1").value;
     const url_image = document.getElementById("file1").value;
-    const description= document.getElementById("description1").value;
+    const description= document.getDElementById("description1").value;
     const date_creation= document.getElementById("date1").value;
     const user_sesion = new Date();
     const user_update = new Date();
@@ -69,22 +69,22 @@ btnEditar.addEventListener("click", async (e) => {
         location.reload();
     }
 
-});
+}); */
 
 
 
 
-const btnInactivar = document.getElementById("btn_inactivar");
+/*const btnInactivar = document.getElementById("btn_inactivar");
 btnInactivar.addEventListener("click", async (e) => {
     e.preventDefault();//
 
     alert("Inactivar");
-    const id_project= document.getElementById("txt_id_proyect").value;
+    const id_project= document.getElementById("txt_id_proyect").value;*/
 
     /*  const user_update = "ALCAMPOVERDE";
      const usur_creation = "ALCAMPOVERDE"; */
 
-    let parametros = JSON.stringify({ id_project });
+  /*  let parametros = JSON.stringify({ id_project });
 
     console.log(parametros);
 
@@ -104,7 +104,7 @@ btnInactivar.addEventListener("click", async (e) => {
 
     }
 
-});
+});*/
 
 
 
@@ -117,11 +117,11 @@ btnInactivar.addEventListener("click", async (e) => {
 
 
 const getData = async () => {
-    const data = await fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos?page');
+    const data = await fetch('https://www.fundaciondabyc.org/ApiFundacionDabyc/controllers/proyectos?page');
     console.log(data);
     if (data.status === 200) {
         const datos = await data.json();
-        console.log(datos);
+       // console.log(datos);
         llenarTabla("tblDatos", datos)
     }
 }

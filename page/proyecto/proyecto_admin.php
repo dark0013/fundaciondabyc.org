@@ -18,7 +18,7 @@
           </div>
             <div class="modal-body">
               <div class="container">
-                <form action="action_page.php">
+                <form enctype="multipart/form-data">
                     <input type="hidden" id="txt_id_proyect">
                     <label for="title">Titulo:</label>
                     <input type="text" id="title" name="title" placeholder="Título..">
@@ -41,7 +41,7 @@
       </div> 
   </section>
 
-  <section>
+   <section>
       <div class="modal"  id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content"><div class="modal-header">
@@ -71,7 +71,7 @@
         </div>
 
       </div> 
-  </section>
+  </section> 
     
 
     <section id="tabla">
