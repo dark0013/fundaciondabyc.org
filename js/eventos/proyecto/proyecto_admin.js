@@ -86,7 +86,7 @@ btnInactivar.addEventListener("click", async (e) => {
     const id_project= document.getElementById("txt_id_proyect").value;*/
 
     /*  const user_update = "ALCAMPOVERDE";
-     const usur_creation = "ALCAMPOVERDE"; */
+     const usur_creation = "ALCAMPOVERDE"; *//*
 
     let parametros = JSON.stringify({ id_project });
 
