@@ -13,13 +13,12 @@ btnENVIARMENSAJE.addEventListener("click", async (e) => {
     const full_name = document.getElementById("txt_nombre_completo").value;
     const phone = document.getElementById("txt_numero_telefonico").value;
     const email = document.getElementById("txt_correo_electronico").value;
-    const address = "*******";
     const description = document.getElementById("txt_escribe_tu_mensaje").value;
     const status = "A";
     const user_sesion = new Date();
     const date_creation = new Date();
     const user_creation = "ALCAMPOVERDE";
-    let parametros = JSON.stringify({ indentication, full_name, phone, email, address, description, status, user_sesion, date_creation, user_creation });
+    let parametros = JSON.stringify({ indentication, full_name, phone, email, description, status, user_sesion, date_creation, user_creation });
 
     console.log(parametros);
 
@@ -44,11 +43,10 @@ const btnSUBSCRIBIRSE = document.getElementById("btn_subscribirse");
 
 btnSUBSCRIBIRSE.addEventListener("click", async (e) => {
     e.preventDefault();//
-    const identification_card = document.getElementById("txt_cedula").value;
+    const indentication = document.getElementById("txt_cedula").value;
     const full_name = document.getElementById("txt_nombre_completo").value;
     const email = document.getElementById("txt_correo_electronico").value;
     const phone = document.getElementById("txt_numero_telefonico").value;
-    const address = document.getElementById("txt_direccion").value;
     const description = document.getElementById("txt_escribe_tu_mensaje").value;
     const status = "A";
     const user_sesion = new Date();
@@ -56,8 +54,8 @@ btnSUBSCRIBIRSE.addEventListener("click", async (e) => {
     const user_creation = "ALCAMPOVERDE";
 
     let parametros = JSON.stringify({
-        identification_card, full_name,
-        email, phone, direccion, address, description, status, user_sesion, user_creation,date_creation
+        indentication, full_name,
+        email, phone, description, status, user_sesion, user_creation,date_creation
     });
 
     console.log(parametros);
@@ -85,7 +83,6 @@ const limpiarCampos = _ => {
     document.getElementById("txt_correo_electronico").value = " ";
     document.getElementById("txt_numero_telefonico").value = " ";
     document.getElementById("txt_escribe_tu_mensaje").value = " ";
-    document.getElementById("txt_direccion").value = " ";
 
 }
 

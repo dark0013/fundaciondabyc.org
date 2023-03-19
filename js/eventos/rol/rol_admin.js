@@ -14,7 +14,11 @@ btnGuardar.addEventListener("click", async (e) => {
     const user_sesion = new Date();
     const date_creation = new Date();  
     const user_creation= "Jordan";
-    debugger
+
+    if (rol_user == "" || cod_rol == "" || user_name == "" || status == "") {
+        alert('Debe ingresar todos los datos');
+        return;
+    }
     let parametros = JSON.stringify({rol_user,cod_rol,user_name,status,user_sesion,user_creation ,date_creation});
 
     console.log(parametros);
@@ -50,6 +54,10 @@ btnEditar.addEventListener("click", async (e) => {
     const user_update = new Date();
     const user_creation = "Jordan";
 
+    if (rol_user == "" || cod_rol == "" || user_name == "" || status == "") {
+        alert('Debe ingresar todos los datos');
+        return;
+    }
     let parametros = JSON.stringify({ id_rol, rol_user, cod_rol, user_name, status , user_sesion,user_creation,user_update });
 
     console.log(parametros);
@@ -83,7 +91,10 @@ btnInactivar.addEventListener("click", async (e) => {
 
     /*  const user_update = "ALCAMPOVERDE";
      const usur_creation = "ALCAMPOVERDE"; */
-
+    if (id_rol == "") {
+        alert('El rol no existe');
+        return;
+    }
     let parametros = JSON.stringify({ id_rol });
 
     console.log(parametros);

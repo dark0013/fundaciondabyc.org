@@ -50,6 +50,10 @@ btnEditar.addEventListener("click", async (e) => {
     const user_sesion = new Date();
     const user_update = new Date();
 
+    if(title === '' || url_image === '' || description === '' || date_creation === '') {
+        alert('Debe ingresar todos los datos');
+        return;
+    }
     let parametros = JSON.stringify({ id_project,title,url_image,description,date_creation, user_sesion, user_update});
 
     console.log(parametros);
@@ -84,7 +88,7 @@ btnInactivar.addEventListener("click", async (e) => {
     /*  const user_update = "ALCAMPOVERDE";
      const usur_creation = "ALCAMPOVERDE"; */
 
-  /*  let parametros = JSON.stringify({ id_project });
+    let parametros = JSON.stringify({ id_project });
 
     console.log(parametros);
 
