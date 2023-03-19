@@ -50,7 +50,7 @@
           </div>
             <div class="modal-body">
               <div class="container">
-                <form action="action_page.php">
+                <form enctype="multipart/form-data">
                     <label for="title">Titulo:</label>
                     <input type="text" id="title1" name="title" placeholder="Título..">
                     <label for="date">Fecha:</label>
@@ -71,7 +71,7 @@
         </div>
 
       </div> 
-  </section> 
+  </section>
     
 
     <section id="tabla">
