@@ -22,8 +22,6 @@ btnGuardar.addEventListener("click", async (e) => {
         return;
     }
     
-
-
     let parametros = JSON.stringify({ name_users, id_rol, identification_card, name, status ,pass, user_creation,date_creation,user_sesion });
 
     console.log(parametros);
@@ -58,7 +56,11 @@ btnEditar.addEventListener("click", async (e) => {
     const pass = document.getElementById("txt_contrasenia1").value;
     const user_update = "ALCAMPOVERDE";
     const user_creation = "ALCAMPOVERDE";
-
+    
+    if (name_users == "" || id_rol == "" || identification_card == "" || name == "" || pass == "") {
+        alert('Debe ingresar todos los datos');
+        return;
+    }
     let parametros = JSON.stringify({ id_user, name_users, id_rol, identification_card, name, pass, user_update, user_creation });
 
     console.log(parametros);

@@ -25,10 +25,11 @@ body{
   input[type=text], input[type=email], input[type=number] {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
+    /*margin: 8px 0;*/
     display: inline-block;
     border: 1px solid #090909;
     box-sizing: border-box;
+    height: 37px;
   }
 
   input[type=button] {

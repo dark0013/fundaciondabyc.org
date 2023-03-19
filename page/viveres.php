@@ -1,5 +1,5 @@
 <php>
-<?php include('menu/navbar_sub.php') ?>
+    <?php include('menu/navbar_sub.php') ?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -25,16 +25,8 @@
     <body>
         <!-- Cascada img -->
 
-
-        <div class="container1">
+        <!--<div class="container1">
             <form class="form1">
-                <h1>Donacion de Viveres</h1>
-                <h3>Nombres:</h3>
-                <input type="text" name="nombre" id="nombre" placeholder="digite sus Nombres">
-                <h3>Apellidos:</h3>
-                <input type="text" name="apellido" id="apellido" placeholder="digite sus apellidos">
-                <h3>Correo electronico:</h3>
-                <input type="email" name="email" id="email" placeholder="digite su correo-electronico">
                 <h1>Lista de Viveres </h1>
                 <div class="container text-center">
                     <div class="row justify-content-start">
@@ -87,9 +79,127 @@
                         </div>
                     </div>
                 </div>
-                <h2>Enlatados en general <input type="number" name="enlatados" id="enlatados"></h2>
-                <input type="button" id="btn_guardar" value="Guardar">
-                <a href="kits.php"><input type="button" value="Regresar"></a>
+            </form>
+        </div>-->
+        <div class="container1">
+            <form class="form1">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">NOMBRES</label>
+                            <input type="text" class="form-control" id="txt_nombres" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">CEDULA</label>
+                            <input type="text" class="form-control" id="txt_cedula" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">CELULAR</label>
+                            <input type="text" class="form-control" id="txt_celular" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">CORREO</label>
+                            <input type="text" class="form-control" id="txt_email" placeholder="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <input type="hidden" class="form-control" id="txt_tipo_donacion" value="VIVERES">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Protenina</label>
+                            <select class="form-control" id="tipo_vivires" name="cmb_tipo_vivires">
+                                <option value="CARNE">CARNE</option>
+                                <option value="POLLO">POLLO</option>
+                                <option value="HUEVO">HUEVO</option>
+                                <option value="TOSINO">TOSINO</option>
+                                <option value="CHANCHO">CHANCHO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Protenina</label>
+                            <select class="form-control" id="tipo_protenia" name="cmb_tipo_protenia">
+                                <option value="CARNE">CARNE</option>
+                                <option value="POLLO">POLLO</option>
+                                <option value="HUEVO">HUEVO</option>
+                                <option value="TOSINO">TOSINO</option>
+                                <option value="CHANCHO">CHANCHO</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Protenina</label>
+                            <select class="form-control" id="tipo_protenia" name="cmb_tipo_protenia">
+                                <option value="CARNE">CARNE</option>
+                                <option value="POLLO">POLLO</option>
+                                <option value="HUEVO">HUEVO</option>
+                                <option value="TOSINO">TOSINO</option>
+                                <option value="CHANCHO">CHANCHO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Protenina</label>
+                            <select class="form-control" id="tipo_protenia" name="cmb_tipo_protenia">
+                                <option value="CARNE">CARNE</option>
+                                <option value="POLLO">POLLO</option>
+                                <option value="HUEVO">HUEVO</option>
+                                <option value="TOSINO">TOSINO</option>
+                                <option value="CHANCHO">CHANCHO</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="button" class="btn btn-primary" id="btn_enviar" value="enviar">
+                    </div>
+                    <div class="col-md-6">
+                        <a href="kits.php"><input type="button" class="btn btn-danger" value="Regresar"></a>
+                    </div>
+                </div>
             </form>
         </div>
         <!-- Footer Area -->
@@ -161,6 +271,7 @@
         <script src="../module/boostrap/js/jquery.sticky.js"></script><!-- Progress Bar JS -->
         <script src="../module/boostrap/js/jquery.barfiller.js"></script><!-- Main JS -->
         <script src="../module/boostrap/js/main.js"></script>
+        <script src="../js/eventos/kits/viveres.js"></script>
     </body>
 
     </html>
