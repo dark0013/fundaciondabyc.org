@@ -24,70 +24,13 @@
 
     <body>
         <!-- Cascada img -->
-
-        <!--<div class="container1">
-            <form class="form1">
-                <h1>Lista de Viveres </h1>
-                <div class="container text-center">
-                    <div class="row justify-content-start">
-                        <div class="row justify-content-evenly">
-                            <div class="col-4">
-                                <h2>Sobres de sopas <input type="number" name="sopa" id="sopa"></h2>
-                            </div>
-                            <div class="col-4">
-                                <h2>Sal <input type="number" name="sal" id="sal"></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="container text-center">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <h3>Arina <input type="number" name="arina" id="arina"></h3>
-                        </div>
-                        <div class="col">
-                            <h3>Aceite <input type="number" name="aceite" id="aceite"></h3>
-                        </div>
-                        <div class="col">
-                            <h3>Mantequilla <input type="number" name="mantequilla" id="mantequilla"></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="container text-center">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <h3>Arroz <input type="number" name="arroz" id="arroz"></h3>
-                        </div>
-                        <div class="col">
-                            <h3>Avena <input type="number" name="avena" id="avena"></h3>
-                        </div>
-                        <div class="col">
-                            <h3>Azucar <input type="number" name="azucar" id="azucar"></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="container text-center">
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <h2>Leche <input type="number" name="leche" id="leche"></h2>
-                        </div>
-                        <div class="col">
-                            <h2>Chocolate <input type="number" name="chocolate" id="chocolate"></h2>
-                        </div>
-                        <div class="col">
-                            <h2>Cafe <input type="number" name="cafe" id="cafe"></h2>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>-->
         <div class="container1">
             <form class="form1">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="exampleFormControlInput1">NOMBRES</label>
-                            <input type="text" class="form-control" id="txt_nombres" placeholder="">
+                            <input type="text" class="form-control" required id="txt_nombres" placeholder="">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -109,21 +52,24 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
                     <input type="hidden" class="form-control" id="txt_tipo_donacion" value="VIVERES">
-
-
-
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">Tipo de Protenina</label>
-                            <select class="form-control" id="tipo_protenia" name="cmb_tipo_protenia">
-                                <option value="CARNE">CARNE</option>
-                                <option value="POLLO">POLLO</option>
-                                <option value="HUEVO">HUEVO</option>
-                                <option value="TOSINO">TOSINO</option>
-                                <option value="CHANCHO">CHANCHO</option>
+                            <label for="exampleFormControlSelect1">Tipo de Viveres</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value=""></option>
+                                <option value="CAFE">Cafe</option>
+                                <option value="CHOCOLATE">Chocolate</option>
+                                <option value="LECHE">Leche</option>
+                                <option value="ARINA">Arina</option>
+                                <option value="ACEITE">Aceite</option>
+                                <option value="MANTEQUILLA">Mantequilla</option>
+                                <option value="ARROZ">Arroz</option>
+                                <option value="AVENA">Avena</option>
+                                <option value="AZUCAR">Azucar</option>
+                                <option value="SOBRES DE SOPAS">Sobres de sopas</option>
+                                <option value="SAL">Sal</option>
                             </select>
                         </div>
                     </div>
@@ -136,13 +82,20 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">Tipo de Protenina</label>
-                            <select class="form-control" id="tipo_protenia" name="cmb_tipo_protenia">
-                                <option value="CARNE">CARNE</option>
-                                <option value="POLLO">POLLO</option>
-                                <option value="HUEVO">HUEVO</option>
-                                <option value="TOSINO">TOSINO</option>
-                                <option value="CHANCHO">CHANCHO</option>
+                            <label for="exampleFormControlSelect1">Tipo de Viveres</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value=""></option>
+                                <option value="CAFE">Cafe</option>
+                                <option value="CHOCOLATE">Chocolate</option>
+                                <option value="LECHE">Leche</option>
+                                <option value="ARINA">Arina</option>
+                                <option value="ACEITE">Aceite</option>
+                                <option value="MANTEQUILLA">Mantequilla</option>
+                                <option value="ARROZ">Arroz</option>
+                                <option value="AVENA">Avena</option>
+                                <option value="AZUCAR">Azucar</option>
+                                <option value="SOBRES DE SOPAS">Sobres de sopas</option>
+                                <option value="SAL">Sal</option>
                             </select>
                         </div>
                     </div>
@@ -155,13 +108,20 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">Tipo de Protenina</label>
-                            <select class="form-control" id="tipo_protenia" name="cmb_tipo_protenia">
-                                <option value="CARNE">CARNE</option>
-                                <option value="POLLO">POLLO</option>
-                                <option value="HUEVO">HUEVO</option>
-                                <option value="TOSINO">TOSINO</option>
-                                <option value="CHANCHO">CHANCHO</option>
+                            <label for="exampleFormControlSelect1">Tipo de Viveres</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value=""></option>
+                                <option value="CAFE">Cafe</option>
+                                <option value="CHOCOLATE">Chocolate</option>
+                                <option value="LECHE">Leche</option>
+                                <option value="ARINA">Arina</option>
+                                <option value="ACEITE">Aceite</option>
+                                <option value="MANTEQUILLA">Mantequilla</option>
+                                <option value="ARROZ">Arroz</option>
+                                <option value="AVENA">Avena</option>
+                                <option value="AZUCAR">Azucar</option>
+                                <option value="SOBRES DE SOPAS">Sobres de sopas</option>
+                                <option value="SAL">Sal</option>
                             </select>
                         </div>
                     </div>
@@ -175,13 +135,46 @@
 
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="exampleFormControlSelect1">Tipo de Protenina</label>
-                            <select class="form-control" id="tipo_protenia" name="cmb_tipo_protenia">
-                                <option value="CARNE">CARNE</option>
-                                <option value="POLLO">POLLO</option>
-                                <option value="HUEVO">HUEVO</option>
-                                <option value="TOSINO">TOSINO</option>
-                                <option value="CHANCHO">CHANCHO</option>
+                            <label for="exampleFormControlSelect1">Tipo de Viveres</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value=""></option>
+                                <option value="CAFE">Cafe</option>
+                                <option value="CHOCOLATE">Chocolate</option>
+                                <option value="LECHE">Leche</option>
+                                <option value="ARINA">Arina</option>
+                                <option value="ACEITE">Aceite</option>
+                                <option value="MANTEQUILLA">Mantequilla</option>
+                                <option value="ARROZ">Arroz</option>
+                                <option value="AVENA">Avena</option>
+                                <option value="AZUCAR">Azucar</option>
+                                <option value="SOBRES DE SOPAS">Sobres de sopas</option>
+                                <option value="SAL">Sal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Viveres</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value=""></option>
+                                <option value="CAFE">Cafe</option>
+                                <option value="CHOCOLATE">Chocolate</option>
+                                <option value="LECHE">Leche</option>
+                                <option value="ARINA">Arina</option>
+                                <option value="ACEITE">Aceite</option>
+                                <option value="MANTEQUILLA">Mantequilla</option>
+                                <option value="ARROZ">Arroz</option>
+                                <option value="AVENA">Avena</option>
+                                <option value="AZUCAR">Azucar</option>
+                                <option value="SOBRES DE SOPAS">Sobres de sopas</option>
+                                <option value="SAL">Sal</option>
                             </select>
                         </div>
                     </div>
@@ -193,7 +186,154 @@
                         </div>
                     </div>
                 </div>
+            </form>
+            <form class="form2">
+                <div class="row">
+                    <input type="hidden" class="form-control" id="txt_tipo_donacion" value="VIVERES">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Viveres</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value=""></option>
+                                <option value="CAFE">Cafe</option>
+                                <option value="CHOCOLATE">Chocolate</option>
+                                <option value="LECHE">Leche</option>
+                                <option value="ARINA">Arina</option>
+                                <option value="ACEITE">Aceite</option>
+                                <option value="MANTEQUILLA">Mantequilla</option>
+                                <option value="ARROZ">Arroz</option>
+                                <option value="AVENA">Avena</option>
+                                <option value="AZUCAR">Azucar</option>
+                                <option value="SOBRES DE SOPAS">Sobres de sopas</option>
+                                <option value="SAL">Sal</option>
+                            </select>
+                        </div>
+                    </div>
 
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Viveres</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value=""></option>
+                                <option value="CAFE">Cafe</option>
+                                <option value="CHOCOLATE">Chocolate</option>
+                                <option value="LECHE">Leche</option>
+                                <option value="ARINA">Arina</option>
+                                <option value="ACEITE">Aceite</option>
+                                <option value="MANTEQUILLA">Mantequilla</option>
+                                <option value="ARROZ">Arroz</option>
+                                <option value="AVENA">Avena</option>
+                                <option value="AZUCAR">Azucar</option>
+                                <option value="SOBRES DE SOPAS">Sobres de sopas</option>
+                                <option value="SAL">Sal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Viveres</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value=""></option>
+                                <option value="CAFE">Cafe</option>
+                                <option value="CHOCOLATE">Chocolate</option>
+                                <option value="LECHE">Leche</option>
+                                <option value="ARINA">Arina</option>
+                                <option value="ACEITE">Aceite</option>
+                                <option value="MANTEQUILLA">Mantequilla</option>
+                                <option value="ARROZ">Arroz</option>
+                                <option value="AVENA">Avena</option>
+                                <option value="AZUCAR">Azucar</option>
+                                <option value="SOBRES DE SOPAS">Sobres de sopas</option>
+                                <option value="SAL">Sal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Viveres</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value=""></option>
+                                <option value="CAFE">Cafe</option>
+                                <option value="CHOCOLATE">Chocolate</option>
+                                <option value="LECHE">Leche</option>
+                                <option value="ARINA">Arina</option>
+                                <option value="ACEITE">Aceite</option>
+                                <option value="MANTEQUILLA">Mantequilla</option>
+                                <option value="ARROZ">Arroz</option>
+                                <option value="AVENA">Avena</option>
+                                <option value="AZUCAR">Azucar</option>
+                                <option value="SOBRES DE SOPAS">Sobres de sopas</option>
+                                <option value="SAL">Sal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Viveres</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value=""></option>
+                                <option value="CAFE">Cafe</option>
+                                <option value="CHOCOLATE">Chocolate</option>
+                                <option value="LECHE">Leche</option>
+                                <option value="ARINA">Arina</option>
+                                <option value="ACEITE">Aceite</option>
+                                <option value="MANTEQUILLA">Mantequilla</option>
+                                <option value="ARROZ">Arroz</option>
+                                <option value="AVENA">Avena</option>
+                                <option value="AZUCAR">Azucar</option>
+                                <option value="SOBRES DE SOPAS">Sobres de sopas</option>
+                                <option value="SAL">Sal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Otros viveres</label>
+                            <textarea id="tipo_viveres" name="cmb_tipo_viveres" placeholder="Escribir otros viveres.."  style="height:auto"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-md-6">
                         <input type="button" class="btn btn-primary" id="btn_enviar" value="enviar">

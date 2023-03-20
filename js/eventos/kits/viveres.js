@@ -1,5 +1,3 @@
-
-
 document.getElementById("btn_enviar").addEventListener("click", async (e) => {
   e.preventDefault();
 
@@ -9,13 +7,13 @@ document.getElementById("btn_enviar").addEventListener("click", async (e) => {
   const email = document.getElementById("txt_email").value;
 
   const txt_tipo_donacion = document.getElementById("txt_tipo_donacion").value;
-  const cmb_tipo_protenia = document.getElementsByName("cmb_tipo_protenia");
+  const cmb_tipo_viveres = document.getElementsByName("cmb_tipo_viveres");
   const txt_cantidad = document.getElementsByName("txt_cantidad");
 
   let list_donacion = [];
 
-  for (let i = 0; i < cmb_tipo_protenia.length; i++) {
-    list_donacion.push({ 'producto': cmb_tipo_protenia[i].value, 'cantidad': txt_cantidad[i].value });
+  for (let i = 0; i < cmb_tipo_viveres.length; i++) {
+    list_donacion.push({ 'producto': cmb_tipo_viveres[i].value, 'cantidad': txt_cantidad[i].value });
   }
 
   console.log(list_donacion);
@@ -38,6 +36,7 @@ document.getElementById("btn_enviar").addEventListener("click", async (e) => {
     },
     body: JSON.stringify(Object.fromEntries(formulario.entries()))
   })
+  console.log(data)
 
   if (data.status == 200) {
     alert('Exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
