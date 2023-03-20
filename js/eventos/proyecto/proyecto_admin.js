@@ -68,18 +68,52 @@ btnEditar.addEventListener("click", async (e) => {
     const date_update = new Date();
     const user_sesion = "ALCAMPOVERDE";
     const user_update = "ALCAMPOVERDE";
-    
+
     if (title === '' || description === '' || date_proyect === '') {
         alert('Debe ingresar todos los datos');
         return;
     }
     const fileInput = document.getElementById("file1");
     const file = fileInput.files[0];
-    if (file && file instanceof Blob) {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = function () {
-        const url_image = reader.result;
+    if (fileInput.value !== '') {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = function () {
+            const url_image = reader.result;
+            let parametros = JSON.stringify({
+                id_project: id_project,
+                title: title,
+                date_proyect: date_proyect,
+                description: description,
+                date_update: date_update,
+                user_sesion: user_sesion,
+                user_update: user_update,
+                url_image: url_image,
+            });
+            fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos', {
+                method: 'PUT',
+                headers: {
+                    'accept': 'application/json ',
+                    'Content-Type': 'application/json'
+                },
+                body: parametros
+            })
+                .then(response => {
+                    if (response.status == 200) {
+                        alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
+                        limpiarCampos();
+                        location.reload();
+                    }
+                })
+                .catch(error => console.log(error));
+        }
+    } else {
+        const image = document.getElementById("image1");
+        const url_image = image.src;
+        /*const image_name = url_image.split('/').pop(); // Obtenemos solo el nombre de la imagen
+        const ext = image_name.split('.').pop(); // Obtenemos la extensión de la imagen
+        const url_without_ext = url_image.substring(0, url_image.lastIndexOf('.')); // Quitamos la extensión de la URL
+        const url_with_ext = url_without_ext + '.' + ext; // Agregamos la extensión a la URL*/
         let parametros = JSON.stringify({
             id_project: id_project,
             title: title,
@@ -88,7 +122,7 @@ btnEditar.addEventListener("click", async (e) => {
             date_update: date_update,
             user_sesion: user_sesion,
             user_update: user_update,
-            url_image: url_image,
+            url_image: encodeURIComponent(url_image),
         });
         fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos', {
             method: 'PUT',
@@ -103,13 +137,13 @@ btnEditar.addEventListener("click", async (e) => {
                     alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
                     limpiarCampos();
                     location.reload();
+                    console.log(response)
                 }
             })
             .catch(error => console.log(error));
-      }
-    } else {
-        alert('Archivo seleccionado no válido o vacio');
     }
+
+
 });
 
 
@@ -226,12 +260,27 @@ function llenarTabla(tabla, filas) {
             document.getElementById("title1").value = cellData.title;
             document.getElementById("description1").value = cellData.description;
             document.getElementById("date1").value = cellData.date_proyect;
-
+            document.getElementById("image1").src = cellData.url_image; // establecer la fuente de la imagen
         }
 
     });
 }
+function previewImage() {
+    var preview = document.getElementById("image1");
+    var file = document.getElementById("file1").files[0];
+    var reader = new FileReader();
 
+    reader.onloadend = function () {
+        preview.src = reader.result;
+        document.getElementById("file1_hidden").value = reader.result;
+    }
+
+    if (file) {
+        reader.readAsDataURL(file);
+    } else {
+        preview.src = "";
+    }
+}
 
 window.onload = () => { getData(); };
 
