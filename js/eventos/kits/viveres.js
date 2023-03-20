@@ -18,6 +18,7 @@ document.getElementById("btn_enviar").addEventListener("click", async (e) => {
     list_donacion.push({ 'producto': cmb_tipo_protenia[i].value, 'cantidad': txt_cantidad[i].value });
   }
 
+  console.log(list_donacion);
   let formulario = new FormData();
 
   formulario.append("name", name);
@@ -39,9 +40,11 @@ document.getElementById("btn_enviar").addEventListener("click", async (e) => {
   })
 
   if (data.status == 200) {
-    alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
+    alert('Exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
     limpiarCampos();
     location.reload();
+  }else{
+    alert('Hubo un error al guardar');
   }
 
 });

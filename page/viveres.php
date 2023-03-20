@@ -112,10 +112,13 @@
 
                 <div class="row">
                     <input type="hidden" class="form-control" id="txt_tipo_donacion" value="VIVERES">
+
+
+
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Tipo de Protenina</label>
-                            <select class="form-control" id="tipo_vivires" name="cmb_tipo_vivires">
+                            <select class="form-control" id="tipo_protenia" name="cmb_tipo_protenia">
                                 <option value="CARNE">CARNE</option>
                                 <option value="POLLO">POLLO</option>
                                 <option value="HUEVO">HUEVO</option>
@@ -124,7 +127,6 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="exampleFormControlInput1">Cantidad</label>

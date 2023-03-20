@@ -34,6 +34,7 @@
           <li><a href="../proyecto/proyecto_admin.php">Agregar Proyecto</a></li>
         </ul>
       </li>
+
       <li>
         <div class="iocn-link">
           <a href="#">
@@ -47,6 +48,19 @@
           <li><a href="#">Donantes</a></li>
           <li><a href="#">Voluntarios</a></li>
           <li><a href="#">Bitacora de Sesión</a></li>
+        </ul>
+      </li>
+    
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug' ></i>
+            <span class="link_name">DONACIONES</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a href="../donaciones/donaciones_reporte.php">REPORTE</a></li>          
         </ul>
       </li>
 

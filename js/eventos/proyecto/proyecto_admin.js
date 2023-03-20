@@ -56,7 +56,7 @@ btnGuardar.addEventListener("click", async (e) => {
 });
 
 
-/* const btnEditar = document.getElementById("btn_editar");
+const btnEditar = document.getElementById("btn_editar");
 btnEditar.addEventListener("click", async (e) => {
     e.preventDefault();
     const id_project = document.getElementById("txt_id_proyect").value;
@@ -96,27 +96,33 @@ btnEditar.addEventListener("click", async (e) => {
             body: formData
         });
 
-    if (data.status == 200) {
-        alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
-        limpiarCampos();
-        location.reload();
+        if (data.status === 200) {
+            alert('¡El proyecto ha sido editado exitosamente!');
+            limpiarCampos();
+            location.reload();
+        }
+    } catch(error) {
+        console.error(error);
+        alert('Ha ocurrido un error al editar el proyecto');
     }
-
 });
 
 
 
 
-/*const btnInactivar = document.getElementById("btn_inactivar");
+const btnInactivar = document.getElementById("btn_inactivar");
 btnInactivar.addEventListener("click", async (e) => {
     e.preventDefault();//
 
     alert("Inactivar");
-    const id_project= document.getElementById("txt_id_proyect").value;*/
+    const id_project= document.getElementById("txt_id_proyect").value;
 
     /*  const user_update = "ALCAMPOVERDE";
-     const usur_creation = "ALCAMPOVERDE"; *//*
-
+     const usur_creation = "ALCAMPOVERDE"; */
+    if (id_project == "") {
+        alert('El proyecto no existe');
+        return;
+    }
     let parametros = JSON.stringify({ id_project });
 
     console.log(parametros);
@@ -137,7 +143,7 @@ btnInactivar.addEventListener("click", async (e) => {
 
     }
 
-});*/
+});
 
 
 
@@ -150,11 +156,11 @@ btnInactivar.addEventListener("click", async (e) => {
 
 
 const getData = async () => {
-    const data = await fetch('https://www.fundaciondabyc.org/ApiFundacionDabyc/controllers/proyectos?page');
+    const data = await fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos?page');
     console.log(data);
     if (data.status === 200) {
         const datos = await data.json();
-       // console.log(datos);
+        console.log(datos);
         llenarTabla("tblDatos", datos)
     }
 }
