@@ -11,7 +11,7 @@ document.getElementById("btn_enviar").addEventListener("click", async (e) => {
   const txt_cantidad = document.getElementsByName("txt_cantidad");
 
   let list_donacion = [];
-
+  debugger
   for (let i = 0; i < cmb_tipo_viveres.length; i++) {
     list_donacion.push({ 'producto': cmb_tipo_viveres[i].value, 'cantidad': txt_cantidad[i].value });
   }
