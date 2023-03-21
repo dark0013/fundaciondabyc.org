@@ -160,7 +160,6 @@
                         <div class="form-group">
                             <label for="exampleFormControlSelect1">Tipo de Viveres</label>
                             <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
-                                <option value=""></option>
                                 <option value="CAFE">Cafe</option>
                                 <option value="CHOCOLATE">Chocolate</option>
                                 <option value="LECHE">Leche</option>
