@@ -9,13 +9,20 @@ document.getElementById("btn_enviar").addEventListener("click", async (e) => {
   const txt_tipo_donacion = document.getElementById("txt_tipo_donacion").value;
   const cmb_tipo_viveres = document.getElementsByName("cmb_tipo_viveres");
   const txt_cantidad = document.getElementsByName("txt_cantidad");
-
   let list_donacion = [];
-  debugger
+  for (let i = 0; i < cmb_tipo_viveres.length; i++) {
+    if (txt_cantidad[i].value > 0) {
+      list_donacion.push({ 'producto': cmb_tipo_viveres[i].value, 'cantidad': txt_cantidad[i].value });
+    }
+  }
+  /*let list_donacion = [];
   for (let i = 0; i < cmb_tipo_viveres.length; i++) {
     list_donacion.push({ 'producto': cmb_tipo_viveres[i].value, 'cantidad': txt_cantidad[i].value });
-  }
-
+  }*/
+  if (name === '' || dni === '' || cellPhone === '' || email === '') {
+    alert('Debe ingresar todos los campos de sus datos ');
+    return;
+}
   console.log(list_donacion);
   let formulario = new FormData();
 

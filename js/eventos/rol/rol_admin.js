@@ -13,7 +13,7 @@ btnGuardar.addEventListener("click", async (e) => {
     const status= document.getElementById("txt_estado").value;
     const user_sesion = new Date();
     const date_creation = new Date();  
-    const user_creation= "Jordan";
+    const user_creation= "ADMIN";
 
     if (rol_user == "" || cod_rol == "" || user_name == "" || status == "") {
         alert('Debe ingresar todos los datos');
@@ -51,8 +51,8 @@ btnEditar.addEventListener("click", async (e) => {
     const user_name = document.getElementById("txt_nameUser").value;
     const status = document.getElementById("txt_estado").value;
     const user_sesion = new Date();
-    const user_update = new Date();
-    const user_creation = "Jordan";
+    const user_update = "ADMIN";
+    const user_creation = "ADMIN";
 
     if (rol_user == "" || cod_rol == "" || user_name == "" || status == "") {
         alert('Debe ingresar todos los datos');

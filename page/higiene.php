@@ -16,7 +16,7 @@
         <!--<link href="../module/boostrap/css/font-awesome.min.css" rel="stylesheet"> Line Awesome CSS -->
         <!--<link href="../module/boostrap/css/line-awesome.min.css" rel="stylesheet"> Animate CSS-->
         <link href="../module/boostrap/css/style.css" rel="stylesheet"><!-- Responsive CSS -->
-        <link href="../css/higiene.css" rel="stylesheet">
+        <link href="../css/viveres.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/ico.css">
         <script src="../module/boostrap/js/kits.js" crossorigin="anonymous"></script>
 
@@ -25,7 +25,7 @@
 
     <body>
         <div class="container1">
-            <form class="form1">
+            <!--<form class="form1">
                 <h1>Donacion de Higiene y Salud</h1>
                 <h3>Nombres:</h3>
                 <input type="text" name="nombre" id="nombre" placeholder="digite sus Nombres">
@@ -76,6 +76,177 @@
 
                 <input type="button" id="btn_guardar" value="Guardar">
                 <a href="kits.php"><input type="button" value="Regresar"></a>
+            </form>-->
+            <form class="form1">
+            <h1>Donacion de Higiene y Salud</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">NOMBRES</label>
+                            <input type="text" required class="form-control" id="txt_nombres" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">CEDULA</label>
+                            <input type="text" required="true" class="form-control" id="txt_cedula" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">CELULAR</label>
+                            <input type="text" required="true" class="form-control" id="txt_celular" placeholder="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">CORREO</label>
+                            <input type="email" required="true" class="form-control" id="txt_email" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="hidden" class="form-control" id="txt_tipo_donacion" value="HIGIENE-SALUD">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        <label for="exampleFormControlSelect1">Tipo de Higienes&Salud</label>
+                            <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value="NULL"></option>
+                                <option value="PAQUETES DE JABONES">Paquetes de jabones</option>
+                                <option value="TOALLAS SANITARIAS">Toallas sanitarias</option>
+                                <option value="SHAMPOO">Shampoo</option>
+                                <option value="PAPEL HIGIENICO">Papel Higienico</option>
+                                <option value="ALCOHOL">Alcohol</option>
+                                <option value="MASCARILLA">Mascarilla</option>
+                                <option value="CLORO">Cloro</option>
+                                <option value="DESINFECTANTE">Desinfectantes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        <label for="exampleFormControlSelect1">Tipo de Higienes&Salud</label>
+                        <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value="NULL"></option>
+                                <option value="PAQUETES DE JABONES">Paquetes de jabones</option>
+                                <option value="TOALLAS SANITARIAS">Toallas sanitarias</option>
+                                <option value="SHAMPOO">Shampoo</option>
+                                <option value="PAPEL HIGIENICO">Papel Higienico</option>
+                                <option value="ALCOHOL">Alcohol</option>
+                                <option value="MASCARILLA">Mascarilla</option>
+                                <option value="CLORO">Cloro</option>
+                                <option value="DESINFECTANTE">Desinfectantes</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        <label for="exampleFormControlSelect1">Tipo de Higienes&Salud</label>
+                        <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value="NULL"></option>
+                                <option value="PAQUETES DE JABONES">Paquetes de jabones</option>
+                                <option value="TOALLAS SANITARIAS">Toallas sanitarias</option>
+                                <option value="SHAMPOO">Shampoo</option>
+                                <option value="PAPEL HIGIENICO">Papel Higienico</option>
+                                <option value="ALCOHOL">Alcohol</option>
+                                <option value="MASCARILLA">Mascarilla</option>
+                                <option value="CLORO">Cloro</option>
+                                <option value="DESINFECTANTE">Desinfectantes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        <label for="exampleFormControlSelect1">Tipo de Higienes&Salud</label>
+                        <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value="NULL"></option>
+                                <option value="PAQUETES DE JABONES">Paquetes de jabones</option>
+                                <option value="TOALLAS SANITARIAS">Toallas sanitarias</option>
+                                <option value="SHAMPOO">Shampoo</option>
+                                <option value="PAPEL HIGIENICO">Papel Higienico</option>
+                                <option value="ALCOHOL">Alcohol</option>
+                                <option value="MASCARILLA">Mascarilla</option>
+                                <option value="CLORO">Cloro</option>
+                                <option value="DESINFECTANTE">Desinfectantes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                        <label for="exampleFormControlSelect1">Tipo de Higienes&Salud</label>
+                        <select class="form-control" id="tipo_viveres" name="cmb_tipo_viveres">
+                                <option value="NULL"></option>
+                                <option value="PAQUETES DE JABONES">Paquetes de jabones</option>
+                                <option value="TOALLAS SANITARIAS">Toallas sanitarias</option>
+                                <option value="SHAMPOO">Shampoo</option>
+                                <option value="PAPEL HIGIENICO">Papel Higienico</option>
+                                <option value="ALCOHOL">Alcohol</option>
+                                <option value="MASCARILLA">Mascarilla</option>
+                                <option value="CLORO">Cloro</option>
+                                <option value="DESINFECTANTE">Desinfectantes</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Otras Higienes&Salud</label>
+                            <textarea id="tipo_viveres" name="cmb_tipo_viveres" placeholder="Escribir otras Higienes&Salud.." style="height:auto"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlInput1">Cantidad</label>
+                            <input type="number" class="form-control" name="txt_cantidad" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <input type="button" class="btn btn-primary" id="btn_enviar" value="enviar">
+                    </div>
+                    <div class="col-md-6">
+                        <a href="kits.php"><input type="button" class="btn btn-danger" value="Regresar"></a>
+                    </div>
+                </div>
             </form>
         </div>
         <!-- Footer Area -->
@@ -147,6 +318,7 @@
         <script src="../module/boostrap/js/jquery.sticky.js"></script><!-- Progress Bar JS -->
         <script src="../module/boostrap/js/jquery.barfiller.js"></script><!-- Main JS -->
         <script src="../module/boostrap/js/main.js"></script>
+        <script src="../js/eventos/kits/viveres.js"> </script>
     </body>
 
     </html>

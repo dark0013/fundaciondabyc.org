@@ -10,7 +10,7 @@ btnGuardar.addEventListener("click", async (e) => {
     const date_proyect = document.getElementById("date").value;
     const status = "A";
     const date_creation = new Date();
-    const user_creation = "ALCAMPOVERDE";
+    const user_creation = "ADMIN";
     const user_sesion = new Date();
 
     // Verificamos que todos los datos hayan sido ingresados
@@ -66,8 +66,8 @@ btnEditar.addEventListener("click", async (e) => {
     const description = document.getElementById("description1").value;
     const date_proyect = document.getElementById("date1").value;
     const date_update = new Date();
-    const user_sesion = "ALCAMPOVERDE";
-    const user_update = "ALCAMPOVERDE";
+    const user_sesion = "ADMIN";
+    const user_update = "ADMIN";
 
     if (title === '' || description === '' || date_proyect === '') {
         alert('Debe ingresar todos los datos');

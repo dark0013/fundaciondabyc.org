@@ -14,10 +14,10 @@ btnENVIARMENSAJE.addEventListener("click", async (e) => {
     const phone = document.getElementById("txt_numero_telefonico").value;
     const email = document.getElementById("txt_correo_electronico").value;
     const description = document.getElementById("txt_escribe_tu_mensaje").value;
-    const status = "A";
+    const status = document.getElementById("txt_status").value;
     const user_sesion = new Date();
     const date_creation = new Date();
-    const user_creation = "ALCAMPOVERDE";
+    const user_creation = "ADMIN";
     let parametros = JSON.stringify({ indentication, full_name, phone, email, description, status, user_sesion, date_creation, user_creation });
 
     console.log(parametros);
@@ -44,18 +44,18 @@ const btnSUBSCRIBIRSE = document.getElementById("btn_subscribirse");
 btnSUBSCRIBIRSE.addEventListener("click", async (e) => {
     e.preventDefault();//
     const indentication = document.getElementById("txt_cedula").value;
-    const full_name = document.getElementById("txt_nombre_completo").value;
-    const email = document.getElementById("txt_correo_electronico").value;
-    const phone = document.getElementById("txt_numero_telefonico").value;
-    const description = document.getElementById("txt_escribe_tu_mensaje").value;
-    const status = "A";
+    const full_name = document.getElementById("txt_nombre_completoS").value;
+    const email = document.getElementById("txt_correo_electronicoS").value;
+    const phone = document.getElementById("txt_numero_telefonicoS").value;
+    const address = document.getElementById("txt_escribe_tu_mensajeS").value;
+    const status = document.getElementById("txt_statu").value;
     const user_sesion = new Date();
     const date_creation = new Date();
-    const user_creation = "ALCAMPOVERDE";
+    const user_creation = "ADMIN";
 
     let parametros = JSON.stringify({
         indentication, full_name,
-        email, phone, description, status, user_sesion, user_creation,date_creation
+        email, phone, address, status, user_sesion, user_creation,date_creation
     });
 
     console.log(parametros);

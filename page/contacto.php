@@ -1,5 +1,5 @@
 <php>
-<?php include('menu/navbar_sub.php') ?>
+    <?php include('menu/navbar_sub.php') ?>
 
     <!DOCTYPE html>
     <html lang="en">
@@ -36,6 +36,7 @@
                                 <h3>Danos tu mensaje</h3>
                                 <form>
                                     <input type="hidden" class="form-control" id="txt_id_user">
+                                    <input type="hidden" class="form-control" id="txt_status" value="C">
                                     <input type="text" name="txt_nombre_completo" id="txt_nombre_completo" required="" placeholder="Nombre Completo">
                                     <input type="email" name="txt_correo_electronico" id="txt_correo_electronico" required="" placeholder="Correo Electronico">
                                     <input type="text" name="txt_numero_telefonico" id="txt_numero_telefonico" placeholder="Numero Telefonico">
@@ -52,11 +53,13 @@
                             <div class="contact-form">
                                 <h3>Subscribirse</h3>
                                 <form name="contact-form" id="contactForm">
-                                    <input type="text" name="Cedula" id="txt_cedula" required="" placeholder="Cedula de Identidad">
-                                    <input type="text" name="name" id="txt_nombre_completo" required="" placeholder="Nombre Completo">
-                                    <input type="email" name="email" id="txt_correo_electronico" required="" placeholder="Correo Electronico">
-                                    <input type="text" name="Numero Telefonico" id="txt_numero_telefonico" placeholder="Numero Telefonico">
-                                    <input name="Direccion" id="txt_escribe_tu_mensaje" cols="30" rows="10" required="" placeholder="Direccion">
+                                    <input type="hidden" class="form-control" id="txt_id_user">
+                                    <input type="hidden" class="form-control" id="txt_statu" value="S">
+                                    <input type="text" name="txt_cedula" id="txt_cedula" required="" placeholder="Cedula de Identidad">
+                                    <input type="text" name="txt_nombre_completo" id="txt_nombre_completoS" required="" placeholder="Nombre Completo">
+                                    <input type="email" name="email" id="txt_correo_electronicoS" required="" placeholder="Correo Electronico">
+                                    <input type="text" name="txt_numero_telefonico" id="txt_numero_telefonicoS" placeholder="Numero Telefonico">
+                                    <input name="txt_escribe_tu_mensaje" id="txt_escribe_tu_mensajeS" cols="30" rows="10" required="" placeholder="Direccion">
                                     <button type="submit" id="btn_subscribirse" name="submit">Subscribirse</button>
                             </div>
                         </div>

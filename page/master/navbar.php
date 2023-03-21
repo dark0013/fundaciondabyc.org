@@ -44,10 +44,9 @@
           <i class='bx bxs-chevron-down arrow' ></i>
         </div>
         <ul class="sub-menu">
-          <li><a href="#">Beneficiarios</a></li>
-          <li><a href="#">Donantes</a></li>
-          <li><a href="#">Voluntarios</a></li>
-          <li><a href="#">Bitacora de Sesión</a></li>
+          <li><a href="../gestion_contactos/donantes.php">Donantes</a></li>
+          <li><a href="../gestion_contactos/subscritos.php">Subscritos</a></li>
+          <li><a href="../gestion_contactos/personas_contactar.php">Personas a contactar</a></li>
         </ul>
       </li>
     

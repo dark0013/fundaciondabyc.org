@@ -15,7 +15,7 @@ btnGuardar.addEventListener("click", async (e) => {
     const pass = document.getElementById("txt_contrasenia").value;
     const user_sesion = new Date();
     const date_creation = new Date();
-    const user_creation = "ALCAMPOVERDE";
+    const user_creation = "ADMIN";
 
     if (name_users == "" || id_rol == "" || identification_card == "" || name == "" || pass == "") {
         alert('Debe ingresar todos los datos');
@@ -54,8 +54,8 @@ btnEditar.addEventListener("click", async (e) => {
     const identification_card = document.getElementById("txt_cedula1").value;
     const name = document.getElementById("txt_nombre1").value;
     const pass = document.getElementById("txt_contrasenia1").value;
-    const user_update = "ALCAMPOVERDE";
-    const user_creation = "ALCAMPOVERDE";
+    const user_update = "ADMIN";
+    const user_creation = "ADMIN";
     
     if (name_users == "" || id_rol == "" || identification_card == "" || name == "" || pass == "") {
         alert('Debe ingresar todos los datos');
