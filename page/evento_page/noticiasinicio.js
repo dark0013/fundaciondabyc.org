@@ -1,13 +1,11 @@
-//let url = 'https://fundaciondabyc.org/ApiFundacionDabyc/controllers/proyectos?page'
- let url = `${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`;
-  fetch(url)
-    .then(response => response.json())
-    .then(data => mostrarDatos(data))
-    .catch(error => console.log(error))
+let url = `${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`;
+fetch(url)
+  .then(response => response.json())
+  .then(data => mostrarDatos(data))
+  .catch(error => console.log(error))
 
+let contador = 0;
 const mostrarDatos = (data) => {
-  console.log(JSON.stringify(data))
-  
   // Recorrer los objetos JSON y obtener los campos necesarios
   data.forEach((objeto) => {
     const title = objeto.title;
@@ -46,8 +44,9 @@ const mostrarDatos = (data) => {
     cardHtml.appendChild(imagenHtml);
     cardHtml.appendChild(cardBodyHtml);
 
-    document.getElementById('card').appendChild(cardHtml);
-    
+    if (contador <= 5) {
+      document.getElementById('card-container').appendChild(cardHtml);
+      contador++;
+    }
   });
 }
-

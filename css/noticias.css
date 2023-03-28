@@ -61,6 +61,10 @@
   flex-grow: 1;
 }
 
+.card-image {
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .imagen {
     flex-wrap: wrap;
