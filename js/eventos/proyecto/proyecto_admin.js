@@ -4,10 +4,10 @@ const btnGuardar = document.getElementById("btn_guardar");
 
 btnGuardar.addEventListener("click", async (e) => {
     e.preventDefault();
-
     const title = document.getElementById("title").value;
     const description = document.getElementById("description").value;
     const date_proyect = document.getElementById("date").value;
+    const video_link = document.getElementById("video_link").value;
     const status = "S";
     const date_creation = new Date();
     const user_creation = "ADMIN";
@@ -30,6 +30,7 @@ btnGuardar.addEventListener("click", async (e) => {
         let parametros = JSON.stringify({
             title: title,
             url_image: url_image,
+            video_link:video_link,
             description: description,
             date_proyect: date_proyect,
             date_creation: date_creation,
@@ -65,6 +66,7 @@ btnEditar.addEventListener("click", async (e) => {
     const id_project = document.getElementById("txt_id_proyect").value;
     const title = document.getElementById("title1").value;
     const description = document.getElementById("description1").value;
+    const video_link = document.getElementById("video_link1").value;
     const date_proyect = document.getElementById("date1").value;
     const date_update = new Date();
     const user_sesion = "ADMIN";
@@ -84,6 +86,7 @@ btnEditar.addEventListener("click", async (e) => {
             let parametros = JSON.stringify({
                 id_project: id_project,
                 title: title,
+                video_link:video_link,
                 date_proyect: date_proyect,
                 description: description,
                 date_update: date_update,
@@ -120,6 +123,7 @@ btnEditar.addEventListener("click", async (e) => {
         const url_with_ext = url_without_ext + '.' + ext; // Agregamos la extensión a la URL*/
         let parametros = JSON.stringify({
             id_project: id_project,
+            video_link:video_link,
             title: title,
             date_proyect: date_proyect,
             description: description,
@@ -260,6 +264,7 @@ function llenarTabla(tabla, filas) {
             $(this).removeClass('selected');
             document.getElementById("txt_id_proyect").value = "";
             document.getElementById("title1").value = "";
+            document.getElementById("video_link1").value = "";
             document.getElementById("description1").value = "";
             document.getElementById("date1").value = "";
         } else {
@@ -269,6 +274,7 @@ function llenarTabla(tabla, filas) {
             document.getElementById("txt_id_proyect").value = cellData.id_project;
             document.getElementById("title1").value = cellData.title;
             document.getElementById("description1").value = cellData.description;
+            document.getElementById("video_link1").value = cellData.video_link;
             document.getElementById("date1").value = cellData.date_proyect;
             document.getElementById("image1").src = cellData.url_image; // establecer la fuente de la imagen
         }
@@ -299,4 +305,5 @@ const limpiarCampos = _ => {
     document.getElementById("title1").value = " ";
     document.getElementById("description1").value = " ";
     document.getElementById("date1").value = " ";
+    document.getElementById("video_link").value = " ";
 }

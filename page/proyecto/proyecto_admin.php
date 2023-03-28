@@ -29,6 +29,8 @@
                 <textarea id="description" name="description" placeholder="Descripción.." style="height:200px"></textarea>
                 <label for="file">Archivo:</label>
                 <input type="file" id="file" name="file" placeholder="Archivo..">
+                <label for="video_link">Link reels:</label>
+                <input type="text" id="video_link" name="video_link" placeholder="Link..">
               </form>
               <div class="modal-footer" id="modalfoot">
                 <input type="button" id="btn_guardar" value="Guardar" class="input1">
@@ -63,6 +65,8 @@
                 <div class="">
                   <img style="width: 50%;" id="image1" src="" alt="Imagen seleccionada">
                 </div>
+                <label for="video_link1">Link reels:</label>
+                <input type="text" id="video_link1" name="video_link1" placeholder="Link..">
                 <br>
                 <input type="file" id="file1" name="image1" placeholder="Archivo.." onchange="previewImage();" value="{{ cellData.url_image }}">
                 <input type="hidden" id="file1_hidden" name="image1">

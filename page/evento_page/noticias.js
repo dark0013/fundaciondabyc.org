@@ -1,5 +1,5 @@
-//let url = 'https://fundaciondabyc.org/ApiFundacionDabyc/controllers/proyectos?page'
-let url = `${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`;
+//let url = `${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`;
+let url = 'http://localhost/ApiFundacionDabyc/controllers/proyectos?page'
 fetch(url)
   .then(response => response.json())
   .then(data => mostrarDatos(data))
@@ -7,25 +7,25 @@ fetch(url)
 
 const mostrarDatos = (data) => {
   console.log(JSON.stringify(data))
-  
+
   // Recorrer los objetos JSON y obtener los campos necesarios
   data.forEach((objeto) => {
     const title = objeto.title;
     const imagen = objeto.url_image;
+    const url = objeto.video_link
     const date_creation = objeto.date_proyect;
     const description = objeto.description;
-    const video_link = objeto.video_link;
 
     // Mostrar los valores en la página web
     const cardHtml = document.createElement('div');
     cardHtml.className = 'card';
 
-    const videoHtml = document.createElement('iframe');
-    videoHtml.id = 'iframe';
-    videoHtml.src = video_link;
-    
-   /* const imagenHtml = document.createElement('img');
-    imagenHtml.src = imagen;*/
+    const imagenHtml = document.createElement('img');
+    imagenHtml.src = imagen;
+
+    const linkHtml = document.createElement('a');
+    linkHtml.href = url;
+    linkHtml.appendChild(imagenHtml);
 
     const cardBodyHtml = document.createElement('div');
     cardBodyHtml.className = 'card-body';
@@ -47,33 +47,12 @@ const mostrarDatos = (data) => {
     cardBodyHtml.appendChild(date_creationHtml);
     cardBodyHtml.appendChild(descriptionHtml);
 
-    cardHtml.appendChild(videoHtml);
-    //cardHtml.appendChild(imagenHtml);
+    cardHtml.appendChild(linkHtml);
     cardHtml.appendChild(cardBodyHtml);
 
     document.getElementById('card').appendChild(cardHtml);
     
   });
-
-  const reelUrl = "https://www.instagram.com/reel/CqTbJCUvQcI/";
-  //const video_link = objeto.video_link;
-  const iframe = document.getElementById("iframe");
-  iframe.setAttribute("src", `${reelUrl}embed/`);
-
-  // Añade un botón de inicio de sesión y un evento para redirigir al usuario a la página de inicio de sesión de Instagram
-  const loginButton = document.createElement("button");
-  loginButton.innerText = "Iniciar sesión en Instagram";
-  loginButton.addEventListener("click", () => {
-      window.open("https://www.instagram.com/accounts/login/", "_blank");
-  });
-  document.getElementById("card").appendChild(loginButton);
-
-  // Comprueba si el usuario ha iniciado sesión en Instagram y actualiza el iframe
-  setInterval(() => {
-      if (document.cookie.includes("sessionid")) {
-          iframe.setAttribute("src", `${reelUrl}embed/`);
-          loginButton.style.display = "none";
-      }
-  }, 1000);
 }
+
 

@@ -21,9 +21,9 @@
             <div class="hijo">
 
                 <p>
-                    Fundación "Dios Abre Brecha Y Camino", nació hace 29 años como un método de ayuda a personas en situación vulnerable. 
+                    Fundación "Dios Abre Brecha Y Camino", nació hace 29 años como un método de ayuda a personas en situación vulnerable.
                     El señor Luis Eduardo Nieto Lavayen fue precursor de estas causas sociales a nivel alimentario, educativo y deportivo; después de su deceso ,
-                    toma a cargo la fundación nuestra presidenta Ingrid Nieto, quien decide sacar el registro de la fundación en el Ministerio de Inclusión Económica y Social, 
+                    toma a cargo la fundación nuestra presidenta Ingrid Nieto, quien decide sacar el registro de la fundación en el Ministerio de Inclusión Económica y Social,
                     siendo el 25 de Abril aprobado su registro con la personería jurídica MIES-CZ-8-DDG1-2018-0033.
                 </p>
             </div>
@@ -51,25 +51,25 @@
             </div>
 
         </div>
-        <center>
+        <div style="text-align: center;">
             <div class="container">
                 <h1 class="text-center text-success mb-4">Noticias</h1>
-                        <div class="#">
-                            <div class="container col-12 col-md-6 col-lg-12">
-                                <div id="card-container">
+                <div class="#">
+                    <div class="container col-12 col-md-6 col-lg-12">
+                        <div id="card-container">
 
-                                </div>
-                            </div>
                         </div>
+                    </div>
+                </div>
             </div>
-        </center>
+        </div>
         <div class="container1">
             <div class="button">
                 <a href="page/noticias.php">Ver más</a>
             </div>
 
         </div>
-        
+
         <!-- Footer Area -->
         <footer class="footer-area">
             <div class="container">
