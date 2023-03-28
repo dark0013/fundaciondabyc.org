@@ -23,7 +23,8 @@ btnGuardar.addEventListener("click", async (e) => {
 
     console.log(parametros);
 
-    let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/rol`, {
+    //let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/rol`, {
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/rol', {
         method: 'POST',
         headers: {
             'accept': 'application/json ',
@@ -62,7 +63,8 @@ btnEditar.addEventListener("click", async (e) => {
 
     console.log(parametros);
 
-    let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/rol`, {
+    //let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/rol`, {
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/rol', {
         method: 'PUT',
         headers: {
             'accept': 'application/json ',
@@ -99,7 +101,8 @@ btnInactivar.addEventListener("click", async (e) => {
 
     console.log(parametros);
 
-    let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/rol`, {
+    //let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/rol`, {
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/rol', {
         method: 'DELETE',
         headers: {
             'accept': 'application/json ',
@@ -118,7 +121,8 @@ btnInactivar.addEventListener("click", async (e) => {
 });
 
 const getData = async () => {
-    const data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/rol?page`);
+    //const data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/rol?page`);
+    const data = await fetch('http://localhost/ApiFundacionDabyc/controllers/rol?page');
     console.log(data);
     if (data.status === 200) {
         const datos = await data.json();

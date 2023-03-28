@@ -26,7 +26,8 @@ btnGuardar.addEventListener("click", async (e) => {
 
     console.log(parametros);
 
-    let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/usuario`, {
+    //let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/usuario`, {
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/usuario', {
         method: 'POST',
         headers: {
             'accept': 'application/json ',
@@ -65,7 +66,8 @@ btnEditar.addEventListener("click", async (e) => {
 
     console.log(parametros);
 
-    let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/usuario`, {
+    //let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/usuario`, {
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/usuario', {     
         method: 'PUT',
         headers: {
             'accept': 'application/json ',
@@ -99,7 +101,8 @@ btnInactivar.addEventListener("click", async (e) => {
 
     console.log(parametros);
 
-    let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/usuario`, {
+    //let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/usuario`, {
+    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/usuario', {    
         method: 'DELETE',
         headers: {
             'accept': 'application/json ',
