@@ -205,7 +205,8 @@ btnInactivar.addEventListener("click", async (e) => {
 
 
 const getData = async () => {
-    const data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`);
+    //const data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`);
+    const data = await fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos?page');
     console.log(data);
     if (data.status === 200) {
         const datos = await data.json();
