@@ -1,5 +1,5 @@
-//let url = 'https://fundaciondabyc.org/ApiFundacionDabyc/controllers/proyectos?page'
-let url = `${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`;
+//let url = `${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`;
+let url = 'http://localhost/ApiFundacionDabyc/controllers/proyectos?page';
 fetch(url)
   .then(response => response.json())
   .then(data => mostrarDatos(data))
