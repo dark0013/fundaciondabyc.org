@@ -51,44 +51,25 @@
             </div>
 
         </div>
+        <center>
+            <div class="container">
+                <h1 class="text-center text-success mb-4">Noticias</h1>
+                        <div class="#">
+                            <div class="container col-12 col-md-6 col-lg-12">
+                                <div id="card-container">
 
-        <div class="container my-4">
-            <h1 class="text-center text-success mb-4">Noticias</h1>
-            <div class="row" style="overflow: hidden;">
-                <div class="row row-cols">
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="assets/img/img_inicio/dona-grupal3-2.jpeg" height="197" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Compartimos refrigerio con niños de la clase de pintura en chongon
-                                    gracias @almacenestiaec y @bcoalimentosgye #fundraising #fundacion #fundacionesecuador
-                                    #viveres #alimentos #nutricion #solidaridad #medicinas #salud #brigadamédica #mundosano
-                                    #desayunosaludable #almuerzos #ods #hambrecero</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="assets/img/img_inicio/dona-grupal.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Gracias a KFC por ayudarnos a hacer una diferencia. Su apoyo nos anima
-                                    a continuar comprometidos para alcanzar nuestra meta, muchas gracias por su generosidad
-                                    y apoyo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="card">
-                            <img src="assets/img/img_inicio/dona-grupal2.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Compartiendo una tarde con niños en Olón.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div>
+        </center>
+        <div class="container1">
+            <div class="button">
+                <a href="page/noticias.php">Ver más</a>
+            </div>
 
+        </div>
+        
         <!-- Footer Area -->
         <footer class="footer-area">
             <div class="container">
@@ -147,8 +128,9 @@
 
 
         <script src="module/jquery/jquery-3.6.1.min.js"></script>
+        <script src="module/jquery/jquery-3.6.1.min.js"></script>
         <script src="module/boostrap/js/bootstrap.bundle.min.js"></script>
-
+        <script src="page/evento_page/noticiasinicio.js"></script>
     </body>
 
 </php>

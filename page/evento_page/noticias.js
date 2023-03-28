@@ -1,5 +1,5 @@
-//let url = `${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`;
-let url = 'http://localhost/ApiFundacionDabyc/controllers/proyectos?page';
+//let url = 'https://fundaciondabyc.org/ApiFundacionDabyc/controllers/proyectos?page'
+let url = `${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`;
 fetch(url)
   .then(response => response.json())
   .then(data => mostrarDatos(data))
@@ -41,6 +41,7 @@ const mostrarDatos = (data) => {
     const descriptionHtml = document.createElement('textarea');
     descriptionHtml.innerHTML = description;
     descriptionHtml.className = 'card-text';
+    descriptionHtml.setAttribute('readonly', true); // Agregar el atributo readonly
 
     cardBodyHtml.appendChild(titleHtml);
     cardBodyHtml.appendChild(date_creationHtml);
