@@ -22,7 +22,7 @@ btnENVIARMENSAJE.addEventListener("click", async (e) => {
 
     console.log(parametros);
 
-    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/contactos', {
+    let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/contactos`, {
         method: 'POST',
         headers: {
             'accept': 'application/json ',
@@ -60,7 +60,7 @@ btnSUBSCRIBIRSE.addEventListener("click", async (e) => {
 
     console.log(parametros);
 
-    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/contactos', {
+    let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/contactos`, {
         method: 'POST',
         headers: {
             'accept': 'application/json ',

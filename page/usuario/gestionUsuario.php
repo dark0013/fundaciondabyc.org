@@ -144,15 +144,15 @@
 <table id="tblDatos"  class="table table-striped table-bordered" style="width: 100%" onclick="openModal()" data-bs-toggle="modal" data-bs-target="#exampleModal1">
       <thead>
         <tr >
-          <th>ID</th>
-          <th>name_users</th>
-          <th>identification_card</th>
-          <th>pass</th>
-          <th>name</th>
-          <th>id_rol</th>
-          <th>status</th>
-          <th>usuario_creacion</th>
-          <th>date_creation</th>
+          <th>#</th>
+          <th>Nombre de usuario</th>
+          <th>Cedula</th>
+          <th>Contrasena</th>
+          <th>Nombre</th>
+          <th>Rol</th>
+          <th>Estado</th>
+          <th>Usuario de creacion</th>
+          <th>Fecha de creacion</th>
         </tr>
       </thead>
     </table>

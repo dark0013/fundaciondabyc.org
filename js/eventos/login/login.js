@@ -7,7 +7,7 @@ btnLogin.addEventListener('click', async (event) => {
   const txt_contrasenia = document.getElementById("txt_contrasenia").value;
 
   try {
-    const response = await fetch('http://localhost/ApiFundacionDabyc/controllers/usuario?page');
+    const response = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/usuario?page`);
     if (response.ok) {
       const data = await response.json();
       const usuario = data.find(usuario => usuario.name_users === txt_nombre_user && usuario.pass === txt_contrasenia);

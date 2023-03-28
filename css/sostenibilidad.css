@@ -1,9 +1,9 @@
 .row2 {
-    display: flex;
     flex-wrap: wrap;
     margin-right: 100px;
-    height: 70%;
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .col-sm-4 {
@@ -18,9 +18,10 @@
     height: auto;
   }
   .row2 img{
-    width: 100%;
+    width: 80%;
     height: 80%;
-    margin-left: 80px;
+    margin-left: 60px;
+    max-height: 400px;
   }
 .Nose{
     display: inline-flex;

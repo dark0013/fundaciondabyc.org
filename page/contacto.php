@@ -33,14 +33,14 @@
                                 <h2>Encuentranos de manera fácil</h2>
                             </div>
                             <div class="contact-form">
-                                <h3>Danos tu mensaje</h3>
+                                <h3>Dejanos tu mensaje</h3>
                                 <form>
-                                    <input type="hidden" class="form-control" id="txt_id_user">
-                                    <input type="hidden" class="form-control" id="txt_status" value="C">
-                                    <input type="text" name="txt_nombre_completo" id="txt_nombre_completo" required="" placeholder="Nombre Completo">
-                                    <input type="email" name="txt_correo_electronico" id="txt_correo_electronico" required="" placeholder="Correo Electronico">
-                                    <input type="text" name="txt_numero_telefonico" id="txt_numero_telefonico" placeholder="Numero Telefonico">
-                                    <textarea name="txt_escribe_tu_mensaje" id="txt_escribe_tu_mensaje" cols="30" rows="10" required="" placeholder="Escribe tu mensaje"></textarea>
+                                    <input style="color: white;" type="hidden" class="form-control" id="txt_id_user">
+                                    <input style="color: white;" type="hidden" class="form-control" id="txt_status" value="C">
+                                    <input style="color: white;" type="text" name="txt_nombre_completo" id="txt_nombre_completo" required="" placeholder="Nombre Completo">
+                                    <input style="color: white;" type="email" name="txt_correo_electronico" id="txt_correo_electronico" required="" placeholder="Correo Electronico">
+                                    <input style="color: white;" type="text" name="txt_numero_telefonico" id="txt_numero_telefonico" placeholder="Numero Telefonico">
+                                    <textarea style="color: white;" name="txt_escribe_tu_mensaje" id="txt_escribe_tu_mensaje" cols="30" rows="10" required="" placeholder="Escribe tu mensaje"></textarea>
                                 </form>
                                 <button id="btn_Enviar_Mensaje" type="submit" name="submit">Enviar Mensaje</button>
                             </div>
@@ -53,14 +53,14 @@
                             <div class="contact-form">
                                 <h3>Subscribirse</h3>
                                 <form name="contact-form" id="contactForm">
-                                    <input type="hidden" class="form-control" id="txt_id_user">
-                                    <input type="hidden" class="form-control" id="txt_statu" value="S">
-                                    <input type="text" name="txt_cedula" id="txt_cedula" required="" placeholder="Cedula de Identidad">
-                                    <input type="text" name="txt_nombre_completo" id="txt_nombre_completoS" required="" placeholder="Nombre Completo">
-                                    <input type="email" name="email" id="txt_correo_electronicoS" required="" placeholder="Correo Electronico">
-                                    <input type="text" name="txt_numero_telefonico" id="txt_numero_telefonicoS" placeholder="Numero Telefonico">
-                                    <input name="txt_escribe_tu_mensaje" id="txt_escribe_tu_mensajeS" cols="30" rows="10" required="" placeholder="Direccion">
-                                    <button type="submit" id="btn_subscribirse" name="submit">Subscribirse</button>
+                                    <input style="color: white;" type="hidden" class="form-control" id="txt_id_user">
+                                    <input style="color: white;" type="hidden" class="form-control" id="txt_statu" value="S">
+                                    <input style="color: white;" type="text" name="txt_cedula" id="txt_cedula" required="" placeholder="Cedula de Identidad">
+                                    <input style="color: white;" type="text" name="txt_nombre_completo" id="txt_nombre_completoS" required="" placeholder="Nombre Completo">
+                                    <input style="color: white;" type="email" name="email" id="txt_correo_electronicoS" required="" placeholder="Correo Electronico">
+                                    <input style="color: white;" type="text" name="txt_numero_telefonico" id="txt_numero_telefonicoS" placeholder="Numero Telefonico">
+                                    <input style="color: white;" name="txt_escribe_tu_mensaje" id="txt_escribe_tu_mensajeS" cols="30" rows="10" required="" placeholder="Direccion">
+                                    <button style="color: white;" type="submit" id="btn_subscribirse" name="submit">Subscribirse</button>
                             </div>
                         </div>
                     </div>
@@ -92,18 +92,16 @@
                                     <img src="../assets/ico/correo-electronico.png" width="8%">
                                     fundaciondabyc@gmail.com</img>
                                     <br>
-                                    <img src="../assets/ico/telefono.png" width="8%">
-                                    +593 978728242</img>
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 com-sm-12">
                             <h5>Enlaces útiles</h5>
                             <ul>
-                                <li><a href="/index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contactanos</a></li>
+                                <li><a href="../index.php">Inicio</a><a href="nosotros.php">Nosotros</a><a href="contacto.php">Contactanos</a></li>
                             </ul>
                         </div>
-                        <div class="col-lg-3 col-md-6  footer-bottom">
+                        <div class="col-lg-3 col-md-6 footer-bottom">
                             <div class="subscribe-form">
                                 <h5>DABYC</h5>
                                 <p>Fundacion Dabyc es una organización sin fines de lucro que lucha por posicionarse
@@ -116,7 +114,7 @@
                 <div class="footer-bottom">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <p class="copyright-line">© 2020 Todos los Derechos Reservados<a href="/index.html" title="">|
+                            <p class="copyright-line">© 2020 Todos los Derechos Reservados<a href="../index.php" title="">|
                                     DABYC</a>.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">

@@ -8,7 +8,6 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DABYC</title>
-        <link rel="icon" href="assets/ico/ico.png" type="image/jpg" />
         <link rel="stylesheet" href="module/boostrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/inicio.css">
@@ -22,15 +21,10 @@
             <div class="hijo">
 
                 <p>
-                    Fundación Dios Abre Brecha Y Camino nació hace 29 años como un método de auda a personas en
-                    situación
-                    vulnerable, conocidas de el señor Luis Eduardo Nieto Lavayen, precursor de causas sociales a nivel
-                    alimentario, educativo y deportes.<br>
-                    Después del deceso de el señor Nieto se hace cargo de la fundación nuestra presidenta Ingrid Nietos,
-                    quien
-                    toma la decisión de sacar el registro de la fundación en el ministerio de inclusion económica y
-                    social,
-                    siendo el 25 de abril aprobado su registro con la personería jurídica MIES-CZ-8-DDG1-2018-0033.
+                    Fundación "Dios Abre Brecha Y Camino", nació hace 29 años como un método de ayuda a personas en situación vulnerable. 
+                    El señor Luis Eduardo Nieto Lavayen fue precursor de estas causas sociales a nivel alimentario, educativo y deportivo; después de su deceso ,
+                    toma a cargo la fundación nuestra presidenta Ingrid Nieto, quien decide sacar el registro de la fundación en el Ministerio de Inclusión Económica y Social, 
+                    siendo el 25 de Abril aprobado su registro con la personería jurídica MIES-CZ-8-DDG1-2018-0033.
                 </p>
             </div>
         </div>
@@ -40,8 +34,8 @@
         <div class="bg-dark text-white py-4">
             <div class="container my-4">
                 <div class="row">
-                    <div class="col-md-6">
-                        <img src="assets/img/img_inicio/slums-2635238_960_720.jpg" width="100%">
+                    <div class="col-md-6" style="text-align: center;">
+                        <img src="assets/img/img_inicio/WhatsApp Image 2023-03-25 at 19.25.48.jpeg" width="300px">
                     </div>
                     <div class="col-md-6">
                         <h4><b>La Fundación tiene como objetivo general:</b></h4>
@@ -87,7 +81,7 @@
                         <div class="card">
                             <img src="assets/img/img_inicio/dona-grupal2.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <p class="card-text">Compartiendo una tarde con niños en olon.</p>
+                                <p class="card-text">Compartiendo una tarde con niños en Olón.</p>
                             </div>
                         </div>
                     </div>
@@ -112,15 +106,14 @@
                                     <img src="assets/ico/correo-electronico.png" width="8%">
                                     fundaciondabyc@gmail.com</img>
                                     <br>
-                                    <img src="assets/ico/telefono.png" width="8%">
-                                    +593 978728242</img>
+
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 com-sm-12">
                             <h5>Enlaces útiles</h5>
                             <ul>
-                                <li><a href="index.html">Inicio</a><a href="page/nosotros.html">Nosotros</a><a href="page/contacto.html">Contactanos</a></li>
+                                <li><a href="index.php">Inicio</a><a href="page/nosotros.php">Nosotros</a><a href="page/contacto.php">Contactanos</a></li>
                             </ul>
                         </div>
 
@@ -137,7 +130,7 @@
                 <div class="footer-bottom">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <p class="copyright-line">© 2020 Todos los Derechos Reservados<a href="index.html" title="">|
+                            <p class="copyright-line">© 2020 Todos los Derechos Reservados<a href="index.php" title="">|
                                     DABYC</a>.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">

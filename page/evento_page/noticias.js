@@ -1,5 +1,5 @@
 //let url = 'https://fundaciondabyc.org/ApiFundacionDabyc/controllers/proyectos?page'
-let url = 'http://localhost/ApiFundacionDabyc/controllers/proyectos?page'
+let url = `${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`;
 fetch(url)
   .then(response => response.json())
   .then(data => mostrarDatos(data))
@@ -25,7 +25,7 @@ const mostrarDatos = (data) => {
     const cardBodyHtml = document.createElement('div');
     cardBodyHtml.className = 'card-body';
 
-    const titleHtml = document.createElement('h2');
+    const titleHtml = document.createElement('h4');
     titleHtml.innerHTML = title;
     titleHtml.className = 'card-title';
 

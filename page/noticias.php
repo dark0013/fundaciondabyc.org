@@ -11,7 +11,6 @@
         <link rel="icon" href="../assets/ico/ico.png" type="image/jpg" />
         <link rel="stylesheet" href="../module/boostrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/style.css">
-        <link rel="stylesheet" href="../css/inicio.css">
         <link rel="stylesheet" href="../css/noticias.css">
         <link href="../module/boostrap/css/style.css" rel="stylesheet">
         <link rel="stylesheet" href="../css/ico.css">
@@ -22,7 +21,7 @@
     <body>
 
         <div class="imagen">
-            <div class="container col-12 col-md-6 col-lg-auto">
+            <div class="container col-12 col-md-6 col-lg-12">
                 <div id="card">
 
                 </div>
@@ -46,15 +45,14 @@
                                     <img src="../assets/ico/correo-electronico.png" width="8%">
                                     fundaciondabyc@gmail.com</img>
                                     <br>
-                                    <img src="../assets/ico/telefono.png" width="8%">
-                                    +593 978728242</img>
+
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 com-sm-12">
                             <h5>Enlaces útiles</h5>
                             <ul>
-                                <li><a href="index.html">Inicio</a><a href="about.html">Nosotros</a><a href="contact.html">Contactanos</a></li>
+                                <li><a href="../index.php">Inicio</a><a href="nosotros.php">Nosotros</a><a href="contacto.php">Contactanos</a></li>
                             </ul>
                         </div>
                         <div class="col-lg-3 col-md-6 footer-bottom">
@@ -70,7 +68,7 @@
                 <div class="footer-bottom">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <p class="copyright-line">© 2020 Todos los Derechos Reservados<a href="index.html" title="">|
+                            <p class="copyright-line">© 2020 Todos los Derechos Reservados<a href="../index.php" title="">|
                                     DABYC</a>.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">

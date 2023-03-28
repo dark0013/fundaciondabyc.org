@@ -35,7 +35,7 @@ document.getElementById("btn_enviar").addEventListener("click", async (e) => {
   formulario.append("donaciones", JSON.stringify(list_donacion));
 
   console.log(JSON.parse(JSON.stringify(Object.fromEntries(formulario.entries()))));
-  let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/donaciones', {
+  let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/donaciones`, {
     method: 'POST',
     headers: {
       'accept': 'application/json ',

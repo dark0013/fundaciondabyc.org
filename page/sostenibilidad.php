@@ -117,8 +117,7 @@
                                     <img src="../assets/ico/correo-electronico.png" width="8%">
                                     fundaciondabyc@gmail.com</img>
                                     <br>
-                                    <img src="../assets/ico/telefono.png" width="8%">
-                                    +593 978728242</img>
+
                                 </p>
                             </div>
                         </div>

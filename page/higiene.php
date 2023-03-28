@@ -266,24 +266,16 @@
                                     <img src="../assets/ico/correo-electronico.png" width="8%">
                                     fundaciondabyc@gmail.com</img>
                                     <br>
-                                    <img src="../assets/ico/telefono.png" width="8%">
-                                    +593 978728242</img>
+
                                 </p>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 com-sm-12">
                             <h5>Enlaces útiles</h5>
                             <ul>
-                                <li><a href="index.html">Inicio</a><a href="about.html">Nosotros</a><a href="contact.html">Contactanos</a></li>
+                                <li><a href="../index.php">Inicio</a><a href="nosotros.php">Nosotros</a><a href="contacto.php">Contactanos</a></li>
                             </ul>
                         </div>
-                        <!--<div class="col-lg-3 col-md-6 col-sm-12">
-						<h5>Our Causes</h5>
-						<ul>
-							<li><a href="#">Water Purify</a><a href="#">Food Collect</a><a href="#">Health Fund</a><a
-									href="#">Free Eduction</a><a href="#">Nutritution Fact</a></li>
-						</ul>
-					</div>-->
                         <div class="col-lg-3 col-md-6 footer-bottom">
                             <div class="subscribe-form">
                                 <h5>DABYC</h5>
@@ -297,7 +289,7 @@
                 <div class="footer-bottom">
                     <div class="row justify-content-center align-items-center">
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <p class="copyright-line">© 2020 Todos los Derechos Reservados<a href="index.html" title="">|
+                            <p class="copyright-line">© 2020 Todos los Derechos Reservados<a href="../index.php" title="">|
                                     DABYC</a>.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12">

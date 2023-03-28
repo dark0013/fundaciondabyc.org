@@ -8,7 +8,7 @@ btnGuardar.addEventListener("click", async (e) => {
     const title = document.getElementById("title").value;
     const description = document.getElementById("description").value;
     const date_proyect = document.getElementById("date").value;
-    const status = "A";
+    const status = "S";
     const date_creation = new Date();
     const user_creation = "ADMIN";
     const user_sesion = new Date();
@@ -38,7 +38,7 @@ btnGuardar.addEventListener("click", async (e) => {
             user_creation: user_creation
         });
 
-        fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos', {
+        fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/proyectos`, {
             method: 'POST',
             headers: {
                 'accept': 'application/json ',
@@ -90,7 +90,7 @@ btnEditar.addEventListener("click", async (e) => {
                 user_update: user_update,
                 url_image: url_image,
             });
-            fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos', {
+            fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/proyectos`, {
                 method: 'PUT',
                 headers: {
                     'accept': 'application/json ',
@@ -103,7 +103,9 @@ btnEditar.addEventListener("click", async (e) => {
                         alert('exito al guardar, refresque pantalla o presione F5 para poder previsualizar los cambios');
                         limpiarCampos();
                         location.reload();
-                    }
+                    }else{
+                      alert('Error al momento de actualizar');
+                      }
                 })
                 .catch(error => console.log(error));
         }
@@ -124,7 +126,7 @@ btnEditar.addEventListener("click", async (e) => {
             user_update: user_update,
             url_image: encodeURIComponent(url_image),
         });
-        fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos', {
+        fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/proyectos`, {
             method: 'PUT',
             headers: {
                 'accept': 'application/json ',
@@ -138,6 +140,8 @@ btnEditar.addEventListener("click", async (e) => {
                     limpiarCampos();
                     location.reload();
                     console.log(response)
+                }else{
+                     alert('Error al momento de actualizar');
                 }
             })
             .catch(error => console.log(error));
@@ -154,7 +158,6 @@ const btnInactivar = document.getElementById("btn_inactivar");
 btnInactivar.addEventListener("click", async (e) => {
     e.preventDefault();//
 
-    alert("Inactivar");
     const id_project = document.getElementById("txt_id_proyect").value;
 
     /*  const user_update = "ALCAMPOVERDE";
@@ -167,7 +170,7 @@ btnInactivar.addEventListener("click", async (e) => {
 
     console.log(parametros);
 
-    let data = await fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos', {
+    let data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/proyectos`, {
         method: 'DELETE',
         headers: {
             'accept': 'application/json ',
@@ -181,6 +184,8 @@ btnInactivar.addEventListener("click", async (e) => {
         limpiarCampos();
         location.reload();
 
+    }else{
+         alert('Error al momento de eliminar');
     }
 
 });
@@ -196,7 +201,7 @@ btnInactivar.addEventListener("click", async (e) => {
 
 
 const getData = async () => {
-    const data = await fetch('http://localhost/ApiFundacionDabyc/controllers/proyectos?page');
+    const data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/proyectos?page`);
     console.log(data);
     if (data.status === 200) {
         const datos = await data.json();
