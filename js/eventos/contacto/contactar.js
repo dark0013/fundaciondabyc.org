@@ -1,7 +1,8 @@
 let idTabla = 0;
 
 const getData = async () => {
-    const data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/contactos?pageC`);
+    //const data = await fetch(`${window.location.origin}/ApiFundacionDabyc/controllers/contactos?pageC`);
+    const data = await fetch('http://localhost/ApiFundacionDabyc/controllers/contactos?pageC');
     console.log(data);
     if (data.status === 200) {
         const datos = await data.json();
